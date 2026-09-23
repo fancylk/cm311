@@ -1,0 +1,3513 @@
+
+libgk_gfx2d.so:	file format elf32-littlearm
+
+Disassembly of section .plt:
+
+000007e0 <.plt>:
+     7e0: e004         	b	0x7ec <.plt+0xc>        @ imm = #0x8
+     7e2: e52d         	b	0x240                   @ imm = #-0x5a6
+     7e4: e004         	b	0x7f0 <.plt+0x10>       @ imm = #0x8
+     7e6: e59f         	b	0x328                   @ imm = #-0x4c2
+     7e8: e00e         	b	0x808 <__cxa_atexit@plt+0x8> @ imm = #0x1c
+     7ea: e08f         	b	0x90c                   @ imm = #0x11e
+     7ec: f008 e5be    	blx	0x40936c                @ imm = #0x408b7c
+     7f0: 37b0         	adds	r7, #0xb0
+     7f2: 0000         	movs	r0, r0
+
+000007f4 <__cxa_finalize@plt>:
+     7f4: c600         	<unknown>
+     7f6: e28f         	b	0xd18 <gfx2d_get_cmp_surface_size+0x2c> @ imm = #0x51e
+     7f8: ca03         	ldm	r2!, {r0, r1}
+     7fa: e28c         	b	0xd16 <gfx2d_get_cmp_surface_size+0x2a> @ imm = #0x518
+     7fc: f7b0 e5bc    	blx	0xffbb1378              @ imm = #-0x44f488
+
+00000800 <__cxa_atexit@plt>:
+     800: c600         	<unknown>
+     802: e28f         	b	0xd24 <gfx2d_get_cmp_surface_size+0x38> @ imm = #0x51e
+     804: ca03         	ldm	r2!, {r0, r1}
+     806: e28c         	b	0xd22 <gfx2d_get_cmp_surface_size+0x36> @ imm = #0x518
+     808: f7a8 e5bc    	blx	0xffba9384              @ imm = #-0x457488
+
+0000080c <__register_atfork@plt>:
+     80c: c600         	<unknown>
+     80e: e28f         	b	0xd30 <gfx2d_get_cmp_surface_size+0x44> @ imm = #0x51e
+     810: ca03         	ldm	r2!, {r0, r1}
+     812: e28c         	b	0xd2e <gfx2d_get_cmp_surface_size+0x42> @ imm = #0x518
+     814: f7a0 e5bc    	blx	0xffba1390              @ imm = #-0x45f488
+
+00000818 <pthread_mutex_lock@plt>:
+     818: c600         	<unknown>
+     81a: e28f         	b	0xd3c <gfx2d_get_cmp_surface_size+0x50> @ imm = #0x51e
+     81c: ca03         	ldm	r2!, {r0, r1}
+     81e: e28c         	b	0xd3a <gfx2d_get_cmp_surface_size+0x4e> @ imm = #0x518
+     820: f798 e5bc    	blx	0xffb9939c              @ imm = #-0x467488
+
+00000824 <open@plt>:
+     824: c600         	<unknown>
+     826: e28f         	b	0xd48 <gfx2d_get_cmp_surface_size+0x5c> @ imm = #0x51e
+     828: ca03         	ldm	r2!, {r0, r1}
+     82a: e28c         	b	0xd46 <gfx2d_get_cmp_surface_size+0x5a> @ imm = #0x518
+     82c: f790 e5bc    	blx	0xffb913a8              @ imm = #-0x46f488
+
+00000830 <pthread_mutex_unlock@plt>:
+     830: c600         	<unknown>
+     832: e28f         	b	0xd54 <gfx2d_get_cmp_surface_size+0x68> @ imm = #0x51e
+     834: ca03         	ldm	r2!, {r0, r1}
+     836: e28c         	b	0xd52 <gfx2d_get_cmp_surface_size+0x66> @ imm = #0x518
+     838: f788 e5bc    	blx	0xffb893b4              @ imm = #-0x477488
+
+0000083c <ioctl@plt>:
+     83c: c600         	<unknown>
+     83e: e28f         	b	0xd60 <gfx2d_get_cmp_surface_size+0x74> @ imm = #0x51e
+     840: ca03         	ldm	r2!, {r0, r1}
+     842: e28c         	b	0xd5e <gfx2d_get_cmp_surface_size+0x72> @ imm = #0x518
+     844: f780 e5bc    	blx	0xffb813c0              @ imm = #-0x47f488
+
+00000848 <close@plt>:
+     848: c600         	<unknown>
+     84a: e28f         	b	0xd6c <gfx2d_get_cmp_surface_size+0x80> @ imm = #0x51e
+     84c: ca03         	ldm	r2!, {r0, r1}
+     84e: e28c         	b	0xd6a <gfx2d_get_cmp_surface_size+0x7e> @ imm = #0x518
+     850: f778 e5bc    	blx	0xffb793cc              @ imm = #-0x487488
+
+00000854 <__stack_chk_fail@plt>:
+     854: c600         	<unknown>
+     856: e28f         	b	0xd78 <gfx2d_get_cmp_surface_size+0x8c> @ imm = #0x51e
+     858: ca03         	ldm	r2!, {r0, r1}
+     85a: e28c         	b	0xd76 <gfx2d_get_cmp_surface_size+0x8a> @ imm = #0x518
+     85c: f770 e5bc    	blx	0xffb713d8              @ imm = #-0x48f488
+
+00000860 <__aeabi_memclr8@plt>:
+     860: c600         	<unknown>
+     862: e28f         	b	0xd84 <gfx2d_convert_cap_drv_to_user+0x4> @ imm = #0x51e
+     864: ca03         	ldm	r2!, {r0, r1}
+     866: e28c         	b	0xd82 <gfx2d_convert_cap_drv_to_user+0x2> @ imm = #0x518
+     868: f768 e5bc    	blx	0xffb693e4              @ imm = #-0x497488
+
+0000086c <__aeabi_memcpy4@plt>:
+     86c: c600         	<unknown>
+     86e: e28f         	b	0xd90 <gfx2d_convert_cap_drv_to_user+0x10> @ imm = #0x51e
+     870: ca03         	ldm	r2!, {r0, r1}
+     872: e28c         	b	0xd8e <gfx2d_convert_cap_drv_to_user+0xe> @ imm = #0x518
+     874: f760 e5bc    	blx	0xffb613f0              @ imm = #-0x49f488
+
+00000878 <dup@plt>:
+     878: c600         	<unknown>
+     87a: e28f         	b	0xd9c <gfx2d_convert_cap_drv_to_user+0x1c> @ imm = #0x51e
+     87c: ca03         	ldm	r2!, {r0, r1}
+     87e: e28c         	b	0xd9a <gfx2d_convert_cap_drv_to_user+0x1a> @ imm = #0x518
+     880: f758 e5bc    	blx	0xffb593fc              @ imm = #-0x4a7488
+
+00000884 <gfx2d_get_cmp_surface_stride@plt>:
+     884: c600         	<unknown>
+     886: e28f         	b	0xda8 <gfx2d_convert_cap_drv_to_user+0x28> @ imm = #0x51e
+     888: ca03         	ldm	r2!, {r0, r1}
+     88a: e28c         	b	0xda6 <gfx2d_convert_cap_drv_to_user+0x26> @ imm = #0x518
+     88c: f750 e5bc    	blx	0xffb51408              @ imm = #-0x4af488
+
+00000890 <gfx2d_convert_cap_drv_to_user@plt>:
+     890: c600         	<unknown>
+     892: e28f         	b	0xdb4 <gfx2d_convert_cap_drv_to_user+0x34> @ imm = #0x51e
+     894: ca03         	ldm	r2!, {r0, r1}
+     896: e28c         	b	0xdb2 <gfx2d_convert_cap_drv_to_user+0x32> @ imm = #0x518
+     898: f748 e5bc    	blx	0xffb49414              @ imm = #-0x4b7488
+
+0000089c <fprintf@plt>:
+     89c: c600         	<unknown>
+     89e: e28f         	b	0xdc0 <gfx2d_convert_cap_drv_to_user+0x40> @ imm = #0x51e
+     8a0: ca03         	ldm	r2!, {r0, r1}
+     8a2: e28c         	b	0xdbe <gfx2d_convert_cap_drv_to_user+0x3e> @ imm = #0x518
+     8a4: f740 e5bc    	blx	0xffb41420              @ imm = #-0x4bf488
+
+000008a8 <fflush@plt>:
+     8a8: c600         	<unknown>
+     8aa: e28f         	b	0xdcc <gfx2d_convert_cap_drv_to_user+0x4c> @ imm = #0x51e
+     8ac: ca03         	ldm	r2!, {r0, r1}
+     8ae: e28c         	b	0xdca <gfx2d_convert_cap_drv_to_user+0x4a> @ imm = #0x518
+     8b0: f738 e5bc    	blx	0xffb3942c              @ imm = #-0x4c7488
+
+000008b4 <abort@plt>:
+     8b4: c600         	<unknown>
+     8b6: e28f         	b	0xdd8 <gfx2d_convert_cap_drv_to_user+0x58> @ imm = #0x51e
+     8b8: ca03         	ldm	r2!, {r0, r1}
+     8ba: e28c         	b	0xdd6 <gfx2d_convert_cap_drv_to_user+0x56> @ imm = #0x518
+     8bc: f730 e5bc    	blx	0xffb31438              @ imm = #-0x4cf488
+
+000008c0 <__aeabi_memclr@plt>:
+     8c0: c600         	<unknown>
+     8c2: e28f         	b	0xde4 <gfx2d_convert_cap_drv_to_user+0x64> @ imm = #0x51e
+     8c4: ca03         	ldm	r2!, {r0, r1}
+     8c6: e28c         	b	0xde2 <gfx2d_convert_cap_drv_to_user+0x62> @ imm = #0x518
+     8c8: f728 e5bc    	blx	0xffb29444              @ imm = #-0x4d7488
+
+000008cc <dladdr@plt>:
+     8cc: c600         	<unknown>
+     8ce: e28f         	b	0xdf0 <gfx2d_convert_cap_drv_to_user+0x70> @ imm = #0x51e
+     8d0: ca03         	ldm	r2!, {r0, r1}
+     8d2: e28c         	b	0xdee <gfx2d_convert_cap_drv_to_user+0x6e> @ imm = #0x518
+     8d4: f720 e5bc    	blx	0xffb21450              @ imm = #-0x4df488
+
+000008d8 <dl_iterate_phdr@plt>:
+     8d8: c600         	<unknown>
+     8da: e28f         	b	0xdfc <gfx2d_convert_cap_drv_to_user+0x7c> @ imm = #0x51e
+     8dc: ca03         	ldm	r2!, {r0, r1}
+     8de: e28c         	b	0xdfa <gfx2d_convert_cap_drv_to_user+0x7a> @ imm = #0x518
+     8e0: f718 e5bc    	blx	0xffb1945c              @ imm = #-0x4e7488
+     8e4: c600         	<unknown>
+     8e6: e28f         	b	0xe08 <gfx2d_convert_cap_drv_to_user+0x88> @ imm = #0x51e
+     8e8: ca03         	ldm	r2!, {r0, r1}
+     8ea: e28c         	b	0xe06 <gfx2d_convert_cap_drv_to_user+0x86> @ imm = #0x518
+     8ec: f710 e5bc    	blx	0xffb11468              @ imm = #-0x4ef488
+
+Disassembly of section .text:
+
+000008f0 <.text>:
+     8f0: 4801         	ldr	r0, [pc, #0x4]          @ 0x8f8 <.text+0x8>
+     8f2: 4478         	add	r0, pc
+     8f4: f001 bf42    	b.w	0x277c <gk_gfx2d_get_capability+0x1970> @ imm = #0x1e84
+     8f8: 370a         	adds	r7, #0xa
+     8fa: 0000         	movs	r0, r0
+     8fc: 2800         	cmp	r0, #0x0
+     8fe: bf08         	it	eq
+     900: 4770         	bxeq	lr
+     902: 4700         	bx	r0
+     904: 4a04         	ldr	r2, [pc, #0x10]         @ 0x918 <.text+0x28>
+     906: 4601         	mov	r1, r0
+     908: 4802         	ldr	r0, [pc, #0x8]          @ 0x914 <.text+0x24>
+     90a: 447a         	add	r2, pc
+     90c: 4478         	add	r0, pc
+     90e: f001 bf3d    	b.w	0x278c <gk_gfx2d_get_capability+0x1980> @ imm = #0x1e7a
+     912: bf00         	nop
+     914: ffed ffff    	<unknown>
+     918: 36f2         	adds	r6, #0xf2
+     91a: 0000         	movs	r0, r0
+     91c: 4b01         	ldr	r3, [pc, #0x4]          @ 0x924 <.text+0x34>
+     91e: 447b         	add	r3, pc
+     920: f001 bf3c    	b.w	0x279c <gk_gfx2d_get_capability+0x1990> @ imm = #0x1e78
+     924: 36de         	adds	r6, #0xde
+     926: 0000         	movs	r0, r0
+
+00000928 <gk_gfx2d_open>:
+     928: b510         	push	{r4, lr}
+     92a: 2403         	movs	r4, #0x3
+     92c: 2800         	cmp	r0, #0x0
+     92e: f2c8 0400    	movt	r4, #0x8000
+     932: d12b         	bne	0x98c <gk_gfx2d_open+0x64> @ imm = #0x56
+     934: 4816         	ldr	r0, [pc, #0x58]         @ 0x990 <gk_gfx2d_open+0x68>
+     936: 4478         	add	r0, pc
+     938: f7ff ef6e    	blx	0x818 <pthread_mutex_lock@plt> @ imm = #-0x124
+     93c: 3412         	adds	r4, #0x12
+     93e: bb28         	cbnz	r0, 0x98c <gk_gfx2d_open+0x64> @ imm = #0x4a
+     940: 4814         	ldr	r0, [pc, #0x50]         @ 0x994 <gk_gfx2d_open+0x6c>
+     942: 4478         	add	r0, pc
+     944: 6800         	ldr	r0, [r0]
+     946: 3001         	adds	r0, #0x1
+     948: d019         	beq	0x97e <gk_gfx2d_open+0x56> @ imm = #0x32
+     94a: 4913         	ldr	r1, [pc, #0x4c]         @ 0x998 <gk_gfx2d_open+0x70>
+     94c: 4479         	add	r1, pc
+     94e: 6809         	ldr	r1, [r1]
+     950: 3101         	adds	r1, #0x1
+     952: d003         	beq	0x95c <gk_gfx2d_open+0x34> @ imm = #0x6
+     954: 4911         	ldr	r1, [pc, #0x44]         @ 0x99c <gk_gfx2d_open+0x74>
+     956: 4479         	add	r1, pc
+     958: 6008         	str	r0, [r1]
+     95a: e010         	b	0x97e <gk_gfx2d_open+0x56> @ imm = #0x20
+     95c: 4810         	ldr	r0, [pc, #0x40]         @ 0x9a0 <gk_gfx2d_open+0x78>
+     95e: 2102         	movs	r1, #0x2
+     960: f44f 7280    	mov.w	r2, #0x100
+     964: 4478         	add	r0, pc
+     966: f7ff ef5e    	blx	0x824 <open@plt>        @ imm = #-0x144
+     96a: 490e         	ldr	r1, [pc, #0x38]         @ 0x9a4 <gk_gfx2d_open+0x7c>
+     96c: 2800         	cmp	r0, #0x0
+     96e: 4479         	add	r1, pc
+     970: 6008         	str	r0, [r1]
+     972: db04         	blt	0x97e <gk_gfx2d_open+0x56> @ imm = #0x8
+     974: 480c         	ldr	r0, [pc, #0x30]         @ 0x9a8 <gk_gfx2d_open+0x80>
+     976: 4478         	add	r0, pc
+     978: 6801         	ldr	r1, [r0]
+     97a: 3101         	adds	r1, #0x1
+     97c: 6001         	str	r1, [r0]
+     97e: 480b         	ldr	r0, [pc, #0x2c]         @ 0x9ac <gk_gfx2d_open+0x84>
+     980: 4478         	add	r0, pc
+     982: f7ff ef56    	blx	0x830 <pthread_mutex_unlock@plt> @ imm = #-0x154
+     986: 2800         	cmp	r0, #0x0
+     988: bf08         	it	eq
+     98a: 4604         	moveq	r4, r0
+     98c: 4620         	mov	r0, r4
+     98e: bd10         	pop	{r4, pc}
+     990: 36ce         	adds	r6, #0xce
+     992: 0000         	movs	r0, r0
+     994: 36c6         	adds	r6, #0xc6
+     996: 0000         	movs	r0, r0
+     998: 36b4         	adds	r6, #0xb4
+     99a: 0000         	movs	r0, r0
+     99c: 36b2         	adds	r6, #0xb2
+     99e: 0000         	movs	r0, r0
+     9a0: 1fbc         	subs	r4, r7, #0x6
+     9a2: 0000         	movs	r0, r0
+     9a4: 3692         	adds	r6, #0x92
+     9a6: 0000         	movs	r0, r0
+     9a8: 3692         	adds	r6, #0x92
+     9aa: 0000         	movs	r0, r0
+     9ac: 3684         	adds	r6, #0x84
+     9ae: 0000         	movs	r0, r0
+
+000009b0 <gk_gfx2d_close>:
+     9b0: b5b0         	push	{r4, r5, r7, lr}
+     9b2: b088         	sub	sp, #0x20
+     9b4: 4605         	mov	r5, r0
+     9b6: 4829         	ldr	r0, [pc, #0xa4]         @ 0xa5c <gk_gfx2d_close+0xac>
+     9b8: efc0 0050    	vmov.i32	q8, #0x0
+     9bc: 466a         	mov	r2, sp
+     9be: 4478         	add	r0, pc
+     9c0: 6801         	ldr	r1, [r0]
+     9c2: 4827         	ldr	r0, [pc, #0x9c]         @ 0xa60 <gk_gfx2d_close+0xb0>
+     9c4: 6809         	ldr	r1, [r1]
+     9c6: 4478         	add	r0, pc
+     9c8: 9107         	str	r1, [sp, #0x1c]
+     9ca: 2114         	movs	r1, #0x14
+     9cc: f942 0ac1    	vst1.64	{d16, d17}, [r2], r1
+     9d0: 2100         	movs	r1, #0x0
+     9d2: 6011         	str	r1, [r2]
+     9d4: 9104         	str	r1, [sp, #0x10]
+     9d6: f7ff ef20    	blx	0x818 <pthread_mutex_lock@plt> @ imm = #-0x1c0
+     9da: 2415         	movs	r4, #0x15
+     9dc: 2800         	cmp	r0, #0x0
+     9de: f2c8 0400    	movt	r4, #0x8000
+     9e2: d12e         	bne	0xa42 <gk_gfx2d_close+0x92> @ imm = #0x5c
+     9e4: 4820         	ldr	r0, [pc, #0x80]         @ 0xa68 <gk_gfx2d_close+0xb8>
+     9e6: 4478         	add	r0, pc
+     9e8: 6800         	ldr	r0, [r0]
+     9ea: 2800         	cmp	r0, #0x0
+     9ec: db22         	blt	0xa34 <gk_gfx2d_close+0x84> @ imm = #0x44
+     9ee: 491d         	ldr	r1, [pc, #0x74]         @ 0xa64 <gk_gfx2d_close+0xb4>
+     9f0: 4479         	add	r1, pc
+     9f2: 6809         	ldr	r1, [r1]
+     9f4: b1f1         	cbz	r1, 0xa34 <gk_gfx2d_close+0x84> @ imm = #0x3c
+     9f6: 4a1d         	ldr	r2, [pc, #0x74]         @ 0xa6c <gk_gfx2d_close+0xbc>
+     9f8: 3901         	subs	r1, #0x1
+     9fa: 447a         	add	r2, pc
+     9fc: 6011         	str	r1, [r2]
+     9fe: d119         	bne	0xa34 <gk_gfx2d_close+0x84> @ imm = #0x32
+     a00: f64b 2198    	movw	r1, #0xba98
+     a04: 466a         	mov	r2, sp
+     a06: f6cf 61dc    	movt	r1, #0xfedc
+     a0a: 9103         	str	r1, [sp, #0xc]
+     a0c: f243 2110    	movw	r1, #0x3210
+     a10: f2c7 6154    	movt	r1, #0x7654
+     a14: 9102         	str	r1, [sp, #0x8]
+     a16: f243 6101    	movw	r1, #0x3601
+     a1a: f2c4 0118    	movt	r1, #0x4018
+     a1e: 9504         	str	r5, [sp, #0x10]
+     a20: f7ff ef0c    	blx	0x83c <ioctl@plt>       @ imm = #-0x1e8
+     a24: 4d12         	ldr	r5, [pc, #0x48]         @ 0xa70 <gk_gfx2d_close+0xc0>
+     a26: 447d         	add	r5, pc
+     a28: 6828         	ldr	r0, [r5]
+     a2a: f7ff ef0e    	blx	0x848 <close@plt>       @ imm = #-0x1e4
+     a2e: f04f 30ff    	mov.w	r0, #0xffffffff
+     a32: 6028         	str	r0, [r5]
+     a34: 480f         	ldr	r0, [pc, #0x3c]         @ 0xa74 <gk_gfx2d_close+0xc4>
+     a36: 4478         	add	r0, pc
+     a38: f7ff eefa    	blx	0x830 <pthread_mutex_unlock@plt> @ imm = #-0x20c
+     a3c: 2800         	cmp	r0, #0x0
+     a3e: bf08         	it	eq
+     a40: 4604         	moveq	r4, r0
+     a42: 480d         	ldr	r0, [pc, #0x34]         @ 0xa78 <gk_gfx2d_close+0xc8>
+     a44: 9907         	ldr	r1, [sp, #0x1c]
+     a46: 4478         	add	r0, pc
+     a48: 6800         	ldr	r0, [r0]
+     a4a: 6800         	ldr	r0, [r0]
+     a4c: 1a40         	subs	r0, r0, r1
+     a4e: bf02         	ittt	eq
+     a50: 4620         	moveq	r0, r4
+     a52: b008         	addeq	sp, #0x20
+     a54: bdb0         	popeq	{r4, r5, r7, pc}
+     a56: f7ff eefe    	blx	0x854 <__stack_chk_fail@plt> @ imm = #-0x204
+     a5a: bf00         	nop
+     a5c: 35ca         	adds	r5, #0xca
+     a5e: 0000         	movs	r0, r0
+     a60: 363e         	adds	r6, #0x3e
+     a62: 0000         	movs	r0, r0
+     a64: 3618         	adds	r6, #0x18
+     a66: 0000         	movs	r0, r0
+     a68: 361a         	adds	r6, #0x1a
+     a6a: 0000         	movs	r0, r0
+     a6c: 360e         	adds	r6, #0xe
+     a6e: 0000         	movs	r0, r0
+     a70: 35da         	adds	r5, #0xda
+     a72: 0000         	movs	r0, r0
+     a74: 35ce         	adds	r5, #0xce
+     a76: 0000         	movs	r0, r0
+     a78: 3542         	adds	r5, #0x42
+     a7a: 0000         	movs	r0, r0
+
+00000a7c <gk_gfx2d_compose>:
+     a7c: e92d 4ff0    	push.w	{r4, r5, r6, r7, r8, r9, r10, r11, lr}
+     a80: b0b5         	sub	sp, #0xd4
+     a82: 4605         	mov	r5, r0
+     a84: 4857         	ldr	r0, [pc, #0x15c]        @ 0xbe4 <gk_gfx2d_compose+0x168>
+     a86: 466f         	mov	r7, sp
+     a88: 4689         	mov	r9, r1
+     a8a: 4478         	add	r0, pc
+     a8c: 21d0         	movs	r1, #0xd0
+     a8e: 4698         	mov	r8, r3
+     a90: 4614         	mov	r4, r2
+     a92: 6800         	ldr	r0, [r0]
+     a94: 6800         	ldr	r0, [r0]
+     a96: 9034         	str	r0, [sp, #0xd0]
+     a98: 4638         	mov	r0, r7
+     a9a: f7ff eee2    	blx	0x860 <__aeabi_memclr8@plt> @ imm = #-0x23c
+     a9e: 4852         	ldr	r0, [pc, #0x148]        @ 0xbe8 <gk_gfx2d_compose+0x16c>
+     aa0: 2101         	movs	r1, #0x1
+     aa2: f2c8 0100    	movt	r1, #0x8000
+     aa6: 4478         	add	r0, pc
+     aa8: 6806         	ldr	r6, [r0]
+     aaa: 1c70         	adds	r0, r6, #0x1
+     aac: d002         	beq	0xab4 <gk_gfx2d_compose+0x38> @ imm = #0x4
+     aae: b11d         	cbz	r5, 0xab8 <gk_gfx2d_compose+0x3c> @ imm = #0x6
+     ab0: 1c88         	adds	r0, r1, #0x2
+     ab2: e00c         	b	0xace <gk_gfx2d_compose+0x52> @ imm = #0x18
+     ab4: 4608         	mov	r0, r1
+     ab6: e00a         	b	0xace <gk_gfx2d_compose+0x52> @ imm = #0x14
+     ab8: 1cc8         	adds	r0, r1, #0x3
+     aba: f1b9 0f00    	cmp.w	r9, #0x0
+     abe: d006         	beq	0xace <gk_gfx2d_compose+0x52> @ imm = #0xc
+     ac0: f1b8 0f00    	cmp.w	r8, #0x0
+     ac4: bf1c         	itt	ne
+     ac6: f8d9 5008    	ldrne.w	r5, [r9, #0x8]
+     aca: 2d00         	cmpne	r5, #0x0
+     acc: d10b         	bne	0xae6 <gk_gfx2d_compose+0x6a> @ imm = #0x16
+     ace: 4947         	ldr	r1, [pc, #0x11c]        @ 0xbec <gk_gfx2d_compose+0x170>
+     ad0: 9a34         	ldr	r2, [sp, #0xd0]
+     ad2: 4479         	add	r1, pc
+     ad4: 6809         	ldr	r1, [r1]
+     ad6: 6809         	ldr	r1, [r1]
+     ad8: 1a89         	subs	r1, r1, r2
+     ada: bf04         	itt	eq
+     adc: b035         	addeq	sp, #0xd4
+     ade: e8bd 8ff0    	popeq.w	{r4, r5, r6, r7, r8, r9, r10, r11, pc}
+     ae2: f7ff eeb8    	blx	0x854 <__stack_chk_fail@plt> @ imm = #-0x290
+     ae6: f8d9 b004    	ldr.w	r11, [r9, #0x4]
+     aea: f1bb 0f07    	cmp.w	r11, #0x7
+     aee: d901         	bls	0xaf4 <gk_gfx2d_compose+0x78> @ imm = #0x2
+     af0: 1d08         	adds	r0, r1, #0x4
+     af2: e7ec         	b	0xace <gk_gfx2d_compose+0x52> @ imm = #-0x28
+     af4: f101 0a14    	add.w	r10, r1, #0x14
+     af8: 2c10         	cmp	r4, #0x10
+     afa: d16e         	bne	0xbda <gk_gfx2d_compose+0x15e> @ imm = #0xdc
+     afc: 983e         	ldr	r0, [sp, #0xf8]
+     afe: 28a4         	cmp	r0, #0xa4
+     b00: 4650         	mov	r0, r10
+     b02: d1e4         	bne	0xace <gk_gfx2d_compose+0x52> @ imm = #-0x38
+     b04: f8d9 000c    	ldr.w	r0, [r9, #0xc]
+     b08: f5b0 7f98    	cmp.w	r0, #0x130
+     b0c: 4650         	mov	r0, r10
+     b0e: d1de         	bne	0xace <gk_gfx2d_compose+0x52> @ imm = #-0x44
+     b10: 9c40         	ldr	r4, [sp, #0x100]
+     b12: f242 7010    	movw	r0, #0x2710
+     b16: 4284         	cmp	r4, r0
+     b18: d902         	bls	0xb20 <gk_gfx2d_compose+0xa4> @ imm = #0x4
+     b1a: f101 0012    	add.w	r0, r1, #0x12
+     b1e: e7d6         	b	0xace <gk_gfx2d_compose+0x52> @ imm = #-0x54
+     b20: 2000         	movs	r0, #0x0
+     b22: 4641         	mov	r1, r8
+     b24: 9004         	str	r0, [sp, #0x10]
+     b26: f107 0028    	add.w	r0, r7, #0x28
+     b2a: 22a4         	movs	r2, #0xa4
+     b2c: f7ff ee9e    	blx	0x86c <__aeabi_memcpy4@plt> @ imm = #-0x2c4
+     b30: f64b 2098    	movw	r0, #0xba98
+     b34: 2100         	movs	r1, #0x0
+     b36: f6cf 60dc    	movt	r0, #0xfedc
+     b3a: 466f         	mov	r7, sp
+     b3c: 9003         	str	r0, [sp, #0xc]
+     b3e: f243 2010    	movw	r0, #0x3210
+     b42: f2c7 6054    	movt	r0, #0x7654
+     b46: 463a         	mov	r2, r7
+     b48: 9002         	str	r0, [sp, #0x8]
+     b4a: 983f         	ldr	r0, [sp, #0xfc]
+     b4c: 9000         	str	r0, [sp]
+     b4e: 2801         	cmp	r0, #0x1
+     b50: bf08         	it	eq
+     b52: 9401         	streq	r4, [sp, #0x4]
+     b54: f8d9 0000    	ldr.w	r0, [r9]
+     b58: e9cd 5108    	strd	r5, r1, [sp, #32]
+     b5c: f243 6100    	movw	r1, #0x3600
+     b60: e9cd 0b06    	strd	r0, r11, [sp, #24]
+     b64: f2cc 01d0    	movt	r1, #0xc0d0
+     b68: 4630         	mov	r0, r6
+     b6a: f7ff ee68    	blx	0x83c <ioctl@plt>       @ imm = #-0x330
+     b6e: 2800         	cmp	r0, #0x0
+     b70: d1ad         	bne	0xace <gk_gfx2d_compose+0x52> @ imm = #-0xa6
+     b72: f108 0060    	add.w	r0, r8, #0x60
+     b76: f107 0188    	add.w	r1, r7, #0x88
+     b7a: 9c21         	ldr	r4, [sp, #0x84]
+     b7c: 2244         	movs	r2, #0x44
+     b7e: f8c8 405c    	str.w	r4, [r8, #0x5c]
+     b82: f7ff ee74    	blx	0x86c <__aeabi_memcpy4@plt> @ imm = #-0x318
+     b86: 2c00         	cmp	r4, #0x0
+     b88: db29         	blt	0xbde <gk_gfx2d_compose+0x162> @ imm = #0x52
+     b8a: f8d9 0004    	ldr.w	r0, [r9, #0x4]
+     b8e: b330         	cbz	r0, 0xbde <gk_gfx2d_compose+0x162> @ imm = #0x4c
+     b90: 4620         	mov	r0, r4
+     b92: f7ff ee72    	blx	0x878 <dup@plt>         @ imm = #-0x31c
+     b96: f8d9 1008    	ldr.w	r1, [r9, #0x8]
+     b9a: 65c8         	str	r0, [r1, #0x5c]
+     b9c: f8d9 0008    	ldr.w	r0, [r9, #0x8]
+     ba0: 6dc0         	ldr	r0, [r0, #0x5c]
+     ba2: 2800         	cmp	r0, #0x0
+     ba4: db19         	blt	0xbda <gk_gfx2d_compose+0x15e> @ imm = #0x32
+     ba6: f44f 75c6    	mov.w	r5, #0x18c
+     baa: 2400         	movs	r4, #0x0
+     bac: f8d9 0004    	ldr.w	r0, [r9, #0x4]
+     bb0: 3401         	adds	r4, #0x1
+     bb2: 4284         	cmp	r4, r0
+     bb4: d213         	bhs	0xbde <gk_gfx2d_compose+0x162> @ imm = #0x26
+     bb6: f8d8 005c    	ldr.w	r0, [r8, #0x5c]
+     bba: f505 7698    	add.w	r6, r5, #0x130
+     bbe: f7ff ee5c    	blx	0x878 <dup@plt>         @ imm = #-0x348
+     bc2: f8d9 1008    	ldr.w	r1, [r9, #0x8]
+     bc6: 5148         	str	r0, [r1, r5]
+     bc8: f8d9 0008    	ldr.w	r0, [r9, #0x8]
+     bcc: 5940         	ldr	r0, [r0, r5]
+     bce: 4635         	mov	r5, r6
+     bd0: f1b0 3fff    	cmp.w	r0, #0xffffffff
+     bd4: 4650         	mov	r0, r10
+     bd6: dce9         	bgt	0xbac <gk_gfx2d_compose+0x130> @ imm = #-0x2e
+     bd8: e779         	b	0xace <gk_gfx2d_compose+0x52> @ imm = #-0x10e
+     bda: 4650         	mov	r0, r10
+     bdc: e777         	b	0xace <gk_gfx2d_compose+0x52> @ imm = #-0x112
+     bde: 2000         	movs	r0, #0x0
+     be0: e775         	b	0xace <gk_gfx2d_compose+0x52> @ imm = #-0x116
+     be2: bf00         	nop
+     be4: 34fe         	adds	r4, #0xfe
+     be6: 0000         	movs	r0, r0
+     be8: 355a         	adds	r5, #0x5a
+     bea: 0000         	movs	r0, r0
+     bec: 34b6         	adds	r4, #0xb6
+     bee: 0000         	movs	r0, r0
+
+00000bf0 <gk_gfx2d_wait_done>:
+     bf0: b580         	push	{r7, lr}
+     bf2: b088         	sub	sp, #0x20
+     bf4: 4602         	mov	r2, r0
+     bf6: 4821         	ldr	r0, [pc, #0x84]         @ 0xc7c <gk_gfx2d_wait_done+0x8c>
+     bf8: efc0 0050    	vmov.i32	q8, #0x0
+     bfc: 466b         	mov	r3, sp
+     bfe: 4478         	add	r0, pc
+     c00: 2a00         	cmp	r2, #0x0
+     c02: 6800         	ldr	r0, [r0]
+     c04: 6800         	ldr	r0, [r0]
+     c06: 9007         	str	r0, [sp, #0x1c]
+     c08: f04f 0014    	mov.w	r0, #0x14
+     c0c: f943 0ac0    	vst1.64	{d16, d17}, [r3], r0
+     c10: f04f 0000    	mov.w	r0, #0x0
+     c14: 6018         	str	r0, [r3]
+     c16: 9004         	str	r0, [sp, #0x10]
+     c18: f240 0001    	movw	r0, #0x1
+     c1c: f2c8 0000    	movt	r0, #0x8000
+     c20: d00b         	beq	0xc3a <gk_gfx2d_wait_done+0x4a> @ imm = #0x16
+     c22: 3002         	adds	r0, #0x2
+     c24: 4917         	ldr	r1, [pc, #0x5c]         @ 0xc84 <gk_gfx2d_wait_done+0x94>
+     c26: 9a07         	ldr	r2, [sp, #0x1c]
+     c28: 4479         	add	r1, pc
+     c2a: 6809         	ldr	r1, [r1]
+     c2c: 6809         	ldr	r1, [r1]
+     c2e: 1a89         	subs	r1, r1, r2
+     c30: bf04         	itt	eq
+     c32: b008         	addeq	sp, #0x20
+     c34: bd80         	popeq	{r7, pc}
+     c36: f7ff ee0e    	blx	0x854 <__stack_chk_fail@plt> @ imm = #-0x3e4
+     c3a: 4a11         	ldr	r2, [pc, #0x44]         @ 0xc80 <gk_gfx2d_wait_done+0x90>
+     c3c: 447a         	add	r2, pc
+     c3e: 6813         	ldr	r3, [r2]
+     c40: 1c5a         	adds	r2, r3, #0x1
+     c42: d0ef         	beq	0xc24 <gk_gfx2d_wait_done+0x34> @ imm = #-0x22
+     c44: f242 7210    	movw	r2, #0x2710
+     c48: 4291         	cmp	r1, r2
+     c4a: d901         	bls	0xc50 <gk_gfx2d_wait_done+0x60> @ imm = #0x2
+     c4c: 3012         	adds	r0, #0x12
+     c4e: e7e9         	b	0xc24 <gk_gfx2d_wait_done+0x34> @ imm = #-0x2e
+     c50: f64b 2098    	movw	r0, #0xba98
+     c54: 466a         	mov	r2, sp
+     c56: f6cf 60dc    	movt	r0, #0xfedc
+     c5a: 9003         	str	r0, [sp, #0xc]
+     c5c: f243 2010    	movw	r0, #0x3210
+     c60: f2c7 6054    	movt	r0, #0x7654
+     c64: 9002         	str	r0, [sp, #0x8]
+     c66: 2000         	movs	r0, #0x0
+     c68: 9100         	str	r1, [sp]
+     c6a: f243 6101    	movw	r1, #0x3601
+     c6e: 9004         	str	r0, [sp, #0x10]
+     c70: f2c4 0118    	movt	r1, #0x4018
+     c74: 4618         	mov	r0, r3
+     c76: f7ff ede2    	blx	0x83c <ioctl@plt>       @ imm = #-0x43c
+     c7a: e7d3         	b	0xc24 <gk_gfx2d_wait_done+0x34> @ imm = #-0x5a
+     c7c: 338a         	adds	r3, #0x8a
+     c7e: 0000         	movs	r0, r0
+     c80: 33c4         	adds	r3, #0xc4
+     c82: 0000         	movs	r0, r0
+     c84: 3360         	adds	r3, #0x60
+     c86: 0000         	movs	r0, r0
+
+00000c88 <gfx2d_get_cmp_surface_stride>:
+     c88: f240 0c01    	movw	r12, #0x1
+     c8c: 2800         	cmp	r0, #0x0
+     c8e: f2c8 0c00    	movt	r12, #0x8000
+     c92: d002         	beq	0xc9a <gfx2d_get_cmp_surface_stride+0x12> @ imm = #0x4
+     c94: f10c 0002    	add.w	r0, r12, #0x2
+     c98: 4770         	bx	lr
+     c9a: 4813         	ldr	r0, [pc, #0x4c]         @ 0xce8 <gfx2d_get_cmp_surface_stride+0x60>
+     c9c: 4478         	add	r0, pc
+     c9e: 6800         	ldr	r0, [r0]
+     ca0: 3001         	adds	r0, #0x1
+     ca2: bf04         	itt	eq
+     ca4: 4660         	moveq	r0, r12
+     ca6: 4770         	bxeq	lr
+     ca8: b1d3         	cbz	r3, 0xce0 <gfx2d_get_cmp_surface_stride+0x58> @ imm = #0x34
+     caa: f10c 0010    	add.w	r0, r12, #0x10
+     cae: 2a16         	cmp	r2, #0x16
+     cb0: d115         	bne	0xcde <gfx2d_get_cmp_surface_stride+0x56> @ imm = #0x2a
+     cb2: 1e4a         	subs	r2, r1, #0x1
+     cb4: 0a52         	lsrs	r2, r2, #0x9
+     cb6: 2a04         	cmp	r2, #0x4
+     cb8: bf84         	itt	hi
+     cba: f10c 0006    	addhi.w	r0, r12, #0x6
+     cbe: 4770         	bxhi	lr
+     cc0: 07ca         	lsls	r2, r1, #0x1f
+     cc2: bf18         	it	ne
+     cc4: 4770         	bxne	lr
+     cc6: 20ff         	movs	r0, #0xff
+     cc8: eb00 0041    	add.w	r0, r0, r1, lsl #1
+     ccc: f020 01ff    	bic	r1, r0, #0xff
+     cd0: f410 7f80    	tst.w	r0, #0x100
+     cd4: bf08         	it	eq
+     cd6: f501 7180    	addeq.w	r1, r1, #0x100
+     cda: 2000         	movs	r0, #0x0
+     cdc: 6019         	str	r1, [r3]
+     cde: 4770         	bx	lr
+     ce0: f10c 0003    	add.w	r0, r12, #0x3
+     ce4: 4770         	bx	lr
+     ce6: bf00         	nop
+     ce8: 3364         	adds	r3, #0x64
+     cea: 0000         	movs	r0, r0
+
+00000cec <gfx2d_get_cmp_surface_size>:
+     cec: b570         	push	{r4, r5, r6, lr}
+     cee: b082         	sub	sp, #0x8
+     cf0: 4615         	mov	r5, r2
+     cf2: 4a20         	ldr	r2, [pc, #0x80]         @ 0xd74 <gfx2d_get_cmp_surface_size+0x88>
+     cf4: 2401         	movs	r4, #0x1
+     cf6: 2800         	cmp	r0, #0x0
+     cf8: 447a         	add	r2, pc
+     cfa: f2c8 0400    	movt	r4, #0x8000
+     cfe: 6812         	ldr	r2, [r2]
+     d00: 6812         	ldr	r2, [r2]
+     d02: 9201         	str	r2, [sp, #0x4]
+     d04: f04f 0200    	mov.w	r2, #0x0
+     d08: 9200         	str	r2, [sp]
+     d0a: d00c         	beq	0xd26 <gfx2d_get_cmp_surface_size+0x3a> @ imm = #0x18
+     d0c: 3402         	adds	r4, #0x2
+     d0e: 481b         	ldr	r0, [pc, #0x6c]         @ 0xd7c <gfx2d_get_cmp_surface_size+0x90>
+     d10: 9901         	ldr	r1, [sp, #0x4]
+     d12: 4478         	add	r0, pc
+     d14: 6800         	ldr	r0, [r0]
+     d16: 6800         	ldr	r0, [r0]
+     d18: 1a40         	subs	r0, r0, r1
+     d1a: bf02         	ittt	eq
+     d1c: 4620         	moveq	r0, r4
+     d1e: b002         	addeq	sp, #0x8
+     d20: bd70         	popeq	{r4, r5, r6, pc}
+     d22: f7ff ed98    	blx	0x854 <__stack_chk_fail@plt> @ imm = #-0x4d0
+     d26: 4814         	ldr	r0, [pc, #0x50]         @ 0xd78 <gfx2d_get_cmp_surface_size+0x8c>
+     d28: 4478         	add	r0, pc
+     d2a: 6800         	ldr	r0, [r0]
+     d2c: 3001         	adds	r0, #0x1
+     d2e: d0ee         	beq	0xd0e <gfx2d_get_cmp_surface_size+0x22> @ imm = #-0x24
+     d30: 9e06         	ldr	r6, [sp, #0x18]
+     d32: b146         	cbz	r6, 0xd46 <gfx2d_get_cmp_surface_size+0x5a> @ imm = #0x10
+     d34: 46ec         	mov	r12, sp
+     d36: 461a         	mov	r2, r3
+     d38: 2000         	movs	r0, #0x0
+     d3a: 4663         	mov	r3, r12
+     d3c: f7ff eda2    	blx	0x884 <gfx2d_get_cmp_surface_stride@plt> @ imm = #-0x4bc
+     d40: b118         	cbz	r0, 0xd4a <gfx2d_get_cmp_surface_size+0x5e> @ imm = #0x6
+     d42: 3410         	adds	r4, #0x10
+     d44: e7e3         	b	0xd0e <gfx2d_get_cmp_surface_size+0x22> @ imm = #-0x3a
+     d46: 3403         	adds	r4, #0x3
+     d48: e7e1         	b	0xd0e <gfx2d_get_cmp_surface_size+0x22> @ imm = #-0x3e
+     d4a: 1e68         	subs	r0, r5, #0x1
+     d4c: 0980         	lsrs	r0, r0, #0x6
+     d4e: 2818         	cmp	r0, #0x18
+     d50: d901         	bls	0xd56 <gfx2d_get_cmp_surface_size+0x6a> @ imm = #0x2
+     d52: 3406         	adds	r4, #0x6
+     d54: e7db         	b	0xd0e <gfx2d_get_cmp_surface_size+0x22> @ imm = #-0x4a
+     d56: 9800         	ldr	r0, [sp]
+     d58: f44f 71ff    	mov.w	r1, #0x1fe
+     d5c: eb01 1145    	add.w	r1, r1, r5, lsl #5
+     d60: f240 12ff    	movw	r2, #0x1ff
+     d64: 2400         	movs	r4, #0x0
+     d66: 4391         	bics	r1, r2
+     d68: 4368         	muls	r0, r5, r0
+     d6a: eb01 0040    	add.w	r0, r1, r0, lsl #1
+     d6e: 6030         	str	r0, [r6]
+     d70: e7cd         	b	0xd0e <gfx2d_get_cmp_surface_size+0x22> @ imm = #-0x66
+     d72: bf00         	nop
+     d74: 3290         	adds	r2, #0x90
+     d76: 0000         	movs	r0, r0
+     d78: 32d8         	adds	r2, #0xd8
+     d7a: 0000         	movs	r0, r0
+     d7c: 3276         	adds	r2, #0x76
+     d7e: 0000         	movs	r0, r0
+
+00000d80 <gfx2d_convert_cap_drv_to_user>:
+     d80: 2204         	movs	r2, #0x4
+     d82: 2800         	cmp	r0, #0x0
+     d84: f2c8 0200    	movt	r2, #0x8000
+     d88: d03d         	beq	0xe06 <gfx2d_convert_cap_drv_to_user+0x86> @ imm = #0x7a
+     d8a: b3e1         	cbz	r1, 0xe06 <gfx2d_convert_cap_drv_to_user+0x86> @ imm = #0x78
+     d8c: 780a         	ldrb	r2, [r1]
+     d8e: 7002         	strb	r2, [r0]
+     d90: 784a         	ldrb	r2, [r1, #0x1]
+     d92: 7042         	strb	r2, [r0, #0x1]
+     d94: 788a         	ldrb	r2, [r1, #0x2]
+     d96: 7082         	strb	r2, [r0, #0x2]
+     d98: 684a         	ldr	r2, [r1, #0x4]
+     d9a: 6042         	str	r2, [r0, #0x4]
+     d9c: 688a         	ldr	r2, [r1, #0x8]
+     d9e: 6082         	str	r2, [r0, #0x8]
+     da0: 68ca         	ldr	r2, [r1, #0xc]
+     da2: 60c2         	str	r2, [r0, #0xc]
+     da4: 690a         	ldr	r2, [r1, #0x10]
+     da6: 6102         	str	r2, [r0, #0x10]
+     da8: 694a         	ldr	r2, [r1, #0x14]
+     daa: 6142         	str	r2, [r0, #0x14]
+     dac: 698a         	ldr	r2, [r1, #0x18]
+     dae: 6182         	str	r2, [r0, #0x18]
+     db0: 7f0a         	ldrb	r2, [r1, #0x1c]
+     db2: 7702         	strb	r2, [r0, #0x1c]
+     db4: 6a0a         	ldr	r2, [r1, #0x20]
+     db6: 6202         	str	r2, [r0, #0x20]
+     db8: 6a4a         	ldr	r2, [r1, #0x24]
+     dba: 6242         	str	r2, [r0, #0x24]
+     dbc: 6a8a         	ldr	r2, [r1, #0x28]
+     dbe: 6282         	str	r2, [r0, #0x28]
+     dc0: 6aca         	ldr	r2, [r1, #0x2c]
+     dc2: 62c2         	str	r2, [r0, #0x2c]
+     dc4: 6b0a         	ldr	r2, [r1, #0x30]
+     dc6: 6302         	str	r2, [r0, #0x30]
+     dc8: 6b4a         	ldr	r2, [r1, #0x34]
+     dca: 6342         	str	r2, [r0, #0x34]
+     dcc: 6b8a         	ldr	r2, [r1, #0x38]
+     dce: 6382         	str	r2, [r0, #0x38]
+     dd0: 6bca         	ldr	r2, [r1, #0x3c]
+     dd2: 63c2         	str	r2, [r0, #0x3c]
+     dd4: f891 2040    	ldrb.w	r2, [r1, #0x40]
+     dd8: f880 2040    	strb.w	r2, [r0, #0x40]
+     ddc: 6c4a         	ldr	r2, [r1, #0x44]
+     dde: 6442         	str	r2, [r0, #0x44]
+     de0: 6c8a         	ldr	r2, [r1, #0x48]
+     de2: 6482         	str	r2, [r0, #0x48]
+     de4: 6cca         	ldr	r2, [r1, #0x4c]
+     de6: 64c2         	str	r2, [r0, #0x4c]
+     de8: 6d0a         	ldr	r2, [r1, #0x50]
+     dea: 6502         	str	r2, [r0, #0x50]
+     dec: f891 2054    	ldrb.w	r2, [r1, #0x54]
+     df0: f880 2054    	strb.w	r2, [r0, #0x54]
+     df4: f891 2055    	ldrb.w	r2, [r1, #0x55]
+     df8: f880 2055    	strb.w	r2, [r0, #0x55]
+     dfc: 2200         	movs	r2, #0x0
+     dfe: f891 1056    	ldrb.w	r1, [r1, #0x56]
+     e02: f880 1056    	strb.w	r1, [r0, #0x56]
+     e06: 4610         	mov	r0, r2
+     e08: 4770         	bx	lr
+     e0a: 0000         	movs	r0, r0
+
+00000e0c <gk_gfx2d_get_capability>:
+     e0c: b510         	push	{r4, lr}
+     e0e: b098         	sub	sp, #0x60
+     e10: 4604         	mov	r4, r0
+     e12: 4816         	ldr	r0, [pc, #0x58]         @ 0xe6c <gk_gfx2d_get_capability+0x60>
+     e14: 2158         	movs	r1, #0x58
+     e16: 4478         	add	r0, pc
+     e18: 6800         	ldr	r0, [r0]
+     e1a: 6800         	ldr	r0, [r0]
+     e1c: 9017         	str	r0, [sp, #0x5c]
+     e1e: 4668         	mov	r0, sp
+     e20: f7ff ed1e    	blx	0x860 <__aeabi_memclr8@plt> @ imm = #-0x5c4
+     e24: 4812         	ldr	r0, [pc, #0x48]         @ 0xe70 <gk_gfx2d_get_capability+0x64>
+     e26: 4478         	add	r0, pc
+     e28: 6803         	ldr	r3, [r0]
+     e2a: 1c58         	adds	r0, r3, #0x1
+     e2c: f240 0001    	movw	r0, #0x1
+     e30: f2c8 0000    	movt	r0, #0x8000
+     e34: d00f         	beq	0xe56 <gk_gfx2d_get_capability+0x4a> @ imm = #0x1e
+     e36: b16c         	cbz	r4, 0xe54 <gk_gfx2d_get_capability+0x48> @ imm = #0x1a
+     e38: f243 6102    	movw	r1, #0x3602
+     e3c: 466a         	mov	r2, sp
+     e3e: f2c8 0158    	movt	r1, #0x8058
+     e42: 4618         	mov	r0, r3
+     e44: f7ff ecfa    	blx	0x83c <ioctl@plt>       @ imm = #-0x60c
+     e48: b928         	cbnz	r0, 0xe56 <gk_gfx2d_get_capability+0x4a> @ imm = #0xa
+     e4a: 4669         	mov	r1, sp
+     e4c: 4620         	mov	r0, r4
+     e4e: f7ff ed20    	blx	0x890 <gfx2d_convert_cap_drv_to_user@plt> @ imm = #-0x5c0
+     e52: e000         	b	0xe56 <gk_gfx2d_get_capability+0x4a> @ imm = #0x0
+     e54: 3003         	adds	r0, #0x3
+     e56: 4907         	ldr	r1, [pc, #0x1c]         @ 0xe74 <gk_gfx2d_get_capability+0x68>
+     e58: 9a17         	ldr	r2, [sp, #0x5c]
+     e5a: 4479         	add	r1, pc
+     e5c: 6809         	ldr	r1, [r1]
+     e5e: 6809         	ldr	r1, [r1]
+     e60: 1a89         	subs	r1, r1, r2
+     e62: bf04         	itt	eq
+     e64: b018         	addeq	sp, #0x60
+     e66: bd10         	popeq	{r4, pc}
+     e68: f7ff ecf4    	blx	0x854 <__stack_chk_fail@plt> @ imm = #-0x618
+     e6c: 3172         	adds	r1, #0x72
+     e6e: 0000         	movs	r0, r0
+     e70: 31da         	adds	r1, #0xda
+     e72: 0000         	movs	r0, r0
+     e74: 312e         	adds	r1, #0x2e
+     e76: 0000         	movs	r0, r0
+     e78: 6803         	ldr	r3, [r0]
+     e7a: 2b00         	cmp	r3, #0x0
+     e7c: db09         	blt	0xe92 <gk_gfx2d_get_capability+0x86> @ imm = #0x12
+     e7e: 2301         	movs	r3, #0x1
+     e80: 600b         	str	r3, [r1]
+     e82: 2304         	movs	r3, #0x4
+     e84: f850 1f04    	ldr	r1, [r0, #4]!
+     e88: 0e09         	lsrs	r1, r1, #0x18
+     e8a: eb03 0181    	add.w	r1, r3, r1, lsl #2
+     e8e: 6011         	str	r1, [r2]
+     e90: 4770         	bx	lr
+     e92: f3c3 6c03    	ubfx	r12, r3, #0x18, #0x4
+     e96: f1bc 0f00    	cmp.w	r12, #0x0
+     e9a: d00e         	beq	0xeba <gk_gfx2d_get_capability+0xae> @ imm = #0x1c
+     e9c: f1bc 0f03    	cmp.w	r12, #0x3
+     ea0: bf1e         	ittt	ne
+     ea2: f1bc 0f01    	cmpne.w	r12, #0x1
+     ea6: 2000         	movne	r0, #0x0
+     ea8: 4770         	bxne	lr
+     eaa: f3c3 4c07    	ubfx	r12, r3, #0x10, #0x8
+     eae: 2304         	movs	r3, #0x4
+     eb0: eb03 038c    	add.w	r3, r3, r12, lsl #2
+     eb4: f04f 0c02    	mov.w	r12, #0x2
+     eb8: e002         	b	0xec0 <gk_gfx2d_get_capability+0xb4> @ imm = #0x4
+     eba: f04f 0c01    	mov.w	r12, #0x1
+     ebe: 2304         	movs	r3, #0x4
+     ec0: 6013         	str	r3, [r2]
+     ec2: f8c1 c000    	str.w	r12, [r1]
+     ec6: 4770         	bx	lr
+     ec8: e92d 4ff0    	push.w	{r4, r5, r6, r7, r8, r9, r10, r11, lr}
+     ecc: b083         	sub	sp, #0xc
+     ece: 4681         	mov	r9, r0
+     ed0: 48d8         	ldr	r0, [pc, #0x360]        @ 0x1234 <gk_gfx2d_get_capability+0x428>
+     ed2: 469b         	mov	r11, r3
+     ed4: 4617         	mov	r7, r2
+     ed6: 4478         	add	r0, pc
+     ed8: 4688         	mov	r8, r1
+     eda: 455f         	cmp	r7, r11
+     edc: 6800         	ldr	r0, [r0]
+     ede: 6800         	ldr	r0, [r0]
+     ee0: 9002         	str	r0, [sp, #0x8]
+     ee2: f080 818e    	bhs.w	0x1202 <gk_gfx2d_get_capability+0x3f6> @ imm = #0x31c
+     ee6: ad01         	add	r5, sp, #0x4
+     ee8: 2000         	movs	r0, #0x0
+     eea: 9000         	str	r0, [sp]
+     eec: e12e         	b	0x114c <gk_gfx2d_get_capability+0x340> @ imm = #0x25c
+     eee: f04a 0002    	orr	r0, r10, #0x2
+     ef2: f000 000f    	and	r0, r0, #0xf
+     ef6: 280f         	cmp	r0, #0xf
+     ef8: f000 818f    	beq.w	0x121a <gk_gfx2d_get_capability+0x40e> @ imm = #0x31e
+     efc: f00a 010f    	and	r1, r10, #0xf
+     f00: 4648         	mov	r0, r9
+     f02: 462a         	mov	r2, r5
+     f04: f000 fd50    	bl	0x19a8 <gk_gfx2d_get_capability+0xb9c> @ imm = #0xaa0
+     f08: 9a01         	ldr	r2, [sp, #0x4]
+     f0a: e171         	b	0x11f0 <gk_gfx2d_get_capability+0x3e4> @ imm = #0x2e2
+     f0c: 4648         	mov	r0, r9
+     f0e: 210d         	movs	r1, #0xd
+     f10: 462a         	mov	r2, r5
+     f12: f000 fd49    	bl	0x19a8 <gk_gfx2d_get_capability+0xb9c> @ imm = #0xa92
+     f16: 2800         	cmp	r0, #0x0
+     f18: d061         	beq	0xfde <gk_gfx2d_get_capability+0x1d2> @ imm = #0xc2
+     f1a: ad01         	add	r5, sp, #0x4
+     f1c: 455f         	cmp	r7, r11
+     f1e: f0c0 8115    	blo.w	0x114c <gk_gfx2d_get_capability+0x340> @ imm = #0x22a
+     f22: e16b         	b	0x11fc <gk_gfx2d_get_capability+0x3f0> @ imm = #0x2d6
+     f24: f1aa 01b0    	sub.w	r1, r10, #0xb0
+     f28: 2907         	cmp	r1, #0x7
+     f2a: f200 80ab    	bhi.w	0x1084 <gk_gfx2d_get_capability+0x278> @ imm = #0x156
+     f2e: 2009         	movs	r0, #0x9
+     f30: e8df f011    	tbh	[pc, r1, lsl #1]
+     f34: 0164         	lsls	r4, r4, #0x5
+     f36: 0008         	movs	r0, r1
+     f38: 00ae         	lsls	r6, r5, #0x2
+     f3a: 00c8         	lsls	r0, r1, #0x3
+     f3c: 0174         	lsls	r4, r6, #0x5
+     f3e: 0174         	lsls	r4, r6, #0x5
+     f40: 0174         	lsls	r4, r6, #0x5
+     f42: 0174         	lsls	r4, r6, #0x5
+     f44: 455f         	cmp	r7, r11
+     f46: f080 8168    	bhs.w	0x121a <gk_gfx2d_get_capability+0x40e> @ imm = #0x2d0
+     f4a: f087 0003    	eor	r0, r7, #0x3
+     f4e: f818 a000    	ldrb.w	r10, [r8, r0]
+     f52: 2009         	movs	r0, #0x9
+     f54: f1ba 0f00    	cmp.w	r10, #0x0
+     f58: f000 8160    	beq.w	0x121c <gk_gfx2d_get_capability+0x410> @ imm = #0x2c0
+     f5c: f01a 01f0    	ands	r1, r10, #0xf0
+     f60: f040 815c    	bne.w	0x121c <gk_gfx2d_get_capability+0x410> @ imm = #0x2b8
+     f64: 4648         	mov	r0, r9
+     f66: 210d         	movs	r1, #0xd
+     f68: 462a         	mov	r2, r5
+     f6a: 1cb7         	adds	r7, r6, #0x2
+     f6c: f000 fd1c    	bl	0x19a8 <gk_gfx2d_get_capability+0xb9c> @ imm = #0xa38
+     f70: 2800         	cmp	r0, #0x0
+     f72: f000 80c7    	beq.w	0x1104 <gk_gfx2d_get_capability+0x2f8> @ imm = #0x18e
+     f76: ad01         	add	r5, sp, #0x4
+     f78: 455f         	cmp	r7, r11
+     f7a: f0c0 80e7    	blo.w	0x114c <gk_gfx2d_get_capability+0x340> @ imm = #0x1ce
+     f7e: e13d         	b	0x11fc <gk_gfx2d_get_capability+0x3f0> @ imm = #0x27a
+     f80: f00a 00fe    	and	r0, r10, #0xfe
+     f84: 28c8         	cmp	r0, #0xc8
+     f86: f040 8148    	bne.w	0x121a <gk_gfx2d_get_capability+0x40e> @ imm = #0x290
+     f8a: f087 0003    	eor	r0, r7, #0x3
+     f8e: f1ba 0fc8    	cmp.w	r10, #0xc8
+     f92: f04f 0210    	mov.w	r2, #0x10
+     f96: f818 1000    	ldrb.w	r1, [r8, r0]
+     f9a: ea4f 1011    	lsr.w	r0, r1, #0x4
+     f9e: bf08         	it	eq
+     fa0: ea42 1011    	orreq.w	r0, r2, r1, lsr #4
+     fa4: f001 010f    	and	r1, r1, #0xf
+     fa8: 1842         	adds	r2, r0, r1
+     faa: 2a1f         	cmp	r2, #0x1f
+     fac: f200 8135    	bhi.w	0x121a <gk_gfx2d_get_capability+0x40e> @ imm = #0x26a
+     fb0: 3101         	adds	r1, #0x1
+     fb2: 2305         	movs	r3, #0x5
+     fb4: ea41 4200    	orr.w	r2, r1, r0, lsl #16
+     fb8: e091         	b	0x10de <gk_gfx2d_get_capability+0x2d2> @ imm = #0x122
+     fba: ea5f 700a    	lsls.w	r0, r10, #0x1c
+     fbe: f100 812c    	bmi.w	0x121a <gk_gfx2d_get_capability+0x40e> @ imm = #0x258
+     fc2: f00a 0007    	and	r0, r10, #0x7
+     fc6: 2101         	movs	r1, #0x1
+     fc8: 3001         	adds	r0, #0x1
+     fca: 2305         	movs	r3, #0x5
+     fcc: f440 2200    	orr	r2, r0, #0x80000
+     fd0: 4648         	mov	r0, r9
+     fd2: f000 f9d7    	bl	0x1384 <gk_gfx2d_get_capability+0x578> @ imm = #0x3ae
+     fd6: 455f         	cmp	r7, r11
+     fd8: f0c0 80b8    	blo.w	0x114c <gk_gfx2d_get_capability+0x340> @ imm = #0x170
+     fdc: e10e         	b	0x11fc <gk_gfx2d_get_capability+0x3f0> @ imm = #0x21c
+     fde: f00a 0107    	and	r1, r10, #0x7
+     fe2: 2220         	movs	r2, #0x20
+     fe4: f44f 4080    	mov.w	r0, #0x4000
+     fe8: 2500         	movs	r5, #0x0
+     fea: fa02 f101    	lsl.w	r1, r2, r1
+     fee: ea00 20ca    	and.w	r0, r0, r10, lsl #11
+     ff2: 3910         	subs	r1, #0x10
+     ff4: 2600         	movs	r6, #0x0
+     ff6: ea41 0400    	orr.w	r4, r1, r0
+     ffa: 2001         	movs	r0, #0x1
+     ffc: 40b0         	lsls	r0, r6
+     ffe: 4220         	tst	r0, r4
+    1000: d010         	beq	0x1024 <gk_gfx2d_get_capability+0x218> @ imm = #0x20
+    1002: 9801         	ldr	r0, [sp, #0x4]
+    1004: 1d01         	adds	r1, r0, #0x4
+    1006: 9101         	str	r1, [sp, #0x4]
+    1008: 6802         	ldr	r2, [r0]
+    100a: 4648         	mov	r0, r9
+    100c: 4631         	mov	r1, r6
+    100e: f000 fce1    	bl	0x19d4 <gk_gfx2d_get_capability+0xbc8> @ imm = #0x9c2
+    1012: 2e0d         	cmp	r6, #0xd
+    1014: f04f 0100    	mov.w	r1, #0x0
+    1018: bf08         	it	eq
+    101a: 2101         	moveq	r1, #0x1
+    101c: 2800         	cmp	r0, #0x0
+    101e: f47f af7c    	bne.w	0xf1a <gk_gfx2d_get_capability+0x10e> @ imm = #-0x108
+    1022: 430d         	orrs	r5, r1
+    1024: 3601         	adds	r6, #0x1
+    1026: 2e10         	cmp	r6, #0x10
+    1028: d3e7         	blo	0xffa <gk_gfx2d_get_capability+0x1ee> @ imm = #-0x32
+    102a: 07e8         	lsls	r0, r5, #0x1f
+    102c: f47f af75    	bne.w	0xf1a <gk_gfx2d_get_capability+0x10e> @ imm = #-0x116
+    1030: 9a01         	ldr	r2, [sp, #0x4]
+    1032: 4648         	mov	r0, r9
+    1034: 210d         	movs	r1, #0xd
+    1036: f000 fccd    	bl	0x19d4 <gk_gfx2d_get_capability+0xbc8> @ imm = #0x99a
+    103a: e76e         	b	0xf1a <gk_gfx2d_get_capability+0x10e> @ imm = #-0x124
+    103c: 2500         	movs	r5, #0x0
+    103e: 2600         	movs	r6, #0x0
+    1040: 2001         	movs	r0, #0x1
+    1042: 40b0         	lsls	r0, r6
+    1044: ea10 0f08    	tst.w	r0, r8
+    1048: d010         	beq	0x106c <gk_gfx2d_get_capability+0x260> @ imm = #0x20
+    104a: 9801         	ldr	r0, [sp, #0x4]
+    104c: 1d01         	adds	r1, r0, #0x4
+    104e: 9101         	str	r1, [sp, #0x4]
+    1050: 6802         	ldr	r2, [r0]
+    1052: 4648         	mov	r0, r9
+    1054: 4631         	mov	r1, r6
+    1056: f000 fcbd    	bl	0x19d4 <gk_gfx2d_get_capability+0xbc8> @ imm = #0x97a
+    105a: 2e0d         	cmp	r6, #0xd
+    105c: f04f 0100    	mov.w	r1, #0x0
+    1060: bf08         	it	eq
+    1062: 2101         	moveq	r1, #0x1
+    1064: 2800         	cmp	r0, #0x0
+    1066: f040 80b6    	bne.w	0x11d6 <gk_gfx2d_get_capability+0x3ca> @ imm = #0x16c
+    106a: 430d         	orrs	r5, r1
+    106c: 3601         	adds	r6, #0x1
+    106e: 2e10         	cmp	r6, #0x10
+    1070: d3e6         	blo	0x1040 <gk_gfx2d_get_capability+0x234> @ imm = #-0x34
+    1072: 07e8         	lsls	r0, r5, #0x1f
+    1074: f040 80af    	bne.w	0x11d6 <gk_gfx2d_get_capability+0x3ca> @ imm = #0x15e
+    1078: 9a01         	ldr	r2, [sp, #0x4]
+    107a: 4648         	mov	r0, r9
+    107c: 210d         	movs	r1, #0xd
+    107e: f000 fca9    	bl	0x19d4 <gk_gfx2d_get_capability+0xbc8> @ imm = #0x952
+    1082: e0a8         	b	0x11d6 <gk_gfx2d_get_capability+0x3ca> @ imm = #0x150
+    1084: f00a 0007    	and	r0, r10, #0x7
+    1088: 2101         	movs	r1, #0x1
+    108a: 3001         	adds	r0, #0x1
+    108c: 2301         	movs	r3, #0x1
+    108e: e79d         	b	0xfcc <gk_gfx2d_get_capability+0x1c0> @ imm = #-0xc6
+    1090: 455f         	cmp	r7, r11
+    1092: f080 80c2    	bhs.w	0x121a <gk_gfx2d_get_capability+0x40e> @ imm = #0x184
+    1096: 1cb7         	adds	r7, r6, #0x2
+    1098: 2000         	movs	r0, #0x0
+    109a: 2400         	movs	r4, #0x0
+    109c: 1e79         	subs	r1, r7, #0x1
+    109e: f081 0103    	eor	r1, r1, #0x3
+    10a2: f818 1001    	ldrb.w	r1, [r8, r1]
+    10a6: f001 027f    	and	r2, r1, #0x7f
+    10aa: f011 0f80    	tst.w	r1, #0x80
+    10ae: fa02 f200    	lsl.w	r2, r2, r0
+    10b2: ea44 0402    	orr.w	r4, r4, r2
+    10b6: d01a         	beq	0x10ee <gk_gfx2d_get_capability+0x2e2> @ imm = #0x34
+    10b8: 1c79         	adds	r1, r7, #0x1
+    10ba: 3007         	adds	r0, #0x7
+    10bc: 455f         	cmp	r7, r11
+    10be: 460f         	mov	r7, r1
+    10c0: d3ec         	blo	0x109c <gk_gfx2d_get_capability+0x290> @ imm = #-0x28
+    10c2: e0aa         	b	0x121a <gk_gfx2d_get_capability+0x40e> @ imm = #0x154
+    10c4: f087 0003    	eor	r0, r7, #0x3
+    10c8: 2301         	movs	r3, #0x1
+    10ca: f818 0000    	ldrb.w	r0, [r8, r0]
+    10ce: 0301         	lsls	r1, r0, #0xc
+    10d0: f000 000f    	and	r0, r0, #0xf
+    10d4: 3001         	adds	r0, #0x1
+    10d6: fa3f f181    	uxtb16	r1, r1
+    10da: ea41 0200    	orr.w	r2, r1, r0
+    10de: 4648         	mov	r0, r9
+    10e0: 2101         	movs	r1, #0x1
+    10e2: f000 f94f    	bl	0x1384 <gk_gfx2d_get_capability+0x578> @ imm = #0x29e
+    10e6: 1cb7         	adds	r7, r6, #0x2
+    10e8: 455f         	cmp	r7, r11
+    10ea: d32f         	blo	0x114c <gk_gfx2d_get_capability+0x340> @ imm = #0x5e
+    10ec: e086         	b	0x11fc <gk_gfx2d_get_capability+0x3f0> @ imm = #0x10c
+    10ee: 4648         	mov	r0, r9
+    10f0: 210d         	movs	r1, #0xd
+    10f2: 462a         	mov	r2, r5
+    10f4: f000 fc58    	bl	0x19a8 <gk_gfx2d_get_capability+0xb9c> @ imm = #0x8b0
+    10f8: 9801         	ldr	r0, [sp, #0x4]
+    10fa: eb00 0084    	add.w	r0, r0, r4, lsl #2
+    10fe: f500 7201    	add.w	r2, r0, #0x204
+    1102: e074         	b	0x11ee <gk_gfx2d_get_capability+0x3e2> @ imm = #0xe8
+    1104: 2500         	movs	r5, #0x0
+    1106: 2600         	movs	r6, #0x0
+    1108: 2001         	movs	r0, #0x1
+    110a: 40b0         	lsls	r0, r6
+    110c: ea10 0f0a    	tst.w	r0, r10
+    1110: d010         	beq	0x1134 <gk_gfx2d_get_capability+0x328> @ imm = #0x20
+    1112: 9801         	ldr	r0, [sp, #0x4]
+    1114: 1d01         	adds	r1, r0, #0x4
+    1116: 9101         	str	r1, [sp, #0x4]
+    1118: 6802         	ldr	r2, [r0]
+    111a: 4648         	mov	r0, r9
+    111c: 4631         	mov	r1, r6
+    111e: f000 fc59    	bl	0x19d4 <gk_gfx2d_get_capability+0xbc8> @ imm = #0x8b2
+    1122: 2e0d         	cmp	r6, #0xd
+    1124: f04f 0100    	mov.w	r1, #0x0
+    1128: bf08         	it	eq
+    112a: 2101         	moveq	r1, #0x1
+    112c: 2800         	cmp	r0, #0x0
+    112e: f47f af22    	bne.w	0xf76 <gk_gfx2d_get_capability+0x16a> @ imm = #-0x1bc
+    1132: 430d         	orrs	r5, r1
+    1134: 3601         	adds	r6, #0x1
+    1136: 2e10         	cmp	r6, #0x10
+    1138: d3e6         	blo	0x1108 <gk_gfx2d_get_capability+0x2fc> @ imm = #-0x34
+    113a: 07e8         	lsls	r0, r5, #0x1f
+    113c: f47f af1b    	bne.w	0xf76 <gk_gfx2d_get_capability+0x16a> @ imm = #-0x1ca
+    1140: 9a01         	ldr	r2, [sp, #0x4]
+    1142: 4648         	mov	r0, r9
+    1144: 210d         	movs	r1, #0xd
+    1146: f000 fc45    	bl	0x19d4 <gk_gfx2d_get_capability+0xbc8> @ imm = #0x88a
+    114a: e714         	b	0xf76 <gk_gfx2d_get_capability+0x16a> @ imm = #-0x1d8
+    114c: 463e         	mov	r6, r7
+    114e: f086 0003    	eor	r0, r6, #0x3
+    1152: 1c77         	adds	r7, r6, #0x1
+    1154: f818 a000    	ldrb.w	r10, [r8, r0]
+    1158: f01a 0f80    	tst.w	r10, #0x80
+    115c: d10d         	bne	0x117a <gk_gfx2d_get_capability+0x36e> @ imm = #0x1a
+    115e: 4648         	mov	r0, r9
+    1160: 210d         	movs	r1, #0xd
+    1162: 462a         	mov	r2, r5
+    1164: f000 fc20    	bl	0x19a8 <gk_gfx2d_get_capability+0xb9c> @ imm = #0x840
+    1168: ea4f 008a    	lsl.w	r0, r10, #0x2
+    116c: f01a 0f40    	tst.w	r10, #0x40
+    1170: d136         	bne	0x11e0 <gk_gfx2d_get_capability+0x3d4> @ imm = #0x6c
+    1172: 9901         	ldr	r1, [sp, #0x4]
+    1174: 4408         	add	r0, r1
+    1176: 1d02         	adds	r2, r0, #0x4
+    1178: e039         	b	0x11ee <gk_gfx2d_get_capability+0x3e2> @ imm = #0x72
+    117a: f00a 00f0    	and	r0, r10, #0xf0
+    117e: 3880         	subs	r0, #0x80
+    1180: 0900         	lsrs	r0, r0, #0x4
+    1182: 2805         	cmp	r0, #0x5
+    1184: d849         	bhi	0x121a <gk_gfx2d_get_capability+0x40e> @ imm = #0x92
+    1186: e8df f000    	tbb	[pc, r0]
+    118a: 0708         	lsls	r0, r1, #0x1c
+    118c: 0506         	lsls	r6, r0, #0x14
+    118e: 0304         	lsls	r4, r0, #0xc
+    1190: e713         	b	0xfba <gk_gfx2d_get_capability+0x1ae> @ imm = #-0x1da
+    1192: e6f5         	b	0xf80 <gk_gfx2d_get_capability+0x174> @ imm = #-0x216
+    1194: e6c6         	b	0xf24 <gk_gfx2d_get_capability+0x118> @ imm = #-0x274
+    1196: e6b9         	b	0xf0c <gk_gfx2d_get_capability+0x100> @ imm = #-0x28e
+    1198: e6a9         	b	0xeee <gk_gfx2d_get_capability+0xe2> @ imm = #-0x2ae
+    119a: 455f         	cmp	r7, r11
+    119c: d23d         	bhs	0x121a <gk_gfx2d_get_capability+0x40e> @ imm = #0x7a
+    119e: f087 0003    	eor	r0, r7, #0x3
+    11a2: ea4f 310a    	lsl.w	r1, r10, #0xc
+    11a6: 4644         	mov	r4, r8
+    11a8: b289         	uxth	r1, r1
+    11aa: f818 0000    	ldrb.w	r0, [r8, r0]
+    11ae: ea41 1800    	orr.w	r8, r1, r0, lsl #4
+    11b2: f1b8 0f00    	cmp.w	r8, #0x0
+    11b6: d030         	beq	0x121a <gk_gfx2d_get_capability+0x40e> @ imm = #0x60
+    11b8: 4648         	mov	r0, r9
+    11ba: 210d         	movs	r1, #0xd
+    11bc: 462a         	mov	r2, r5
+    11be: 1cb7         	adds	r7, r6, #0x2
+    11c0: f000 fbf2    	bl	0x19a8 <gk_gfx2d_get_capability+0xb9c> @ imm = #0x7e4
+    11c4: f00a 0108    	and	r1, r10, #0x8
+    11c8: 9a00         	ldr	r2, [sp]
+    11ca: 2800         	cmp	r0, #0x0
+    11cc: ea42 02d1    	orr.w	r2, r2, r1, lsr #3
+    11d0: 9200         	str	r2, [sp]
+    11d2: f43f af33    	beq.w	0x103c <gk_gfx2d_get_capability+0x230> @ imm = #-0x19a
+    11d6: 46a0         	mov	r8, r4
+    11d8: ad01         	add	r5, sp, #0x4
+    11da: 455f         	cmp	r7, r11
+    11dc: d3b6         	blo	0x114c <gk_gfx2d_get_capability+0x340> @ imm = #-0x94
+    11de: e00d         	b	0x11fc <gk_gfx2d_get_capability+0x3f0> @ imm = #0x1a
+    11e0: 9901         	ldr	r1, [sp, #0x4]
+    11e2: f000 00fc    	and	r0, r0, #0xfc
+    11e6: f06f 0203    	mvn	r2, #0x3
+    11ea: 1a10         	subs	r0, r2, r0
+    11ec: 1842         	adds	r2, r0, r1
+    11ee: 9201         	str	r2, [sp, #0x4]
+    11f0: 4648         	mov	r0, r9
+    11f2: 210d         	movs	r1, #0xd
+    11f4: f000 fbee    	bl	0x19d4 <gk_gfx2d_get_capability+0xbc8> @ imm = #0x7dc
+    11f8: 455f         	cmp	r7, r11
+    11fa: d3a7         	blo	0x114c <gk_gfx2d_get_capability+0x340> @ imm = #-0xb2
+    11fc: 9800         	ldr	r0, [sp]
+    11fe: 07c0         	lsls	r0, r0, #0x1f
+    1200: d109         	bne	0x1216 <gk_gfx2d_get_capability+0x40a> @ imm = #0x12
+    1202: aa01         	add	r2, sp, #0x4
+    1204: 4648         	mov	r0, r9
+    1206: 210e         	movs	r1, #0xe
+    1208: f000 fbce    	bl	0x19a8 <gk_gfx2d_get_capability+0xb9c> @ imm = #0x79c
+    120c: 9a01         	ldr	r2, [sp, #0x4]
+    120e: 4648         	mov	r0, r9
+    1210: 210f         	movs	r1, #0xf
+    1212: f000 fbdf    	bl	0x19d4 <gk_gfx2d_get_capability+0xbc8> @ imm = #0x7be
+    1216: 2008         	movs	r0, #0x8
+    1218: e000         	b	0x121c <gk_gfx2d_get_capability+0x410> @ imm = #0x0
+    121a: 2009         	movs	r0, #0x9
+    121c: 4906         	ldr	r1, [pc, #0x18]         @ 0x1238 <gk_gfx2d_get_capability+0x42c>
+    121e: 9a02         	ldr	r2, [sp, #0x8]
+    1220: 4479         	add	r1, pc
+    1222: 6809         	ldr	r1, [r1]
+    1224: 6809         	ldr	r1, [r1]
+    1226: 1a89         	subs	r1, r1, r2
+    1228: bf04         	itt	eq
+    122a: b003         	addeq	sp, #0xc
+    122c: e8bd 8ff0    	popeq.w	{r4, r5, r6, r7, r8, r9, r10, r11, pc}
+    1230: f7ff eb10    	blx	0x854 <__stack_chk_fail@plt> @ imm = #-0x9e0
+    1234: 30b2         	adds	r0, #0xb2
+    1236: 0000         	movs	r0, r0
+    1238: 2d68         	cmp	r5, #0x68
+    123a: 0000         	movs	r0, r0
+    123c: b570         	push	{r4, r5, r6, lr}
+    123e: b082         	sub	sp, #0x8
+    1240: 9c06         	ldr	r4, [sp, #0x18]
+    1242: 4615         	mov	r5, r2
+    1244: 4606         	mov	r6, r0
+    1246: 2901         	cmp	r1, #0x1
+    1248: d00a         	beq	0x1260 <gk_gfx2d_get_capability+0x454> @ imm = #0x14
+    124a: bb29         	cbnz	r1, 0x1298 <gk_gfx2d_get_capability+0x48c> @ imm = #0x4a
+    124c: 2002         	movs	r0, #0x2
+    124e: 2d0f         	cmp	r5, #0xf
+    1250: d815         	bhi	0x127e <gk_gfx2d_get_capability+0x472> @ imm = #0x2a
+    1252: b9a3         	cbnz	r3, 0x127e <gk_gfx2d_get_capability+0x472> @ imm = #0x28
+    1254: 4630         	mov	r0, r6
+    1256: 4629         	mov	r1, r5
+    1258: 4622         	mov	r2, r4
+    125a: f000 fba5    	bl	0x19a8 <gk_gfx2d_get_capability+0xb9c> @ imm = #0x74a
+    125e: e016         	b	0x128e <gk_gfx2d_get_capability+0x482> @ imm = #0x2c
+    1260: f043 0004    	orr	r0, r3, #0x4
+    1264: 2805         	cmp	r0, #0x5
+    1266: d109         	bne	0x127c <gk_gfx2d_get_capability+0x470> @ imm = #0x12
+    1268: 2b01         	cmp	r3, #0x1
+    126a: d105         	bne	0x1278 <gk_gfx2d_get_capability+0x46c> @ imm = #0xa
+    126c: 2d0f         	cmp	r5, #0xf
+    126e: d805         	bhi	0x127c <gk_gfx2d_get_capability+0x470> @ imm = #0xa
+    1270: 4630         	mov	r0, r6
+    1272: f000 fc1e    	bl	0x1ab2 <gk_gfx2d_get_capability+0xca6> @ imm = #0x83c
+    1276: e004         	b	0x1282 <gk_gfx2d_get_capability+0x476> @ imm = #0x8
+    1278: 2d1f         	cmp	r5, #0x1f
+    127a: d902         	bls	0x1282 <gk_gfx2d_get_capability+0x476> @ imm = #0x4
+    127c: 2002         	movs	r0, #0x2
+    127e: b002         	add	sp, #0x8
+    1280: bd70         	pop	{r4, r5, r6, pc}
+    1282: f505 7180    	add.w	r1, r5, #0x100
+    1286: 4630         	mov	r0, r6
+    1288: 4622         	mov	r2, r4
+    128a: f000 fbc5    	bl	0x1a18 <gk_gfx2d_get_capability+0xc0c> @ imm = #0x78a
+    128e: 2800         	cmp	r0, #0x0
+    1290: bf18         	it	ne
+    1292: 2002         	movne	r0, #0x2
+    1294: b002         	add	sp, #0x8
+    1296: bd70         	pop	{r4, r5, r6, pc}
+    1298: 480c         	ldr	r0, [pc, #0x30]         @ 0x12cc <gk_gfx2d_get_capability+0x4c0>
+    129a: f240 355f    	movw	r5, #0x35f
+    129e: 490c         	ldr	r1, [pc, #0x30]         @ 0x12d0 <gk_gfx2d_get_capability+0x4c4>
+    12a0: 4478         	add	r0, pc
+    12a2: 4a0c         	ldr	r2, [pc, #0x30]         @ 0x12d4 <gk_gfx2d_get_capability+0x4c8>
+    12a4: 4b0c         	ldr	r3, [pc, #0x30]         @ 0x12d8 <gk_gfx2d_get_capability+0x4cc>
+    12a6: 4479         	add	r1, pc
+    12a8: 6800         	ldr	r0, [r0]
+    12aa: 447a         	add	r2, pc
+    12ac: 4e0b         	ldr	r6, [pc, #0x2c]         @ 0x12dc <gk_gfx2d_get_capability+0x4d0>
+    12ae: 447b         	add	r3, pc
+    12b0: f100 04a8    	add.w	r4, r0, #0xa8
+    12b4: 447e         	add	r6, pc
+    12b6: 4620         	mov	r0, r4
+    12b8: e9cd 5600    	strd	r5, r6, [sp]
+    12bc: f7ff eaee    	blx	0x89c <fprintf@plt>     @ imm = #-0xa24
+    12c0: 4620         	mov	r0, r4
+    12c2: f7ff eaf2    	blx	0x8a8 <fflush@plt>      @ imm = #-0xa1c
+    12c6: f7ff eaf6    	blx	0x8b4 <abort@plt>       @ imm = #-0xa14
+    12ca: bf00         	nop
+    12cc: 2cec         	cmp	r4, #0xec
+    12ce: 0000         	movs	r0, r0
+    12d0: 1688         	asrs	r0, r1, #0x1a
+    12d2: 0000         	movs	r0, r0
+    12d4: 17a4         	asrs	r4, r4, #0x1e
+    12d6: 0000         	movs	r0, r0
+    12d8: 16a9         	asrs	r1, r5, #0x1a
+    12da: 0000         	movs	r0, r0
+    12dc: 16fe         	asrs	r6, r7, #0x1b
+    12de: 0000         	movs	r0, r0
+    12e0: b570         	push	{r4, r5, r6, lr}
+    12e2: b082         	sub	sp, #0x8
+    12e4: 9e06         	ldr	r6, [sp, #0x18]
+    12e6: 4614         	mov	r4, r2
+    12e8: 4605         	mov	r5, r0
+    12ea: 2901         	cmp	r1, #0x1
+    12ec: d00a         	beq	0x1304 <gk_gfx2d_get_capability+0x4f8> @ imm = #0x14
+    12ee: bb31         	cbnz	r1, 0x133e <gk_gfx2d_get_capability+0x532> @ imm = #0x4c
+    12f0: 2002         	movs	r0, #0x2
+    12f2: 2c0f         	cmp	r4, #0xf
+    12f4: d815         	bhi	0x1322 <gk_gfx2d_get_capability+0x516> @ imm = #0x2a
+    12f6: b9a3         	cbnz	r3, 0x1322 <gk_gfx2d_get_capability+0x516> @ imm = #0x28
+    12f8: 6832         	ldr	r2, [r6]
+    12fa: 4628         	mov	r0, r5
+    12fc: 4621         	mov	r1, r4
+    12fe: f000 fb69    	bl	0x19d4 <gk_gfx2d_get_capability+0xbc8> @ imm = #0x6d2
+    1302: e017         	b	0x1334 <gk_gfx2d_get_capability+0x528> @ imm = #0x2e
+    1304: f043 0004    	orr	r0, r3, #0x4
+    1308: 2805         	cmp	r0, #0x5
+    130a: d109         	bne	0x1320 <gk_gfx2d_get_capability+0x514> @ imm = #0x12
+    130c: 2b01         	cmp	r3, #0x1
+    130e: d105         	bne	0x131c <gk_gfx2d_get_capability+0x510> @ imm = #0xa
+    1310: 2c0f         	cmp	r4, #0xf
+    1312: d805         	bhi	0x1320 <gk_gfx2d_get_capability+0x514> @ imm = #0xa
+    1314: 4628         	mov	r0, r5
+    1316: f000 fbcc    	bl	0x1ab2 <gk_gfx2d_get_capability+0xca6> @ imm = #0x798
+    131a: e004         	b	0x1326 <gk_gfx2d_get_capability+0x51a> @ imm = #0x8
+    131c: 2c1f         	cmp	r4, #0x1f
+    131e: d902         	bls	0x1326 <gk_gfx2d_get_capability+0x51a> @ imm = #0x4
+    1320: 2002         	movs	r0, #0x2
+    1322: b002         	add	sp, #0x8
+    1324: bd70         	pop	{r4, r5, r6, pc}
+    1326: e9d6 2300    	ldrd	r2, r3, [r6]
+    132a: f504 7180    	add.w	r1, r4, #0x100
+    132e: 4628         	mov	r0, r5
+    1330: f000 fb89    	bl	0x1a46 <gk_gfx2d_get_capability+0xc3a> @ imm = #0x712
+    1334: 2800         	cmp	r0, #0x0
+    1336: bf18         	it	ne
+    1338: 2002         	movne	r0, #0x2
+    133a: b002         	add	sp, #0x8
+    133c: bd70         	pop	{r4, r5, r6, pc}
+    133e: 480c         	ldr	r0, [pc, #0x30]         @ 0x1370 <gk_gfx2d_get_capability+0x564>
+    1340: f240 3529    	movw	r5, #0x329
+    1344: 490b         	ldr	r1, [pc, #0x2c]         @ 0x1374 <gk_gfx2d_get_capability+0x568>
+    1346: 4478         	add	r0, pc
+    1348: 4a0b         	ldr	r2, [pc, #0x2c]         @ 0x1378 <gk_gfx2d_get_capability+0x56c>
+    134a: 4b0c         	ldr	r3, [pc, #0x30]         @ 0x137c <gk_gfx2d_get_capability+0x570>
+    134c: 4479         	add	r1, pc
+    134e: 6800         	ldr	r0, [r0]
+    1350: 447a         	add	r2, pc
+    1352: 4e0b         	ldr	r6, [pc, #0x2c]         @ 0x1380 <gk_gfx2d_get_capability+0x574>
+    1354: 447b         	add	r3, pc
+    1356: f100 04a8    	add.w	r4, r0, #0xa8
+    135a: 447e         	add	r6, pc
+    135c: 4620         	mov	r0, r4
+    135e: e9cd 5600    	strd	r5, r6, [sp]
+    1362: f7ff ea9c    	blx	0x89c <fprintf@plt>     @ imm = #-0xac8
+    1366: 4620         	mov	r0, r4
+    1368: f7ff ea9e    	blx	0x8a8 <fflush@plt>      @ imm = #-0xac4
+    136c: f7ff eaa2    	blx	0x8b4 <abort@plt>       @ imm = #-0xabc
+    1370: 2c46         	cmp	r4, #0x46
+    1372: 0000         	movs	r0, r0
+    1374: 15e2         	asrs	r2, r4, #0x17
+    1376: 0000         	movs	r0, r0
+    1378: 1652         	asrs	r2, r2, #0x19
+    137a: 0000         	movs	r0, r0
+    137c: 1603         	asrs	r3, r0, #0x18
+    137e: 0000         	movs	r0, r0
+    1380: 1658         	asrs	r0, r3, #0x19
+    1382: 0000         	movs	r0, r0
+    1384: e92d 41f0    	push.w	{r4, r5, r6, r7, r8, lr}
+    1388: b086         	sub	sp, #0x18
+    138a: 4604         	mov	r4, r0
+    138c: 4847         	ldr	r0, [pc, #0x11c]        @ 0x14ac <gk_gfx2d_get_capability+0x6a0>
+    138e: 461e         	mov	r6, r3
+    1390: 4615         	mov	r5, r2
+    1392: 4478         	add	r0, pc
+    1394: 2901         	cmp	r1, #0x1
+    1396: 6800         	ldr	r0, [r0]
+    1398: 6800         	ldr	r0, [r0]
+    139a: 9005         	str	r0, [sp, #0x14]
+    139c: d026         	beq	0x13ec <gk_gfx2d_get_capability+0x5e0> @ imm = #0x4c
+    139e: 2900         	cmp	r1, #0x0
+    13a0: d16a         	bne	0x1478 <gk_gfx2d_get_capability+0x66c> @ imm = #0xd4
+    13a2: bb6e         	cbnz	r6, 0x1400 <gk_gfx2d_get_capability+0x5f4> @ imm = #0x5a
+    13a4: aa02         	add	r2, sp, #0x8
+    13a6: 4620         	mov	r0, r4
+    13a8: 210d         	movs	r1, #0xd
+    13aa: f000 fafd    	bl	0x19a8 <gk_gfx2d_get_capability+0xb9c> @ imm = #0x5fa
+    13ae: bb38         	cbnz	r0, 0x1400 <gk_gfx2d_get_capability+0x5f4> @ imm = #0x4e
+    13b0: 2700         	movs	r7, #0x0
+    13b2: f04f 0801    	mov.w	r8, #0x1
+    13b6: 2600         	movs	r6, #0x0
+    13b8: fa08 f006    	lsl.w	r0, r8, r6
+    13bc: 4228         	tst	r0, r5
+    13be: d00e         	beq	0x13de <gk_gfx2d_get_capability+0x5d2> @ imm = #0x1c
+    13c0: 9802         	ldr	r0, [sp, #0x8]
+    13c2: 1d01         	adds	r1, r0, #0x4
+    13c4: 9102         	str	r1, [sp, #0x8]
+    13c6: 6802         	ldr	r2, [r0]
+    13c8: 4620         	mov	r0, r4
+    13ca: 4631         	mov	r1, r6
+    13cc: f000 fb02    	bl	0x19d4 <gk_gfx2d_get_capability+0xbc8> @ imm = #0x604
+    13d0: 2e0d         	cmp	r6, #0xd
+    13d2: f04f 0100    	mov.w	r1, #0x0
+    13d6: bf08         	it	eq
+    13d8: 2101         	moveq	r1, #0x1
+    13da: b988         	cbnz	r0, 0x1400 <gk_gfx2d_get_capability+0x5f4> @ imm = #0x22
+    13dc: 430f         	orrs	r7, r1
+    13de: 3601         	adds	r6, #0x1
+    13e0: 2e10         	cmp	r6, #0x10
+    13e2: d3e9         	blo	0x13b8 <gk_gfx2d_get_capability+0x5ac> @ imm = #-0x2e
+    13e4: 07f8         	lsls	r0, r7, #0x1f
+    13e6: d03e         	beq	0x1466 <gk_gfx2d_get_capability+0x65a> @ imm = #0x7c
+    13e8: 2000         	movs	r0, #0x0
+    13ea: e00a         	b	0x1402 <gk_gfx2d_get_capability+0x5f6> @ imm = #0x14
+    13ec: f046 0004    	orr	r0, r6, #0x4
+    13f0: 2805         	cmp	r0, #0x5
+    13f2: d105         	bne	0x1400 <gk_gfx2d_get_capability+0x5f4> @ imm = #0xa
+    13f4: aa04         	add	r2, sp, #0x10
+    13f6: 4620         	mov	r0, r4
+    13f8: 210d         	movs	r1, #0xd
+    13fa: f000 fad5    	bl	0x19a8 <gk_gfx2d_get_capability+0xb9c> @ imm = #0x5aa
+    13fe: b160         	cbz	r0, 0x141a <gk_gfx2d_get_capability+0x60e> @ imm = #0x18
+    1400: 2002         	movs	r0, #0x2
+    1402: 492b         	ldr	r1, [pc, #0xac]         @ 0x14b0 <gk_gfx2d_get_capability+0x6a4>
+    1404: 9a05         	ldr	r2, [sp, #0x14]
+    1406: 4479         	add	r1, pc
+    1408: 6809         	ldr	r1, [r1]
+    140a: 6809         	ldr	r1, [r1]
+    140c: 1a89         	subs	r1, r1, r2
+    140e: bf04         	itt	eq
+    1410: b006         	addeq	sp, #0x18
+    1412: e8bd 81f0    	popeq.w	{r4, r5, r6, r7, r8, pc}
+    1416: f7ff ea1e    	blx	0x854 <__stack_chk_fail@plt> @ imm = #-0xbc4
+    141a: b2a8         	uxth	r0, r5
+    141c: b1d8         	cbz	r0, 0x1456 <gk_gfx2d_get_capability+0x64a> @ imm = #0x36
+    141e: 0c2f         	lsrs	r7, r5, #0x10
+    1420: fa17 f585    	uxtah	r5, r7, r5
+    1424: f10d 0808    	add.w	r8, sp, #0x8
+    1428: 9804         	ldr	r0, [sp, #0x10]
+    142a: 4633         	mov	r3, r6
+    142c: 1d01         	adds	r1, r0, #0x4
+    142e: 9104         	str	r1, [sp, #0x10]
+    1430: 4601         	mov	r1, r0
+    1432: f851 2b08    	ldr	r2, [r1], #8
+    1436: 9104         	str	r1, [sp, #0x10]
+    1438: 2101         	movs	r1, #0x1
+    143a: 6840         	ldr	r0, [r0, #0x4]
+    143c: e9cd 2002    	strd	r2, r0, [sp, #8]
+    1440: 4620         	mov	r0, r4
+    1442: 463a         	mov	r2, r7
+    1444: f8cd 8000    	str.w	r8, [sp]
+    1448: f7ff ff4a    	bl	0x12e0 <gk_gfx2d_get_capability+0x4d4> @ imm = #-0x16c
+    144c: 2800         	cmp	r0, #0x0
+    144e: d1d7         	bne	0x1400 <gk_gfx2d_get_capability+0x5f4> @ imm = #-0x52
+    1450: 3701         	adds	r7, #0x1
+    1452: 42af         	cmp	r7, r5
+    1454: d3e8         	blo	0x1428 <gk_gfx2d_get_capability+0x61c> @ imm = #-0x30
+    1456: 2e01         	cmp	r6, #0x1
+    1458: d103         	bne	0x1462 <gk_gfx2d_get_capability+0x656> @ imm = #0x6
+    145a: 9804         	ldr	r0, [sp, #0x10]
+    145c: 1d02         	adds	r2, r0, #0x4
+    145e: 9204         	str	r2, [sp, #0x10]
+    1460: e002         	b	0x1468 <gk_gfx2d_get_capability+0x65c> @ imm = #0x4
+    1462: 9a04         	ldr	r2, [sp, #0x10]
+    1464: e000         	b	0x1468 <gk_gfx2d_get_capability+0x65c> @ imm = #0x0
+    1466: 9a02         	ldr	r2, [sp, #0x8]
+    1468: 4620         	mov	r0, r4
+    146a: 210d         	movs	r1, #0xd
+    146c: f000 fab2    	bl	0x19d4 <gk_gfx2d_get_capability+0xbc8> @ imm = #0x564
+    1470: 2800         	cmp	r0, #0x0
+    1472: bf18         	it	ne
+    1474: 2002         	movne	r0, #0x2
+    1476: e7c4         	b	0x1402 <gk_gfx2d_get_capability+0x5f6> @ imm = #-0x78
+    1478: 480e         	ldr	r0, [pc, #0x38]         @ 0x14b4 <gk_gfx2d_get_capability+0x6a8>
+    147a: f240 36b9    	movw	r6, #0x3b9
+    147e: 490e         	ldr	r1, [pc, #0x38]         @ 0x14b8 <gk_gfx2d_get_capability+0x6ac>
+    1480: 4478         	add	r0, pc
+    1482: 4a0e         	ldr	r2, [pc, #0x38]         @ 0x14bc <gk_gfx2d_get_capability+0x6b0>
+    1484: 4b0e         	ldr	r3, [pc, #0x38]         @ 0x14c0 <gk_gfx2d_get_capability+0x6b4>
+    1486: 4479         	add	r1, pc
+    1488: 6800         	ldr	r0, [r0]
+    148a: 447a         	add	r2, pc
+    148c: 4f0d         	ldr	r7, [pc, #0x34]         @ 0x14c4 <gk_gfx2d_get_capability+0x6b8>
+    148e: 447b         	add	r3, pc
+    1490: f100 04a8    	add.w	r4, r0, #0xa8
+    1494: 447f         	add	r7, pc
+    1496: 4620         	mov	r0, r4
+    1498: e9cd 6700    	strd	r6, r7, [sp]
+    149c: f7ff e9fe    	blx	0x89c <fprintf@plt>     @ imm = #-0xc04
+    14a0: 4620         	mov	r0, r4
+    14a2: f7ff ea02    	blx	0x8a8 <fflush@plt>      @ imm = #-0xbfc
+    14a6: f7ff ea06    	blx	0x8b4 <abort@plt>       @ imm = #-0xbf4
+    14aa: bf00         	nop
+    14ac: 2bf6         	cmp	r3, #0xf6
+    14ae: 0000         	movs	r0, r0
+    14b0: 2b82         	cmp	r3, #0x82
+    14b2: 0000         	movs	r0, r0
+    14b4: 2b0c         	cmp	r3, #0xc
+    14b6: 0000         	movs	r0, r0
+    14b8: 14a8         	asrs	r0, r5, #0x12
+    14ba: 0000         	movs	r0, r0
+    14bc: 1543         	asrs	r3, r0, #0x15
+    14be: 0000         	movs	r0, r0
+    14c0: 14c9         	asrs	r1, r1, #0x13
+    14c2: 0000         	movs	r0, r0
+    14c4: 151e         	asrs	r6, r3, #0x14
+    14c6: 0000         	movs	r0, r0
+    14c8: b5b0         	push	{r4, r5, r7, lr}
+    14ca: b08c         	sub	sp, #0x30
+    14cc: 4813         	ldr	r0, [pc, #0x4c]         @ 0x151c <gk_gfx2d_get_capability+0x710>
+    14ce: 460d         	mov	r5, r1
+    14d0: 4614         	mov	r4, r2
+    14d2: a901         	add	r1, sp, #0x4
+    14d4: 4478         	add	r0, pc
+    14d6: 6800         	ldr	r0, [r0]
+    14d8: 6800         	ldr	r0, [r0]
+    14da: 900b         	str	r0, [sp, #0x2c]
+    14dc: 4620         	mov	r0, r4
+    14de: f000 fad0    	bl	0x1a82 <gk_gfx2d_get_capability+0xc76> @ imm = #0x5a0
+    14e2: f895 0050    	ldrb.w	r0, [r5, #0x50]
+    14e6: 07c0         	lsls	r0, r0, #0x1f
+    14e8: d104         	bne	0x14f4 <gk_gfx2d_get_capability+0x6e8> @ imm = #0x8
+    14ea: 9803         	ldr	r0, [sp, #0xc]
+    14ec: 6800         	ldr	r0, [r0]
+    14ee: b108         	cbz	r0, 0x14f4 <gk_gfx2d_get_capability+0x6e8> @ imm = #0x2
+    14f0: 2009         	movs	r0, #0x9
+    14f2: e007         	b	0x1504 <gk_gfx2d_get_capability+0x6f8> @ imm = #0xe
+    14f4: 4620         	mov	r0, r4
+    14f6: f000 fac1    	bl	0x1a7c <gk_gfx2d_get_capability+0xc70> @ imm = #0x582
+    14fa: 4601         	mov	r1, r0
+    14fc: 2009         	movs	r0, #0x9
+    14fe: 2901         	cmp	r1, #0x1
+    1500: bf08         	it	eq
+    1502: 2008         	moveq	r0, #0x8
+    1504: 4906         	ldr	r1, [pc, #0x18]         @ 0x1520 <gk_gfx2d_get_capability+0x714>
+    1506: 9a0b         	ldr	r2, [sp, #0x2c]
+    1508: 4479         	add	r1, pc
+    150a: 6809         	ldr	r1, [r1]
+    150c: 6809         	ldr	r1, [r1]
+    150e: 1a89         	subs	r1, r1, r2
+    1510: bf04         	itt	eq
+    1512: b00c         	addeq	sp, #0x30
+    1514: bdb0         	popeq	{r4, r5, r7, pc}
+    1516: f7ff e99e    	blx	0x854 <__stack_chk_fail@plt> @ imm = #-0xcc4
+    151a: bf00         	nop
+    151c: 2ab4         	cmp	r2, #0xb4
+    151e: 0000         	movs	r0, r0
+    1520: 2a80         	cmp	r2, #0x80
+    1522: 0000         	movs	r0, r0
+    1524: b5b0         	push	{r4, r5, r7, lr}
+    1526: b08c         	sub	sp, #0x30
+    1528: 4813         	ldr	r0, [pc, #0x4c]         @ 0x1578 <gk_gfx2d_get_capability+0x76c>
+    152a: 460d         	mov	r5, r1
+    152c: 4614         	mov	r4, r2
+    152e: a901         	add	r1, sp, #0x4
+    1530: 4478         	add	r0, pc
+    1532: 6800         	ldr	r0, [r0]
+    1534: 6800         	ldr	r0, [r0]
+    1536: 900b         	str	r0, [sp, #0x2c]
+    1538: 4620         	mov	r0, r4
+    153a: f000 faa2    	bl	0x1a82 <gk_gfx2d_get_capability+0xc76> @ imm = #0x544
+    153e: f895 0050    	ldrb.w	r0, [r5, #0x50]
+    1542: 07c0         	lsls	r0, r0, #0x1f
+    1544: d104         	bne	0x1550 <gk_gfx2d_get_capability+0x744> @ imm = #0x8
+    1546: 9803         	ldr	r0, [sp, #0xc]
+    1548: 6800         	ldr	r0, [r0]
+    154a: b108         	cbz	r0, 0x1550 <gk_gfx2d_get_capability+0x744> @ imm = #0x2
+    154c: 2009         	movs	r0, #0x9
+    154e: e007         	b	0x1560 <gk_gfx2d_get_capability+0x754> @ imm = #0xe
+    1550: 4620         	mov	r0, r4
+    1552: f000 fa93    	bl	0x1a7c <gk_gfx2d_get_capability+0xc70> @ imm = #0x526
+    1556: 4601         	mov	r1, r0
+    1558: 2009         	movs	r0, #0x9
+    155a: 2901         	cmp	r1, #0x1
+    155c: bf08         	it	eq
+    155e: 2008         	moveq	r0, #0x8
+    1560: 4906         	ldr	r1, [pc, #0x18]         @ 0x157c <gk_gfx2d_get_capability+0x770>
+    1562: 9a0b         	ldr	r2, [sp, #0x2c]
+    1564: 4479         	add	r1, pc
+    1566: 6809         	ldr	r1, [r1]
+    1568: 6809         	ldr	r1, [r1]
+    156a: 1a89         	subs	r1, r1, r2
+    156c: bf04         	itt	eq
+    156e: b00c         	addeq	sp, #0x30
+    1570: bdb0         	popeq	{r4, r5, r7, pc}
+    1572: f7ff e970    	blx	0x854 <__stack_chk_fail@plt> @ imm = #-0xd20
+    1576: bf00         	nop
+    1578: 2a58         	cmp	r2, #0x58
+    157a: 0000         	movs	r0, r0
+    157c: 2a24         	cmp	r2, #0x24
+    157e: 0000         	movs	r0, r0
+    1580: b5b0         	push	{r4, r5, r7, lr}
+    1582: b08c         	sub	sp, #0x30
+    1584: 4813         	ldr	r0, [pc, #0x4c]         @ 0x15d4 <gk_gfx2d_get_capability+0x7c8>
+    1586: 460d         	mov	r5, r1
+    1588: 4614         	mov	r4, r2
+    158a: a901         	add	r1, sp, #0x4
+    158c: 4478         	add	r0, pc
+    158e: 6800         	ldr	r0, [r0]
+    1590: 6800         	ldr	r0, [r0]
+    1592: 900b         	str	r0, [sp, #0x2c]
+    1594: 4620         	mov	r0, r4
+    1596: f000 fa74    	bl	0x1a82 <gk_gfx2d_get_capability+0xc76> @ imm = #0x4e8
+    159a: f895 0050    	ldrb.w	r0, [r5, #0x50]
+    159e: 07c0         	lsls	r0, r0, #0x1f
+    15a0: d104         	bne	0x15ac <gk_gfx2d_get_capability+0x7a0> @ imm = #0x8
+    15a2: 9803         	ldr	r0, [sp, #0xc]
+    15a4: 6800         	ldr	r0, [r0]
+    15a6: b108         	cbz	r0, 0x15ac <gk_gfx2d_get_capability+0x7a0> @ imm = #0x2
+    15a8: 2009         	movs	r0, #0x9
+    15aa: e007         	b	0x15bc <gk_gfx2d_get_capability+0x7b0> @ imm = #0xe
+    15ac: 4620         	mov	r0, r4
+    15ae: f000 fa65    	bl	0x1a7c <gk_gfx2d_get_capability+0xc70> @ imm = #0x4ca
+    15b2: 4601         	mov	r1, r0
+    15b4: 2009         	movs	r0, #0x9
+    15b6: 2901         	cmp	r1, #0x1
+    15b8: bf08         	it	eq
+    15ba: 2008         	moveq	r0, #0x8
+    15bc: 4906         	ldr	r1, [pc, #0x18]         @ 0x15d8 <gk_gfx2d_get_capability+0x7cc>
+    15be: 9a0b         	ldr	r2, [sp, #0x2c]
+    15c0: 4479         	add	r1, pc
+    15c2: 6809         	ldr	r1, [r1]
+    15c4: 6809         	ldr	r1, [r1]
+    15c6: 1a89         	subs	r1, r1, r2
+    15c8: bf04         	itt	eq
+    15ca: b00c         	addeq	sp, #0x30
+    15cc: bdb0         	popeq	{r4, r5, r7, pc}
+    15ce: f7ff e942    	blx	0x854 <__stack_chk_fail@plt> @ imm = #-0xd7c
+    15d2: bf00         	nop
+    15d4: 29fc         	cmp	r1, #0xfc
+    15d6: 0000         	movs	r0, r0
+    15d8: 29c8         	cmp	r1, #0xc8
+    15da: 0000         	movs	r0, r0
+    15dc: b570         	push	{r4, r5, r6, lr}
+    15de: f5ad 6d09    	sub.w	sp, sp, #0x890
+    15e2: 4604         	mov	r4, r0
+    15e4: 4825         	ldr	r0, [pc, #0x94]         @ 0x167c <gk_gfx2d_get_capability+0x870>
+    15e6: f50d 6591    	add.w	r5, sp, #0x488
+    15ea: 4478         	add	r0, pc
+    15ec: 6800         	ldr	r0, [r0]
+    15ee: 6800         	ldr	r0, [r0]
+    15f0: f8cd 088c    	str.w	r0, [sp, #0x88c]
+    15f4: 4628         	mov	r0, r5
+    15f6: f000 e954    	blx	0x18a0 <gk_gfx2d_get_capability+0xa94> @ imm = #0x2a8
+    15fa: ae0a         	add	r6, sp, #0x28
+    15fc: 2000         	movs	r0, #0x0
+    15fe: 60e0         	str	r0, [r4, #0xc]
+    1600: 4629         	mov	r1, r5
+    1602: 4630         	mov	r0, r6
+    1604: f000 f964    	bl	0x18d0 <gk_gfx2d_get_capability+0xac4> @ imm = #0x2c8
+    1608: 4669         	mov	r1, sp
+    160a: 4630         	mov	r0, r6
+    160c: f000 fa39    	bl	0x1a82 <gk_gfx2d_get_capability+0xc76> @ imm = #0x472
+    1610: b9b0         	cbnz	r0, 0x1640 <gk_gfx2d_get_capability+0x834> @ imm = #0x2c
+    1612: ad0a         	add	r5, sp, #0x28
+    1614: 466e         	mov	r6, sp
+    1616: 9b03         	ldr	r3, [sp, #0xc]
+    1618: b163         	cbz	r3, 0x1634 <gk_gfx2d_get_capability+0x828> @ imm = #0x18
+    161a: 9908         	ldr	r1, [sp, #0x20]
+    161c: f104 0c48    	add.w	r12, r4, #0x48
+    1620: 9a05         	ldr	r2, [sp, #0x14]
+    1622: 9800         	ldr	r0, [sp]
+    1624: e88c 0007    	stm.w	r12, {r0, r1, r2}
+    1628: 2000         	movs	r0, #0x0
+    162a: 4621         	mov	r1, r4
+    162c: 462a         	mov	r2, r5
+    162e: 4798         	blx	r3
+    1630: 2808         	cmp	r0, #0x8
+    1632: d113         	bne	0x165c <gk_gfx2d_get_capability+0x850> @ imm = #0x26
+    1634: 4628         	mov	r0, r5
+    1636: 4631         	mov	r1, r6
+    1638: f000 fa23    	bl	0x1a82 <gk_gfx2d_get_capability+0xc76> @ imm = #0x446
+    163c: 2800         	cmp	r0, #0x0
+    163e: d0ea         	beq	0x1616 <gk_gfx2d_get_capability+0x80a> @ imm = #-0x2c
+    1640: 2003         	movs	r0, #0x3
+    1642: 490f         	ldr	r1, [pc, #0x3c]         @ 0x1680 <gk_gfx2d_get_capability+0x874>
+    1644: f8dd 288c    	ldr.w	r2, [sp, #0x88c]
+    1648: 4479         	add	r1, pc
+    164a: 6809         	ldr	r1, [r1]
+    164c: 6809         	ldr	r1, [r1]
+    164e: 1a89         	subs	r1, r1, r2
+    1650: bf04         	itt	eq
+    1652: f50d 6d09    	addeq.w	sp, sp, #0x890
+    1656: bd70         	popeq	{r4, r5, r6, pc}
+    1658: f7ff e8fc    	blx	0x854 <__stack_chk_fail@plt> @ imm = #-0xe08
+    165c: 2806         	cmp	r0, #0x6
+    165e: d003         	beq	0x1668 <gk_gfx2d_get_capability+0x85c> @ imm = #0x6
+    1660: 2809         	cmp	r0, #0x9
+    1662: d1ed         	bne	0x1640 <gk_gfx2d_get_capability+0x834> @ imm = #-0x26
+    1664: 2009         	movs	r0, #0x9
+    1666: e7ec         	b	0x1642 <gk_gfx2d_get_capability+0x836> @ imm = #-0x28
+    1668: f50d 6091    	add.w	r0, sp, #0x488
+    166c: a90a         	add	r1, sp, #0x28
+    166e: 4622         	mov	r2, r4
+    1670: 2300         	movs	r3, #0x0
+    1672: f000 f807    	bl	0x1684 <gk_gfx2d_get_capability+0x878> @ imm = #0xe
+    1676: 2002         	movs	r0, #0x2
+    1678: e7e3         	b	0x1642 <gk_gfx2d_get_capability+0x836> @ imm = #-0x3a
+    167a: bf00         	nop
+    167c: 299e         	cmp	r1, #0x9e
+    167e: 0000         	movs	r0, r0
+    1680: 2940         	cmp	r1, #0x40
+    1682: 0000         	movs	r0, r0
+    1684: e92d 47f0    	push.w	{r4, r5, r6, r7, r8, r9, r10, lr}
+    1688: b090         	sub	sp, #0x40
+    168a: 460c         	mov	r4, r1
+    168c: 4601         	mov	r1, r0
+    168e: 483b         	ldr	r0, [pc, #0xec]         @ 0x177c <gk_gfx2d_get_capability+0x970>
+    1690: 469a         	mov	r10, r3
+    1692: 4615         	mov	r5, r2
+    1694: 4478         	add	r0, pc
+    1696: 6800         	ldr	r0, [r0]
+    1698: 6800         	ldr	r0, [r0]
+    169a: 900f         	str	r0, [sp, #0x3c]
+    169c: 4620         	mov	r0, r4
+    169e: f000 f917    	bl	0x18d0 <gk_gfx2d_get_capability+0xac4> @ imm = #0x22e
+    16a2: f10d 0838    	add.w	r8, sp, #0x38
+    16a6: f10d 0910    	add.w	r9, sp, #0x10
+    16aa: 2601         	movs	r6, #0x1
+    16ac: e000         	b	0x16b0 <gk_gfx2d_get_capability+0x8a4> @ imm = #0x0
+    16ae: 3e01         	subs	r6, #0x1
+    16b0: f01a 0001    	ands	r0, r10, #0x1
+    16b4: f04f 0701    	mov.w	r7, #0x1
+    16b8: bf18         	it	ne
+    16ba: 2702         	movne	r7, #0x2
+    16bc: d008         	beq	0x16d0 <gk_gfx2d_get_capability+0x8c4> @ imm = #0x10
+    16be: b93e         	cbnz	r6, 0x16d0 <gk_gfx2d_get_capability+0x8c4> @ imm = #0xe
+    16c0: 692a         	ldr	r2, [r5, #0x10]
+    16c2: 4620         	mov	r0, r4
+    16c4: f04f 31ff    	mov.w	r1, #0xffffffff
+    16c8: f000 f984    	bl	0x19d4 <gk_gfx2d_get_capability+0xbc8> @ imm = #0x308
+    16cc: f04f 0a00    	mov.w	r10, #0x0
+    16d0: 4620         	mov	r0, r4
+    16d2: f06f 0101    	mvn	r1, #0x1
+    16d6: 4642         	mov	r2, r8
+    16d8: f000 f966    	bl	0x19a8 <gk_gfx2d_get_capability+0xb9c> @ imm = #0x2cc
+    16dc: 4620         	mov	r0, r4
+    16de: 4649         	mov	r1, r9
+    16e0: f000 f9cf    	bl	0x1a82 <gk_gfx2d_get_capability+0xc76> @ imm = #0x39e
+    16e4: bbe8         	cbnz	r0, 0x1762 <gk_gfx2d_get_capability+0x956> @ imm = #0x7a
+    16e6: 9b07         	ldr	r3, [sp, #0x1c]
+    16e8: 2b00         	cmp	r3, #0x0
+    16ea: d0e0         	beq	0x16ae <gk_gfx2d_get_capability+0x8a2> @ imm = #-0x40
+    16ec: 990c         	ldr	r1, [sp, #0x30]
+    16ee: f105 0c48    	add.w	r12, r5, #0x48
+    16f2: 9a09         	ldr	r2, [sp, #0x24]
+    16f4: 9804         	ldr	r0, [sp, #0x10]
+    16f6: e88c 0007    	stm.w	r12, {r0, r1, r2}
+    16fa: 4638         	mov	r0, r7
+    16fc: 4629         	mov	r1, r5
+    16fe: 4622         	mov	r2, r4
+    1700: 4798         	blx	r3
+    1702: 2807         	cmp	r0, #0x7
+    1704: d022         	beq	0x174c <gk_gfx2d_get_capability+0x940> @ imm = #0x44
+    1706: 2808         	cmp	r0, #0x8
+    1708: d11c         	bne	0x1744 <gk_gfx2d_get_capability+0x938> @ imm = #0x38
+    170a: 980e         	ldr	r0, [sp, #0x38]
+    170c: 6a29         	ldr	r1, [r5, #0x20]
+    170e: 4288         	cmp	r0, r1
+    1710: d1cd         	bne	0x16ae <gk_gfx2d_get_capability+0x8a2> @ imm = #-0x66
+    1712: 481b         	ldr	r0, [pc, #0x6c]         @ 0x1780 <gk_gfx2d_get_capability+0x974>
+    1714: f240 2669    	movw	r6, #0x269
+    1718: 491a         	ldr	r1, [pc, #0x68]         @ 0x1784 <gk_gfx2d_get_capability+0x978>
+    171a: 4478         	add	r0, pc
+    171c: 4a1a         	ldr	r2, [pc, #0x68]         @ 0x1788 <gk_gfx2d_get_capability+0x97c>
+    171e: 4b1b         	ldr	r3, [pc, #0x6c]         @ 0x178c <gk_gfx2d_get_capability+0x980>
+    1720: 4479         	add	r1, pc
+    1722: 6800         	ldr	r0, [r0]
+    1724: 447a         	add	r2, pc
+    1726: 4f1a         	ldr	r7, [pc, #0x68]         @ 0x1790 <gk_gfx2d_get_capability+0x984>
+    1728: 447b         	add	r3, pc
+    172a: f100 04a8    	add.w	r4, r0, #0xa8
+    172e: 447f         	add	r7, pc
+    1730: 4620         	mov	r0, r4
+    1732: e9cd 6700    	strd	r6, r7, [sp]
+    1736: f7ff e8b2    	blx	0x89c <fprintf@plt>     @ imm = #-0xe9c
+    173a: 4620         	mov	r0, r4
+    173c: f7ff e8b4    	blx	0x8a8 <fflush@plt>      @ imm = #-0xe98
+    1740: f7ff e8b8    	blx	0x8b4 <abort@plt>       @ imm = #-0xe90
+    1744: 2809         	cmp	r0, #0x9
+    1746: d10c         	bne	0x1762 <gk_gfx2d_get_capability+0x956> @ imm = #0x18
+    1748: f7ff e8b4    	blx	0x8b4 <abort@plt>       @ imm = #-0xe98
+    174c: aa03         	add	r2, sp, #0xc
+    174e: 4620         	mov	r0, r4
+    1750: f04f 31ff    	mov.w	r1, #0xffffffff
+    1754: f000 f928    	bl	0x19a8 <gk_gfx2d_get_capability+0xb9c> @ imm = #0x250
+    1758: 9803         	ldr	r0, [sp, #0xc]
+    175a: 6128         	str	r0, [r5, #0x10]
+    175c: 4620         	mov	r0, r4
+    175e: f000 f99f    	bl	0x1aa0 <gk_gfx2d_get_capability+0xc94> @ imm = #0x33e
+    1762: 480c         	ldr	r0, [pc, #0x30]         @ 0x1794 <gk_gfx2d_get_capability+0x988>
+    1764: 990f         	ldr	r1, [sp, #0x3c]
+    1766: 4478         	add	r0, pc
+    1768: 6800         	ldr	r0, [r0]
+    176a: 6800         	ldr	r0, [r0]
+    176c: 1a40         	subs	r0, r0, r1
+    176e: bf04         	itt	eq
+    1770: b010         	addeq	sp, #0x40
+    1772: e8bd 87f0    	popeq.w	{r4, r5, r6, r7, r8, r9, r10, pc}
+    1776: f7ff e86e    	blx	0x854 <__stack_chk_fail@plt> @ imm = #-0xf24
+    177a: bf00         	nop
+    177c: 28f4         	cmp	r0, #0xf4
+    177e: 0000         	movs	r0, r0
+    1780: 2872         	cmp	r0, #0x72
+    1782: 0000         	movs	r0, r0
+    1784: 120e         	asrs	r6, r1, #0x8
+    1786: 0000         	movs	r0, r0
+    1788: 12b9         	asrs	r1, r7, #0xa
+    178a: 0000         	movs	r0, r0
+    178c: 122f         	asrs	r7, r5, #0x8
+    178e: 0000         	movs	r0, r0
+    1790: 12bd         	asrs	r5, r7, #0xa
+    1792: 0000         	movs	r0, r0
+    1794: 2822         	cmp	r0, #0x22
+    1796: 0000         	movs	r0, r0
+    1798: 4770         	bx	lr
+    179a: 0000         	movs	r0, r0
+    179c: b5b0         	push	{r4, r5, r7, lr}
+    179e: f5ad 6d06    	sub.w	sp, sp, #0x860
+    17a2: b082         	sub	sp, #0x8
+    17a4: f50d 658d    	add.w	r5, sp, #0x468
+    17a8: 4604         	mov	r4, r0
+    17aa: 4628         	mov	r0, r5
+    17ac: f000 e878    	blx	0x18a0 <gk_gfx2d_get_capability+0xa94> @ imm = #0xf0
+    17b0: a902         	add	r1, sp, #0x8
+    17b2: 4628         	mov	r0, r5
+    17b4: 4622         	mov	r2, r4
+    17b6: 2301         	movs	r3, #0x1
+    17b8: f7ff ff64    	bl	0x1684 <gk_gfx2d_get_capability+0x878> @ imm = #-0x138
+    17bc: 480c         	ldr	r0, [pc, #0x30]         @ 0x17f0 <gk_gfx2d_get_capability+0x9e4>
+    17be: f240 24cf    	movw	r4, #0x2cf
+    17c2: 4d0f         	ldr	r5, [pc, #0x3c]         @ 0x1800 <gk_gfx2d_get_capability+0x9f4>
+    17c4: 4478         	add	r0, pc
+    17c6: 490b         	ldr	r1, [pc, #0x2c]         @ 0x17f4 <gk_gfx2d_get_capability+0x9e8>
+    17c8: 447d         	add	r5, pc
+    17ca: 4a0b         	ldr	r2, [pc, #0x2c]         @ 0x17f8 <gk_gfx2d_get_capability+0x9ec>
+    17cc: 6800         	ldr	r0, [r0]
+    17ce: 4479         	add	r1, pc
+    17d0: 4b0a         	ldr	r3, [pc, #0x28]         @ 0x17fc <gk_gfx2d_get_capability+0x9f0>
+    17d2: 447a         	add	r2, pc
+    17d4: e9cd 4500    	strd	r4, r5, [sp]
+    17d8: f100 04a8    	add.w	r4, r0, #0xa8
+    17dc: 447b         	add	r3, pc
+    17de: 4620         	mov	r0, r4
+    17e0: f7ff e85c    	blx	0x89c <fprintf@plt>     @ imm = #-0xf48
+    17e4: 4620         	mov	r0, r4
+    17e6: f7ff e860    	blx	0x8a8 <fflush@plt>      @ imm = #-0xf40
+    17ea: f7ff e864    	blx	0x8b4 <abort@plt>       @ imm = #-0xf38
+    17ee: bf00         	nop
+    17f0: 27c8         	movs	r7, #0xc8
+    17f2: 0000         	movs	r0, r0
+    17f4: 1160         	asrs	r0, r4, #0x5
+    17f6: 0000         	movs	r0, r0
+    17f8: 1176         	asrs	r6, r6, #0x5
+    17fa: 0000         	movs	r0, r0
+    17fc: 117b         	asrs	r3, r7, #0x5
+    17fe: 0000         	movs	r0, r0
+    1800: 11bc         	asrs	r4, r7, #0x6
+    1802: 0000         	movs	r0, r0
+    1804: b580         	push	{r7, lr}
+    1806: b08c         	sub	sp, #0x30
+    1808: 490b         	ldr	r1, [pc, #0x2c]         @ 0x1838 <gk_gfx2d_get_capability+0xa2c>
+    180a: 4479         	add	r1, pc
+    180c: 6809         	ldr	r1, [r1]
+    180e: 6809         	ldr	r1, [r1]
+    1810: 910b         	str	r1, [sp, #0x2c]
+    1812: a901         	add	r1, sp, #0x4
+    1814: f000 f935    	bl	0x1a82 <gk_gfx2d_get_capability+0xc76> @ imm = #0x26a
+    1818: 4601         	mov	r1, r0
+    181a: 2900         	cmp	r1, #0x0
+    181c: 4907         	ldr	r1, [pc, #0x1c]         @ 0x183c <gk_gfx2d_get_capability+0xa30>
+    181e: 9803         	ldr	r0, [sp, #0xc]
+    1820: 4479         	add	r1, pc
+    1822: bf18         	it	ne
+    1824: 2000         	movne	r0, #0x0
+    1826: 9a0b         	ldr	r2, [sp, #0x2c]
+    1828: 6809         	ldr	r1, [r1]
+    182a: 6809         	ldr	r1, [r1]
+    182c: 1a89         	subs	r1, r1, r2
+    182e: bf04         	itt	eq
+    1830: b00c         	addeq	sp, #0x30
+    1832: bd80         	popeq	{r7, pc}
+    1834: f7ff e80e    	blx	0x854 <__stack_chk_fail@plt> @ imm = #-0xfe4
+    1838: 277e         	movs	r7, #0x7e
+    183a: 0000         	movs	r0, r0
+    183c: 2768         	movs	r7, #0x68
+    183e: 0000         	movs	r0, r0
+    1840: b580         	push	{r7, lr}
+    1842: b08c         	sub	sp, #0x30
+    1844: 490b         	ldr	r1, [pc, #0x2c]         @ 0x1874 <gk_gfx2d_get_capability+0xa68>
+    1846: 4479         	add	r1, pc
+    1848: 6809         	ldr	r1, [r1]
+    184a: 6809         	ldr	r1, [r1]
+    184c: 910b         	str	r1, [sp, #0x2c]
+    184e: a901         	add	r1, sp, #0x4
+    1850: f000 f917    	bl	0x1a82 <gk_gfx2d_get_capability+0xc76> @ imm = #0x22e
+    1854: 4601         	mov	r1, r0
+    1856: 2900         	cmp	r1, #0x0
+    1858: 4907         	ldr	r1, [pc, #0x1c]         @ 0x1878 <gk_gfx2d_get_capability+0xa6c>
+    185a: 9801         	ldr	r0, [sp, #0x4]
+    185c: 4479         	add	r1, pc
+    185e: bf18         	it	ne
+    1860: 2000         	movne	r0, #0x0
+    1862: 9a0b         	ldr	r2, [sp, #0x2c]
+    1864: 6809         	ldr	r1, [r1]
+    1866: 6809         	ldr	r1, [r1]
+    1868: 1a89         	subs	r1, r1, r2
+    186a: bf04         	itt	eq
+    186c: b00c         	addeq	sp, #0x30
+    186e: bd80         	popeq	{r7, pc}
+    1870: f7fe eff0    	blx	0x854 <__stack_chk_fail@plt> @ imm = #-0x1020
+    1874: 2742         	movs	r7, #0x42
+    1876: 0000         	movs	r0, r0
+    1878: 272c         	movs	r7, #0x2c
+    187a: 0000         	movs	r0, r0
+    187c: 4601         	mov	r1, r0
+    187e: 688a         	ldr	r2, [r1, #0x8]
+    1880: 2a00         	cmp	r2, #0x0
+    1882: bf08         	it	eq
+    1884: 4770         	bxeq	lr
+    1886: 2001         	movs	r0, #0x1
+    1888: 4710         	bx	r2
+    188a: b580         	push	{r7, lr}
+    188c: 4608         	mov	r0, r1
+    188e: f000 f8f5    	bl	0x1a7c <gk_gfx2d_get_capability+0xc70> @ imm = #0x1ea
+    1892: 2109         	movs	r1, #0x9
+    1894: 2801         	cmp	r0, #0x1
+    1896: bf08         	it	eq
+    1898: 2100         	moveq	r1, #0x0
+    189a: 4608         	mov	r0, r1
+    189c: bd80         	pop	{r7, pc}
+    189e: 0000         	movs	r0, r0
+    18a0: 1fff         	subs	r7, r7, #0x7
+    18a2: e880 d034    	<unknown>
+    18a6: e580         	b	0x13aa <gk_gfx2d_get_capability+0x59e> @ imm = #-0x500
+    18a8: e038         	b	0x191c <gk_gfx2d_get_capability+0xb10> @ imm = #0x70
+    18aa: e580         	b	0x13ae <gk_gfx2d_get_capability+0x5a2> @ imm = #-0x500
+    18ac: e03c         	b	0x1928 <gk_gfx2d_get_capability+0xb1c> @ imm = #0x78
+    18ae: e580         	b	0x13b2 <gk_gfx2d_get_capability+0x5a6> @ imm = #-0x500
+    18b0: 0000         	movs	r0, r0
+    18b2: e3a0         	b	0x1ff6 <gk_gfx2d_get_capability+0x11ea> @ imm = #0x740
+    18b4: ff1e e12f    	vrhadd.u16	d14, d14, d31
+    18b8: 0b20         	lsrs	r0, r4, #0xc
+    18ba: ec80 ff1e    	stc	p15, c15, [r0], {30}
+    18be: e12f         	b	0x1b20 <gk_gfx2d_get_capability+0xd14> @ imm = #0x25e
+    18c0: 0b20         	lsrs	r0, r4, #0xc
+    18c2: ec80 ff1e    	stc	p15, c15, [r0], {30}
+    18c6: e12f         	b	0x1b28 <gk_gfx2d_get_capability+0xd1c> @ imm = #0x25e
+    18c8: 0b20         	lsrs	r0, r4, #0xc
+    18ca: ecc0 ff1e    	stcl	p15, c15, [r0], {30}
+    18ce: e12f         	b	0x1b30 <gk_gfx2d_get_capability+0xd24> @ imm = #0x25e
+    18d0: b5b0         	push	{r4, r5, r7, lr}
+    18d2: 4a34         	ldr	r2, [pc, #0xd0]         @ 0x19a4 <gk_gfx2d_get_capability+0xb98>
+    18d4: 4604         	mov	r4, r0
+    18d6: 4832         	ldr	r0, [pc, #0xc8]         @ 0x19a0 <gk_gfx2d_get_capability+0xb94>
+    18d8: 2500         	movs	r5, #0x0
+    18da: 447a         	add	r2, pc
+    18dc: f8a4 5048    	strh.w	r5, [r4, #0x48]
+    18e0: 4478         	add	r0, pc
+    18e2: 3208         	adds	r2, #0x8
+    18e4: f884 504a    	strb.w	r5, [r4, #0x4a]
+    18e8: e9c4 2000    	strd	r2, r0, [r4]
+    18ec: 2030         	movs	r0, #0x30
+    18ee: 460a         	mov	r2, r1
+    18f0: f962 0a00    	vld1.8	{d16, d17}, [r2], r0
+    18f4: f101 0020    	add.w	r0, r1, #0x20
+    18f8: f960 2a0f    	vld1.8	{d18, d19}, [r0]
+    18fc: f101 0010    	add.w	r0, r1, #0x10
+    1900: 2188         	movs	r1, #0x88
+    1902: f960 4a0f    	vld1.8	{d20, d21}, [r0]
+    1906: f104 0028    	add.w	r0, r4, #0x28
+    190a: f962 6a0f    	vld1.8	{d22, d23}, [r2]
+    190e: f940 2a0f    	vst1.8	{d18, d19}, [r0]
+    1912: f104 0018    	add.w	r0, r4, #0x18
+    1916: f940 4a0f    	vst1.8	{d20, d21}, [r0]
+    191a: f104 0008    	add.w	r0, r4, #0x8
+    191e: f940 0a0f    	vst1.8	{d16, d17}, [r0]
+    1922: f104 0038    	add.w	r0, r4, #0x38
+    1926: f940 6a0f    	vst1.8	{d22, d23}, [r0]
+    192a: f104 0050    	add.w	r0, r4, #0x50
+    192e: f7fe efc8    	blx	0x8c0 <__aeabi_memclr@plt> @ imm = #-0x1070
+    1932: efc0 0050    	vmov.i32	q8, #0x0
+    1936: f504 70a4    	add.w	r0, r4, #0x148
+    193a: f504 71ac    	add.w	r1, r4, #0x158
+    193e: f940 0a0f    	vst1.8	{d16, d17}, [r0]
+    1942: f504 709c    	add.w	r0, r4, #0x138
+    1946: f940 0a0f    	vst1.8	{d16, d17}, [r0]
+    194a: f504 7094    	add.w	r0, r4, #0x128
+    194e: f940 0a0f    	vst1.8	{d16, d17}, [r0]
+    1952: f504 708c    	add.w	r0, r4, #0x118
+    1956: f940 0a0f    	vst1.8	{d16, d17}, [r0]
+    195a: f504 7084    	add.w	r0, r4, #0x108
+    195e: f940 0a0f    	vst1.8	{d16, d17}, [r0]
+    1962: f104 00f8    	add.w	r0, r4, #0xf8
+    1966: f940 0a0f    	vst1.8	{d16, d17}, [r0]
+    196a: f104 00e8    	add.w	r0, r4, #0xe8
+    196e: f940 0a0f    	vst1.8	{d16, d17}, [r0]
+    1972: f104 00d8    	add.w	r0, r4, #0xd8
+    1976: f940 0a0f    	vst1.8	{d16, d17}, [r0]
+    197a: f504 70b4    	add.w	r0, r4, #0x168
+    197e: f940 0a0f    	vst1.8	{d16, d17}, [r0]
+    1982: 6820         	ldr	r0, [r4]
+    1984: f941 0a0f    	vst1.8	{d16, d17}, [r1]
+    1988: 2100         	movs	r1, #0x0
+    198a: f8a4 5180    	strh.w	r5, [r4, #0x180]
+    198e: f8c4 517c    	str.w	r5, [r4, #0x17c]
+    1992: f8c4 5178    	str.w	r5, [r4, #0x178]
+    1996: 6b42         	ldr	r2, [r0, #0x34]
+    1998: 4620         	mov	r0, r4
+    199a: 4790         	blx	r2
+    199c: 2000         	movs	r0, #0x0
+    199e: bdb0         	pop	{r4, r5, r7, pc}
+    19a0: 272c         	movs	r7, #0x2c
+    19a2: 0000         	movs	r0, r0
+    19a4: 255e         	movs	r5, #0x5e
+    19a6: 0000         	movs	r0, r0
+    19a8: b570         	push	{r4, r5, r6, lr}
+    19aa: 4606         	mov	r6, r0
+    19ac: 4614         	mov	r4, r2
+    19ae: 6830         	ldr	r0, [r6]
+    19b0: 460d         	mov	r5, r1
+    19b2: 6882         	ldr	r2, [r0, #0x8]
+    19b4: 4630         	mov	r0, r6
+    19b6: 4790         	blx	r2
+    19b8: b138         	cbz	r0, 0x19ca <gk_gfx2d_get_capability+0xbbe> @ imm = #0xe
+    19ba: 6830         	ldr	r0, [r6]
+    19bc: 4629         	mov	r1, r5
+    19be: 68c2         	ldr	r2, [r0, #0xc]
+    19c0: 4630         	mov	r0, r6
+    19c2: 4790         	blx	r2
+    19c4: 6020         	str	r0, [r4]
+    19c6: 2000         	movs	r0, #0x0
+    19c8: bd70         	pop	{r4, r5, r6, pc}
+    19ca: f24e 6072    	movw	r0, #0xe672
+    19ce: f6cf 70ff    	movt	r0, #0xffff
+    19d2: bd70         	pop	{r4, r5, r6, pc}
+    19d4: b570         	push	{r4, r5, r6, lr}
+    19d6: 4604         	mov	r4, r0
+    19d8: 4616         	mov	r6, r2
+    19da: 6820         	ldr	r0, [r4]
+    19dc: 460d         	mov	r5, r1
+    19de: 6882         	ldr	r2, [r0, #0x8]
+    19e0: 4620         	mov	r0, r4
+    19e2: 4790         	blx	r2
+    19e4: b150         	cbz	r0, 0x19fc <gk_gfx2d_get_capability+0xbf0> @ imm = #0x14
+    19e6: 6820         	ldr	r0, [r4]
+    19e8: 4629         	mov	r1, r5
+    19ea: 4632         	mov	r2, r6
+    19ec: 6903         	ldr	r3, [r0, #0x10]
+    19ee: 4620         	mov	r0, r4
+    19f0: 4798         	blx	r3
+    19f2: 1c68         	adds	r0, r5, #0x1
+    19f4: d008         	beq	0x1a08 <gk_gfx2d_get_capability+0xbfc> @ imm = #0x10
+    19f6: 2500         	movs	r5, #0x0
+    19f8: 4628         	mov	r0, r5
+    19fa: bd70         	pop	{r4, r5, r6, pc}
+    19fc: f24e 6572    	movw	r5, #0xe672
+    1a00: f6cf 75ff    	movt	r5, #0xffff
+    1a04: 4628         	mov	r0, r5
+    1a06: bd70         	pop	{r4, r5, r6, pc}
+    1a08: 6820         	ldr	r0, [r4]
+    1a0a: 2100         	movs	r1, #0x0
+    1a0c: 2500         	movs	r5, #0x0
+    1a0e: 6b42         	ldr	r2, [r0, #0x34]
+    1a10: 4620         	mov	r0, r4
+    1a12: 4790         	blx	r2
+    1a14: 4628         	mov	r0, r5
+    1a16: bd70         	pop	{r4, r5, r6, pc}
+    1a18: b570         	push	{r4, r5, r6, lr}
+    1a1a: 4606         	mov	r6, r0
+    1a1c: 4614         	mov	r4, r2
+    1a1e: 6830         	ldr	r0, [r6]
+    1a20: 460d         	mov	r5, r1
+    1a22: 6942         	ldr	r2, [r0, #0x14]
+    1a24: 4630         	mov	r0, r6
+    1a26: 4790         	blx	r2
+    1a28: b140         	cbz	r0, 0x1a3c <gk_gfx2d_get_capability+0xc30> @ imm = #0x10
+    1a2a: 6830         	ldr	r0, [r6]
+    1a2c: 4629         	mov	r1, r5
+    1a2e: 6982         	ldr	r2, [r0, #0x18]
+    1a30: 4630         	mov	r0, r6
+    1a32: 4790         	blx	r2
+    1a34: e9c4 0100    	strd	r0, r1, [r4]
+    1a38: 2000         	movs	r0, #0x0
+    1a3a: bd70         	pop	{r4, r5, r6, pc}
+    1a3c: f24e 6072    	movw	r0, #0xe672
+    1a40: f6cf 70ff    	movt	r0, #0xffff
+    1a44: bd70         	pop	{r4, r5, r6, pc}
+    1a46: e92d 41f0    	push.w	{r4, r5, r6, r7, r8, lr}
+    1a4a: 4607         	mov	r7, r0
+    1a4c: 4615         	mov	r5, r2
+    1a4e: 6838         	ldr	r0, [r7]
+    1a50: 4698         	mov	r8, r3
+    1a52: 460e         	mov	r6, r1
+    1a54: 6942         	ldr	r2, [r0, #0x14]
+    1a56: 4638         	mov	r0, r7
+    1a58: 4790         	blx	r2
+    1a5a: b148         	cbz	r0, 0x1a70 <gk_gfx2d_get_capability+0xc64> @ imm = #0x12
+    1a5c: 6838         	ldr	r0, [r7]
+    1a5e: 4631         	mov	r1, r6
+    1a60: 462a         	mov	r2, r5
+    1a62: 4643         	mov	r3, r8
+    1a64: 69c4         	ldr	r4, [r0, #0x1c]
+    1a66: 4638         	mov	r0, r7
+    1a68: 47a0         	blx	r4
+    1a6a: 2000         	movs	r0, #0x0
+    1a6c: e8bd 81f0    	pop.w	{r4, r5, r6, r7, r8, pc}
+    1a70: f24e 6072    	movw	r0, #0xe672
+    1a74: f6cf 70ff    	movt	r0, #0xffff
+    1a78: e8bd 81f0    	pop.w	{r4, r5, r6, r7, r8, pc}
+    1a7c: 6801         	ldr	r1, [r0]
+    1a7e: 6a09         	ldr	r1, [r1, #0x20]
+    1a80: 4708         	bx	r1
+    1a82: b510         	push	{r4, lr}
+    1a84: 460c         	mov	r4, r1
+    1a86: 6801         	ldr	r1, [r0]
+    1a88: 6a4a         	ldr	r2, [r1, #0x24]
+    1a8a: 4621         	mov	r1, r4
+    1a8c: 4790         	blx	r2
+    1a8e: 6861         	ldr	r1, [r4, #0x4]
+    1a90: 2000         	movs	r0, #0x0
+    1a92: 2900         	cmp	r1, #0x0
+    1a94: bf04         	itt	eq
+    1a96: f24e 606b    	movweq	r0, #0xe66b
+    1a9a: f6cf 70ff    	movteq	r0, #0xffff
+    1a9e: bd10         	pop	{r4, pc}
+    1aa0: b580         	push	{r7, lr}
+    1aa2: 6801         	ldr	r1, [r0]
+    1aa4: 6a89         	ldr	r1, [r1, #0x28]
+    1aa6: 4788         	blx	r1
+    1aa8: f24e 6074    	movw	r0, #0xe674
+    1aac: f6cf 70ff    	movt	r0, #0xffff
+    1ab0: bd80         	pop	{r7, pc}
+    1ab2: 6801         	ldr	r1, [r0]
+    1ab4: 6bc9         	ldr	r1, [r1, #0x3c]
+    1ab6: 4708         	bx	r1
+    1ab8: 3910         	subs	r1, #0x10
+    1aba: 2000         	movs	r0, #0x0
+    1abc: f111 0f13    	cmn.w	r1, #0x13
+    1ac0: bf88         	it	hi
+    1ac2: 2001         	movhi	r0, #0x1
+    1ac4: 4770         	bx	lr
+    1ac6: 0000         	movs	r0, r0
+    1ac8: 1c8a         	adds	r2, r1, #0x2
+    1aca: 2a11         	cmp	r2, #0x11
+    1acc: d810         	bhi	0x1af0 <gk_gfx2d_get_capability+0xce4> @ imm = #0x20
+    1ace: e8df f002    	tbb	[pc, r2]
+    1ad2: 0c09         	lsrs	r1, r1, #0x10
+    1ad4: 0f0f         	lsrs	r7, r1, #0x1c
+    1ad6: 0f0f         	lsrs	r7, r1, #0x1c
+    1ad8: 0f0f         	lsrs	r7, r1, #0x1c
+    1ada: 0f0f         	lsrs	r7, r1, #0x1c
+    1adc: 0f0f         	lsrs	r7, r1, #0x1c
+    1ade: 0f0f         	lsrs	r7, r1, #0x1c
+    1ae0: 090f         	lsrs	r7, r1, #0x4
+    1ae2: 0c32         	lsrs	r2, r6, #0x10
+    1ae4: 303c         	adds	r0, #0x3c
+    1ae6: 6800         	ldr	r0, [r0]
+    1ae8: 4770         	bx	lr
+    1aea: 3044         	adds	r0, #0x44
+    1aec: 6800         	ldr	r0, [r0]
+    1aee: 4770         	bx	lr
+    1af0: 290c         	cmp	r1, #0xc
+    1af2: bf9f         	itttt	ls
+    1af4: eb00 0081    	addls.w	r0, r0, r1, lsl #2
+    1af8: 3008         	addls	r0, #0x8
+    1afa: 6800         	ldrls	r0, [r0]
+    1afc: 4770         	bxls	lr
+    1afe: b510         	push	{r4, lr}
+    1b00: b082         	sub	sp, #0x8
+    1b02: 480e         	ldr	r0, [pc, #0x38]         @ 0x1b3c <gk_gfx2d_get_capability+0xd30>
+    1b04: f44f 64c3    	mov.w	r4, #0x618
+    1b08: f8df c040    	ldr.w	r12, [pc, #0x40]        @ 0x1b4c <gk_gfx2d_get_capability+0xd40>
+    1b0c: 4478         	add	r0, pc
+    1b0e: 490c         	ldr	r1, [pc, #0x30]         @ 0x1b40 <gk_gfx2d_get_capability+0xd34>
+    1b10: 44fc         	add	r12, pc
+    1b12: 4a0c         	ldr	r2, [pc, #0x30]         @ 0x1b44 <gk_gfx2d_get_capability+0xd38>
+    1b14: 6800         	ldr	r0, [r0]
+    1b16: 4479         	add	r1, pc
+    1b18: 4b0b         	ldr	r3, [pc, #0x2c]         @ 0x1b48 <gk_gfx2d_get_capability+0xd3c>
+    1b1a: 447a         	add	r2, pc
+    1b1c: e9cd 4c00    	strd	r4, r12, [sp]
+    1b20: f100 04a8    	add.w	r4, r0, #0xa8
+    1b24: 447b         	add	r3, pc
+    1b26: 4620         	mov	r0, r4
+    1b28: f7fe eeb8    	blx	0x89c <fprintf@plt>     @ imm = #-0x1290
+    1b2c: 4620         	mov	r0, r4
+    1b2e: f7fe eebc    	blx	0x8a8 <fflush@plt>      @ imm = #-0x1288
+    1b32: f7fe eec0    	blx	0x8b4 <abort@plt>       @ imm = #-0x1280
+    1b36: 3040         	adds	r0, #0x40
+    1b38: 6800         	ldr	r0, [r0]
+    1b3a: 4770         	bx	lr
+    1b3c: 2480         	movs	r4, #0x80
+    1b3e: 0000         	movs	r0, r0
+    1b40: 0e18         	lsrs	r0, r3, #0x18
+    1b42: 0000         	movs	r0, r0
+    1b44: 0f7a         	lsrs	r2, r7, #0x1d
+    1b46: 0000         	movs	r0, r0
+    1b48: 0f7c         	lsrs	r4, r7, #0x1d
+    1b4a: 0000         	movs	r0, r0
+    1b4c: 0fba         	lsrs	r2, r7, #0x1e
+    1b4e: 0000         	movs	r0, r0
+    1b50: b510         	push	{r4, lr}
+    1b52: b082         	sub	sp, #0x8
+    1b54: 1c8b         	adds	r3, r1, #0x2
+    1b56: 2b11         	cmp	r3, #0x11
+    1b58: d810         	bhi	0x1b7c <gk_gfx2d_get_capability+0xd70> @ imm = #0x20
+    1b5a: e8df f003    	tbb	[pc, r3]
+    1b5e: 0c09         	lsrs	r1, r1, #0x10
+    1b60: 0f0f         	lsrs	r7, r1, #0x1c
+    1b62: 0f0f         	lsrs	r7, r1, #0x1c
+    1b64: 0f0f         	lsrs	r7, r1, #0x1c
+    1b66: 0f0f         	lsrs	r7, r1, #0x1c
+    1b68: 0f0f         	lsrs	r7, r1, #0x1c
+    1b6a: 0f0f         	lsrs	r7, r1, #0x1c
+    1b6c: 090f         	lsrs	r7, r1, #0x4
+    1b6e: 0c30         	lsrs	r0, r6, #0x10
+    1b70: 63c2         	str	r2, [r0, #0x3c]
+    1b72: b002         	add	sp, #0x8
+    1b74: bd10         	pop	{r4, pc}
+    1b76: 6442         	str	r2, [r0, #0x44]
+    1b78: b002         	add	sp, #0x8
+    1b7a: bd10         	pop	{r4, pc}
+    1b7c: 290c         	cmp	r1, #0xc
+    1b7e: bf9f         	itttt	ls
+    1b80: eb00 0081    	addls.w	r0, r0, r1, lsl #2
+    1b84: 6082         	strls	r2, [r0, #0x8]
+    1b86: b002         	addls	sp, #0x8
+    1b88: bd10         	popls	{r4, pc}
+    1b8a: 480e         	ldr	r0, [pc, #0x38]         @ 0x1bc4 <gk_gfx2d_get_capability+0xdb8>
+    1b8c: f240 643b    	movw	r4, #0x63b
+    1b90: f8df c040    	ldr.w	r12, [pc, #0x40]        @ 0x1bd4 <gk_gfx2d_get_capability+0xdc8>
+    1b94: 4478         	add	r0, pc
+    1b96: 490c         	ldr	r1, [pc, #0x30]         @ 0x1bc8 <gk_gfx2d_get_capability+0xdbc>
+    1b98: 44fc         	add	r12, pc
+    1b9a: 4a0c         	ldr	r2, [pc, #0x30]         @ 0x1bcc <gk_gfx2d_get_capability+0xdc0>
+    1b9c: 6800         	ldr	r0, [r0]
+    1b9e: 4479         	add	r1, pc
+    1ba0: 4b0b         	ldr	r3, [pc, #0x2c]         @ 0x1bd0 <gk_gfx2d_get_capability+0xdc4>
+    1ba2: 447a         	add	r2, pc
+    1ba4: e9cd 4c00    	strd	r4, r12, [sp]
+    1ba8: f100 04a8    	add.w	r4, r0, #0xa8
+    1bac: 447b         	add	r3, pc
+    1bae: 4620         	mov	r0, r4
+    1bb0: f7fe ee74    	blx	0x89c <fprintf@plt>     @ imm = #-0x1318
+    1bb4: 4620         	mov	r0, r4
+    1bb6: f7fe ee78    	blx	0x8a8 <fflush@plt>      @ imm = #-0x1310
+    1bba: f7fe ee7c    	blx	0x8b4 <abort@plt>       @ imm = #-0x1308
+    1bbe: 6402         	str	r2, [r0, #0x40]
+    1bc0: b002         	add	sp, #0x8
+    1bc2: bd10         	pop	{r4, pc}
+    1bc4: 23f8         	movs	r3, #0xf8
+    1bc6: 0000         	movs	r0, r0
+    1bc8: 0d90         	lsrs	r0, r2, #0x16
+    1bca: 0000         	movs	r0, r0
+    1bcc: 0f41         	lsrs	r1, r0, #0x1d
+    1bce: 0000         	movs	r0, r0
+    1bd0: 0ef4         	lsrs	r4, r6, #0x1b
+    1bd2: 0000         	movs	r0, r0
+    1bd4: 0f32         	lsrs	r2, r6, #0x1c
+    1bd6: 0000         	movs	r0, r0
+    1bd8: f021 011f    	bic	r1, r1, #0x1f
+    1bdc: 2000         	movs	r0, #0x0
+    1bde: f5b1 7f80    	cmp.w	r1, #0x100
+    1be2: bf08         	it	eq
+    1be4: 2001         	moveq	r0, #0x1
+    1be6: 4770         	bx	lr
+    1be8: b5b0         	push	{r4, r5, r7, lr}
+    1bea: b082         	sub	sp, #0x8
+    1bec: 460c         	mov	r4, r1
+    1bee: 4605         	mov	r5, r0
+    1bf0: f024 000f    	bic	r0, r4, #0xf
+    1bf4: f5b0 7f88    	cmp.w	r0, #0x110
+    1bf8: d010         	beq	0x1c1c <gk_gfx2d_get_capability+0xe10> @ imm = #0x20
+    1bfa: f5b0 7f80    	cmp.w	r0, #0x100
+    1bfe: d126         	bne	0x1c4e <gk_gfx2d_get_capability+0xe42> @ imm = #0x4c
+    1c00: f895 0049    	ldrb.w	r0, [r5, #0x49]
+    1c04: b9d8         	cbnz	r0, 0x1c3e <gk_gfx2d_get_capability+0xe32> @ imm = #0x36
+    1c06: 2001         	movs	r0, #0x1
+    1c08: f885 0049    	strb.w	r0, [r5, #0x49]
+    1c0c: f105 0050    	add.w	r0, r5, #0x50
+    1c10: f895 1048    	ldrb.w	r1, [r5, #0x48]
+    1c14: b189         	cbz	r1, 0x1c3a <gk_gfx2d_get_capability+0xe2e> @ imm = #0x22
+    1c16: f7ff ee54    	blx	0x18c0 <gk_gfx2d_get_capability+0xab4> @ imm = #-0x358
+    1c1a: e010         	b	0x1c3e <gk_gfx2d_get_capability+0xe32> @ imm = #0x20
+    1c1c: f895 004a    	ldrb.w	r0, [r5, #0x4a]
+    1c20: b930         	cbnz	r0, 0x1c30 <gk_gfx2d_get_capability+0xe24> @ imm = #0xc
+    1c22: 2001         	movs	r0, #0x1
+    1c24: f885 004a    	strb.w	r0, [r5, #0x4a]
+    1c28: f105 00d8    	add.w	r0, r5, #0xd8
+    1c2c: f7ff ee4c    	blx	0x18c8 <gk_gfx2d_get_capability+0xabc> @ imm = #-0x368
+    1c30: eb05 00c4    	add.w	r0, r5, r4, lsl #3
+    1c34: f5a0 60f5    	sub.w	r0, r0, #0x7a8
+    1c38: e005         	b	0x1c46 <gk_gfx2d_get_capability+0xe3a> @ imm = #0xa
+    1c3a: f7ff ee3e    	blx	0x18b8 <gk_gfx2d_get_capability+0xaac> @ imm = #-0x384
+    1c3e: eb05 00c4    	add.w	r0, r5, r4, lsl #3
+    1c42: f5a0 60f6    	sub.w	r0, r0, #0x7b0
+    1c46: e9d0 0100    	ldrd	r0, r1, [r0]
+    1c4a: b002         	add	sp, #0x8
+    1c4c: bdb0         	pop	{r4, r5, r7, pc}
+    1c4e: 480c         	ldr	r0, [pc, #0x30]         @ 0x1c80 <gk_gfx2d_get_capability+0xe74>
+    1c50: f240 740f    	movw	r4, #0x70f
+    1c54: 4d0e         	ldr	r5, [pc, #0x38]         @ 0x1c90 <gk_gfx2d_get_capability+0xe84>
+    1c56: 4478         	add	r0, pc
+    1c58: 490a         	ldr	r1, [pc, #0x28]         @ 0x1c84 <gk_gfx2d_get_capability+0xe78>
+    1c5a: 447d         	add	r5, pc
+    1c5c: 4a0a         	ldr	r2, [pc, #0x28]         @ 0x1c88 <gk_gfx2d_get_capability+0xe7c>
+    1c5e: 6800         	ldr	r0, [r0]
+    1c60: 4479         	add	r1, pc
+    1c62: 4b0a         	ldr	r3, [pc, #0x28]         @ 0x1c8c <gk_gfx2d_get_capability+0xe80>
+    1c64: 447a         	add	r2, pc
+    1c66: e9cd 4500    	strd	r4, r5, [sp]
+    1c6a: f100 04a8    	add.w	r4, r0, #0xa8
+    1c6e: 447b         	add	r3, pc
+    1c70: 4620         	mov	r0, r4
+    1c72: f7fe ee14    	blx	0x89c <fprintf@plt>     @ imm = #-0x13d8
+    1c76: 4620         	mov	r0, r4
+    1c78: f7fe ee16    	blx	0x8a8 <fflush@plt>      @ imm = #-0x13d4
+    1c7c: f7fe ee1a    	blx	0x8b4 <abort@plt>       @ imm = #-0x13cc
+    1c80: 2336         	movs	r3, #0x36
+    1c82: 0000         	movs	r0, r0
+    1c84: 0cce         	lsrs	r6, r1, #0x13
+    1c86: 0000         	movs	r0, r0
+    1c88: 0e8b         	lsrs	r3, r1, #0x1a
+    1c8a: 0000         	movs	r0, r0
+    1c8c: 0e32         	lsrs	r2, r6, #0x18
+    1c8e: 0000         	movs	r0, r0
+    1c90: 0ea6         	lsrs	r6, r4, #0x1a
+    1c92: 0000         	movs	r0, r0
+    1c94: b5f0         	push	{r4, r5, r6, r7, lr}
+    1c96: b083         	sub	sp, #0xc
+    1c98: 460e         	mov	r6, r1
+    1c9a: 4607         	mov	r7, r0
+    1c9c: f026 000f    	bic	r0, r6, #0xf
+    1ca0: 461c         	mov	r4, r3
+    1ca2: 4615         	mov	r5, r2
+    1ca4: f5b0 7f88    	cmp.w	r0, #0x110
+    1ca8: d010         	beq	0x1ccc <gk_gfx2d_get_capability+0xec0> @ imm = #0x20
+    1caa: f5b0 7f80    	cmp.w	r0, #0x100
+    1cae: d126         	bne	0x1cfe <gk_gfx2d_get_capability+0xef2> @ imm = #0x4c
+    1cb0: f897 0049    	ldrb.w	r0, [r7, #0x49]
+    1cb4: b9d8         	cbnz	r0, 0x1cee <gk_gfx2d_get_capability+0xee2> @ imm = #0x36
+    1cb6: 2001         	movs	r0, #0x1
+    1cb8: f887 0049    	strb.w	r0, [r7, #0x49]
+    1cbc: f107 0050    	add.w	r0, r7, #0x50
+    1cc0: f897 1048    	ldrb.w	r1, [r7, #0x48]
+    1cc4: b189         	cbz	r1, 0x1cea <gk_gfx2d_get_capability+0xede> @ imm = #0x22
+    1cc6: f7ff edfc    	blx	0x18c0 <gk_gfx2d_get_capability+0xab4> @ imm = #-0x408
+    1cca: e010         	b	0x1cee <gk_gfx2d_get_capability+0xee2> @ imm = #0x20
+    1ccc: f897 004a    	ldrb.w	r0, [r7, #0x4a]
+    1cd0: b930         	cbnz	r0, 0x1ce0 <gk_gfx2d_get_capability+0xed4> @ imm = #0xc
+    1cd2: 2001         	movs	r0, #0x1
+    1cd4: f887 004a    	strb.w	r0, [r7, #0x4a]
+    1cd8: f107 00d8    	add.w	r0, r7, #0xd8
+    1cdc: f7ff edf4    	blx	0x18c8 <gk_gfx2d_get_capability+0xabc> @ imm = #-0x418
+    1ce0: eb07 00c6    	add.w	r0, r7, r6, lsl #3
+    1ce4: f5a0 60f5    	sub.w	r0, r0, #0x7a8
+    1ce8: e005         	b	0x1cf6 <gk_gfx2d_get_capability+0xeea> @ imm = #0xa
+    1cea: f7ff ede6    	blx	0x18b8 <gk_gfx2d_get_capability+0xaac> @ imm = #-0x434
+    1cee: eb07 00c6    	add.w	r0, r7, r6, lsl #3
+    1cf2: f5a0 60f6    	sub.w	r0, r0, #0x7b0
+    1cf6: e9c0 5400    	strd	r5, r4, [r0]
+    1cfa: b003         	add	sp, #0xc
+    1cfc: bdf0         	pop	{r4, r5, r6, r7, pc}
+    1cfe: 480c         	ldr	r0, [pc, #0x30]         @ 0x1d30 <gk_gfx2d_get_capability+0xf24>
+    1d00: f240 7633    	movw	r6, #0x733
+    1d04: 490b         	ldr	r1, [pc, #0x2c]         @ 0x1d34 <gk_gfx2d_get_capability+0xf28>
+    1d06: 4478         	add	r0, pc
+    1d08: 4a0b         	ldr	r2, [pc, #0x2c]         @ 0x1d38 <gk_gfx2d_get_capability+0xf2c>
+    1d0a: 4b0c         	ldr	r3, [pc, #0x30]         @ 0x1d3c <gk_gfx2d_get_capability+0xf30>
+    1d0c: 4479         	add	r1, pc
+    1d0e: 6800         	ldr	r0, [r0]
+    1d10: 447a         	add	r2, pc
+    1d12: 4f0b         	ldr	r7, [pc, #0x2c]         @ 0x1d40 <gk_gfx2d_get_capability+0xf34>
+    1d14: 447b         	add	r3, pc
+    1d16: f100 04a8    	add.w	r4, r0, #0xa8
+    1d1a: 447f         	add	r7, pc
+    1d1c: 4620         	mov	r0, r4
+    1d1e: e9cd 6700    	strd	r6, r7, [sp]
+    1d22: f7fe edbc    	blx	0x89c <fprintf@plt>     @ imm = #-0x1488
+    1d26: 4620         	mov	r0, r4
+    1d28: f7fe edbe    	blx	0x8a8 <fflush@plt>      @ imm = #-0x1484
+    1d2c: f7fe edc2    	blx	0x8b4 <abort@plt>       @ imm = #-0x147c
+    1d30: 2286         	movs	r2, #0x86
+    1d32: 0000         	movs	r0, r0
+    1d34: 0c22         	lsrs	r2, r4, #0x10
+    1d36: 0000         	movs	r0, r0
+    1d38: 0e0b         	lsrs	r3, r1, #0x18
+    1d3a: 0000         	movs	r0, r0
+    1d3c: 0d8c         	lsrs	r4, r1, #0x16
+    1d3e: 0000         	movs	r0, r0
+    1d40: 0de6         	lsrs	r6, r4, #0x17
+    1d42: 0000         	movs	r0, r0
+    1d44: b5b0         	push	{r4, r5, r7, lr}
+    1d46: b084         	sub	sp, #0x10
+    1d48: 4604         	mov	r4, r0
+    1d4a: 4820         	ldr	r0, [pc, #0x80]         @ 0x1dcc <gk_gfx2d_get_capability+0xfc0>
+    1d4c: 2500         	movs	r5, #0x0
+    1d4e: 4478         	add	r0, pc
+    1d50: 6800         	ldr	r0, [r0]
+    1d52: 6800         	ldr	r0, [r0]
+    1d54: 9003         	str	r0, [sp, #0xc]
+    1d56: f894 0180    	ldrb.w	r0, [r4, #0x180]
+    1d5a: bb58         	cbnz	r0, 0x1db4 <gk_gfx2d_get_capability+0xfa8> @ imm = #0x56
+    1d5c: e9cd 5501    	strd	r5, r5, [sp, #4]
+    1d60: a901         	add	r1, sp, #0x4
+    1d62: f8d4 0178    	ldr.w	r0, [r4, #0x178]
+    1d66: aa02         	add	r2, sp, #0x8
+    1d68: f7ff f886    	bl	0xe78 <gk_gfx2d_get_capability+0x6c> @ imm = #-0xef4
+    1d6c: e9dd 2301    	ldrd	r2, r3, [sp, #4]
+    1d70: 4601         	mov	r1, r0
+    1d72: 4620         	mov	r0, r4
+    1d74: f7ff f8a8    	bl	0xec8 <gk_gfx2d_get_capability+0xbc> @ imm = #-0xeb0
+    1d78: 2808         	cmp	r0, #0x8
+    1d7a: d11b         	bne	0x1db4 <gk_gfx2d_get_capability+0xfa8> @ imm = #0x36
+    1d7c: 6820         	ldr	r0, [r4]
+    1d7e: 2101         	movs	r1, #0x1
+    1d80: 6b42         	ldr	r2, [r0, #0x34]
+    1d82: 4620         	mov	r0, r4
+    1d84: 4790         	blx	r2
+    1d86: f894 0180    	ldrb.w	r0, [r4, #0x180]
+    1d8a: b108         	cbz	r0, 0x1d90 <gk_gfx2d_get_capability+0xf84> @ imm = #0x2
+    1d8c: 2500         	movs	r5, #0x0
+    1d8e: e011         	b	0x1db4 <gk_gfx2d_get_capability+0xfa8> @ imm = #0x22
+    1d90: f8d4 0168    	ldr.w	r0, [r4, #0x168]
+    1d94: b168         	cbz	r0, 0x1db2 <gk_gfx2d_get_capability+0xfa6> @ imm = #0x1a
+    1d96: 6820         	ldr	r0, [r4]
+    1d98: f06f 0101    	mvn	r1, #0x1
+    1d9c: e9d0 2503    	ldrd	r2, r5, [r0, #12]
+    1da0: 4620         	mov	r0, r4
+    1da2: 4790         	blx	r2
+    1da4: f8d4 1168    	ldr.w	r1, [r4, #0x168]
+    1da8: 180a         	adds	r2, r1, r0
+    1daa: 4620         	mov	r0, r4
+    1dac: f06f 0101    	mvn	r1, #0x1
+    1db0: 47a8         	blx	r5
+    1db2: 2501         	movs	r5, #0x1
+    1db4: 4806         	ldr	r0, [pc, #0x18]         @ 0x1dd0 <gk_gfx2d_get_capability+0xfc4>
+    1db6: 9903         	ldr	r1, [sp, #0xc]
+    1db8: 4478         	add	r0, pc
+    1dba: 6800         	ldr	r0, [r0]
+    1dbc: 6800         	ldr	r0, [r0]
+    1dbe: 1a40         	subs	r0, r0, r1
+    1dc0: bf02         	ittt	eq
+    1dc2: 4628         	moveq	r0, r5
+    1dc4: b004         	addeq	sp, #0x10
+    1dc6: bdb0         	popeq	{r4, r5, r7, pc}
+    1dc8: f7fe ed44    	blx	0x854 <__stack_chk_fail@plt> @ imm = #-0x1578
+    1dcc: 223a         	movs	r2, #0x3a
+    1dce: 0000         	movs	r0, r0
+    1dd0: 21d0         	movs	r1, #0xd0
+    1dd2: 0000         	movs	r0, r0
+    1dd4: f500 72ac    	add.w	r2, r0, #0x158
+    1dd8: edd0 2b5e    	vldr	d18, [r0, #376]
+    1ddc: f500 70b4    	add.w	r0, r0, #0x168
+    1de0: f962 0a8f    	vld1.32	{d16, d17}, [r2]
+    1de4: f960 4a8f    	vld1.32	{d20, d21}, [r0]
+    1de8: f101 0010    	add.w	r0, r1, #0x10
+    1dec: f940 4a8f    	vst1.32	{d20, d21}, [r0]
+    1df0: 2020         	movs	r0, #0x20
+    1df2: f941 0a80    	vst1.32	{d16, d17}, [r1], r0
+    1df6: edc1 2b00    	vstr	d18, [r1]
+    1dfa: 4770         	bx	lr
+    1dfc: b5b0         	push	{r4, r5, r7, lr}
+    1dfe: 4605         	mov	r5, r0
+    1e00: f105 0408    	add.w	r4, r5, #0x8
+    1e04: f895 0049    	ldrb.w	r0, [r5, #0x49]
+    1e08: b148         	cbz	r0, 0x1e1e <gk_gfx2d_get_capability+0x1012> @ imm = #0x12
+    1e0a: f895 1048    	ldrb.w	r1, [r5, #0x48]
+    1e0e: f105 0050    	add.w	r0, r5, #0x50
+    1e12: b111         	cbz	r1, 0x1e1a <gk_gfx2d_get_capability+0x100e> @ imm = #0x4
+    1e14: f000 ecaa    	blx	0x276c <gk_gfx2d_get_capability+0x1960> @ imm = #0x954
+    1e18: e001         	b	0x1e1e <gk_gfx2d_get_capability+0x1012> @ imm = #0x2
+    1e1a: f000 eca4    	blx	0x2764 <gk_gfx2d_get_capability+0x1958> @ imm = #0x948
+    1e1e: f895 004a    	ldrb.w	r0, [r5, #0x4a]
+    1e22: 2800         	cmp	r0, #0x0
+    1e24: bf1c         	itt	ne
+    1e26: f105 00d8    	addne.w	r0, r5, #0xd8
+    1e2a: f000 eca4    	blxne	0x2774 <gk_gfx2d_get_capability+0x1968> @ imm = #0x948
+    1e2e: 4620         	mov	r0, r4
+    1e30: e8bd 40b0    	pop.w	{r4, r5, r7, lr}
+    1e34: f000 bcba    	b.w	0x27ac <gk_gfx2d_get_capability+0x19a0> @ imm = #0x974
+    1e38: f890 0181    	ldrb.w	r0, [r0, #0x181]
+    1e3c: 4770         	bx	lr
+    1e3e: 0000         	movs	r0, r0
+    1e40: b5f0         	push	{r4, r5, r6, r7, lr}
+    1e42: b087         	sub	sp, #0x1c
+    1e44: 460e         	mov	r6, r1
+    1e46: 4915         	ldr	r1, [pc, #0x54]         @ 0x1e9c <gk_gfx2d_get_capability+0x1090>
+    1e48: 4615         	mov	r5, r2
+    1e4a: 461c         	mov	r4, r3
+    1e4c: 4479         	add	r1, pc
+    1e4e: 6809         	ldr	r1, [r1]
+    1e50: 6809         	ldr	r1, [r1]
+    1e52: 9106         	str	r1, [sp, #0x18]
+    1e54: 6801         	ldr	r1, [r0]
+    1e56: 68ca         	ldr	r2, [r1, #0xc]
+    1e58: f04f 31ff    	mov.w	r1, #0xffffffff
+    1e5c: 4790         	blx	r2
+    1e5e: a902         	add	r1, sp, #0x8
+    1e60: 4607         	mov	r7, r0
+    1e62: f7fe ed34    	blx	0x8cc <dladdr@plt>      @ imm = #-0x1598
+    1e66: b168         	cbz	r0, 0x1e84 <gk_gfx2d_get_capability+0x1078> @ imm = #0x1a
+    1e68: 9804         	ldr	r0, [sp, #0x10]
+    1e6a: b158         	cbz	r0, 0x1e84 <gk_gfx2d_get_capability+0x1078> @ imm = #0x16
+    1e6c: 9000         	str	r0, [sp]
+    1e6e: 4630         	mov	r0, r6
+    1e70: f04f 31ff    	mov.w	r1, #0xffffffff
+    1e74: 462a         	mov	r2, r5
+    1e76: f000 f85b    	bl	0x1f30 <gk_gfx2d_get_capability+0x1124> @ imm = #0xb6
+    1e7a: 9805         	ldr	r0, [sp, #0x14]
+    1e7c: 1a38         	subs	r0, r7, r0
+    1e7e: 6020         	str	r0, [r4]
+    1e80: 2001         	movs	r0, #0x1
+    1e82: e000         	b	0x1e86 <gk_gfx2d_get_capability+0x107a> @ imm = #0x0
+    1e84: 2000         	movs	r0, #0x0
+    1e86: 4906         	ldr	r1, [pc, #0x18]         @ 0x1ea0 <gk_gfx2d_get_capability+0x1094>
+    1e88: 9a06         	ldr	r2, [sp, #0x18]
+    1e8a: 4479         	add	r1, pc
+    1e8c: 6809         	ldr	r1, [r1]
+    1e8e: 6809         	ldr	r1, [r1]
+    1e90: 1a89         	subs	r1, r1, r2
+    1e92: bf04         	itt	eq
+    1e94: b007         	addeq	sp, #0x1c
+    1e96: bdf0         	popeq	{r4, r5, r6, r7, pc}
+    1e98: f7fe ecdc    	blx	0x854 <__stack_chk_fail@plt> @ imm = #-0x1648
+    1e9c: 213c         	movs	r1, #0x3c
+    1e9e: 0000         	movs	r0, r0
+    1ea0: 20fe         	movs	r0, #0xfe
+    1ea2: 0000         	movs	r0, r0
+    1ea4: b5b0         	push	{r4, r5, r7, lr}
+    1ea6: b086         	sub	sp, #0x18
+    1ea8: 4604         	mov	r4, r0
+    1eaa: 481a         	ldr	r0, [pc, #0x68]         @ 0x1f14 <gk_gfx2d_get_capability+0x1108>
+    1eac: 460d         	mov	r5, r1
+    1eae: f04f 31ff    	mov.w	r1, #0xffffffff
+    1eb2: 4478         	add	r0, pc
+    1eb4: 6800         	ldr	r0, [r0]
+    1eb6: 6800         	ldr	r0, [r0]
+    1eb8: 9005         	str	r0, [sp, #0x14]
+    1eba: 6820         	ldr	r0, [r4]
+    1ebc: 68c2         	ldr	r2, [r0, #0xc]
+    1ebe: 4620         	mov	r0, r4
+    1ec0: 4790         	blx	r2
+    1ec2: 4a15         	ldr	r2, [pc, #0x54]         @ 0x1f18 <gk_gfx2d_get_capability+0x110c>
+    1ec4: 466b         	mov	r3, sp
+    1ec6: 6861         	ldr	r1, [r4, #0x4]
+    1ec8: f020 0001    	bic	r0, r0, #0x1
+    1ecc: 447a         	add	r2, pc
+    1ece: e9cd 1302    	strd	r1, r3, [sp, #8]
+    1ed2: a902         	add	r1, sp, #0x8
+    1ed4: 1b45         	subs	r5, r0, r5
+    1ed6: 4610         	mov	r0, r2
+    1ed8: 9504         	str	r5, [sp, #0x10]
+    1eda: f7fe ecfe    	blx	0x8d8 <dl_iterate_phdr@plt> @ imm = #-0x1604
+    1ede: 2800         	cmp	r0, #0x0
+    1ee0: bf1c         	itt	ne
+    1ee2: 9800         	ldrne	r0, [sp]
+    1ee4: 2800         	cmpne	r0, #0x0
+    1ee6: d10d         	bne	0x1f04 <gk_gfx2d_get_capability+0x10f8> @ imm = #0x1a
+    1ee8: 2001         	movs	r0, #0x1
+    1eea: f884 0180    	strb.w	r0, [r4, #0x180]
+    1eee: 480b         	ldr	r0, [pc, #0x2c]         @ 0x1f1c <gk_gfx2d_get_capability+0x1110>
+    1ef0: 9905         	ldr	r1, [sp, #0x14]
+    1ef2: 4478         	add	r0, pc
+    1ef4: 6800         	ldr	r0, [r0]
+    1ef6: 6800         	ldr	r0, [r0]
+    1ef8: 1a40         	subs	r0, r0, r1
+    1efa: bf04         	itt	eq
+    1efc: b006         	addeq	sp, #0x18
+    1efe: bdb0         	popeq	{r4, r5, r7, pc}
+    1f00: f7fe eca8    	blx	0x854 <__stack_chk_fail@plt> @ imm = #-0x16b0
+    1f04: 466a         	mov	r2, sp
+    1f06: 4620         	mov	r0, r4
+    1f08: 4629         	mov	r1, r5
+    1f0a: f000 f835    	bl	0x1f78 <gk_gfx2d_get_capability+0x116c> @ imm = #0x6a
+    1f0e: 2800         	cmp	r0, #0x0
+    1f10: d0ea         	beq	0x1ee8 <gk_gfx2d_get_capability+0x10dc> @ imm = #-0x2c
+    1f12: e7ec         	b	0x1eee <gk_gfx2d_get_capability+0x10e2> @ imm = #-0x28
+    1f14: 20d6         	movs	r0, #0xd6
+    1f16: 0000         	movs	r0, r0
+    1f18: 0271         	lsls	r1, r6, #0x9
+    1f1a: 0000         	movs	r0, r0
+    1f1c: 2096         	movs	r0, #0x96
+    1f1e: 0000         	movs	r0, r0
+    1f20: 3008         	adds	r0, #0x8
+    1f22: f000 b957    	b.w	0x21d4 <gk_gfx2d_get_capability+0x13c8> @ imm = #0x2ae
+    1f26: 2101         	movs	r1, #0x1
+    1f28: f880 1048    	strb.w	r1, [r0, #0x48]
+    1f2c: 4770         	bx	lr
+    1f2e: 0000         	movs	r0, r0
+    1f30: b580         	push	{r7, lr}
+    1f32: b084         	sub	sp, #0x10
+    1f34: 460b         	mov	r3, r1
+    1f36: 490d         	ldr	r1, [pc, #0x34]         @ 0x1f6c <gk_gfx2d_get_capability+0x1160>
+    1f38: f8df c034    	ldr.w	r12, [pc, #0x34]        @ 0x1f70 <gk_gfx2d_get_capability+0x1164>
+    1f3c: 4479         	add	r1, pc
+    1f3e: 44fc         	add	r12, pc
+    1f40: 6809         	ldr	r1, [r1]
+    1f42: 6809         	ldr	r1, [r1]
+    1f44: 9103         	str	r1, [sp, #0xc]
+    1f46: a906         	add	r1, sp, #0x18
+    1f48: 9102         	str	r1, [sp, #0x8]
+    1f4a: e9cd c100    	strd	r12, r1, [sp]
+    1f4e: 4611         	mov	r1, r2
+    1f50: 2200         	movs	r2, #0x0
+    1f52: f7fe ecc8    	blx	0x8e4 <dl_iterate_phdr@plt+0xc> @ imm = #-0x1670
+    1f56: 4807         	ldr	r0, [pc, #0x1c]         @ 0x1f74 <gk_gfx2d_get_capability+0x1168>
+    1f58: 9903         	ldr	r1, [sp, #0xc]
+    1f5a: 4478         	add	r0, pc
+    1f5c: 6800         	ldr	r0, [r0]
+    1f5e: 6800         	ldr	r0, [r0]
+    1f60: 1a40         	subs	r0, r0, r1
+    1f62: bf04         	itt	eq
+    1f64: b004         	addeq	sp, #0x10
+    1f66: bd80         	popeq	{r7, pc}
+    1f68: f7fe ec74    	blx	0x854 <__stack_chk_fail@plt> @ imm = #-0x1718
+    1f6c: 204c         	movs	r0, #0x4c
+    1f6e: 0000         	movs	r0, r0
+    1f70: 0bee         	lsrs	r6, r5, #0xf
+    1f72: 0000         	movs	r0, r0
+    1f74: 202e         	movs	r0, #0x2e
+    1f76: 0000         	movs	r0, r0
+    1f78: e92d 43f0    	push.w	{r4, r5, r6, r7, r8, r9, lr}
+    1f7c: b083         	sub	sp, #0xc
+    1f7e: 6857         	ldr	r7, [r2, #0x4]
+    1f80: 2300         	movs	r3, #0x0
+    1f82: ebb3 0fd7    	cmp.w	r3, r7, lsr #3
+    1f86: d037         	beq	0x1ff8 <gk_gfx2d_get_capability+0x11ec> @ imm = #0x6e
+    1f88: 6813         	ldr	r3, [r2]
+    1f8a: ea4f 0ed7    	lsr.w	lr, r7, #0x3
+    1f8e: 2600         	movs	r6, #0x0
+    1f90: f04f 4c00    	mov.w	r12, #0x80000000
+    1f94: 4675         	mov	r5, lr
+    1f96: eb06 0755    	add.w	r7, r6, r5, lsr #1
+    1f9a: f853 4037    	ldr.w	r4, [r3, r7, lsl #3]
+    1f9e: ea0c 0244    	and.w	r2, r12, r4, lsl #1
+    1fa2: 4322         	orrs	r2, r4
+    1fa4: eb03 04c7    	add.w	r4, r3, r7, lsl #3
+    1fa8: 4422         	add	r2, r4
+    1faa: 086c         	lsrs	r4, r5, #0x1
+    1fac: 428a         	cmp	r2, r1
+    1fae: bf9e         	ittt	ls
+    1fb0: 1e6a         	subls	r2, r5, #0x1
+    1fb2: 1b14         	subls	r4, r2, r4
+    1fb4: 1c7e         	addls	r6, r7, #0x1
+    1fb6: 2c00         	cmp	r4, #0x0
+    1fb8: 4625         	mov	r5, r4
+    1fba: d1ec         	bne	0x1f96 <gk_gfx2d_get_capability+0x118a> @ imm = #-0x28
+    1fbc: b1de         	cbz	r6, 0x1ff6 <gk_gfx2d_get_capability+0x11ea> @ imm = #0x36
+    1fbe: 1e72         	subs	r2, r6, #0x1
+    1fc0: f04f 4c00    	mov.w	r12, #0x80000000
+    1fc4: 4576         	cmp	r6, lr
+    1fc6: f853 1032    	ldr.w	r1, [r3, r2, lsl #3]
+    1fca: eb03 02c2    	add.w	r2, r3, r2, lsl #3
+    1fce: d104         	bne	0x1fda <gk_gfx2d_get_capability+0x11ce> @ imm = #0x8
+    1fd0: f04f 39ff    	mov.w	r9, #0xffffffff
+    1fd4: 1d13         	adds	r3, r2, #0x4
+    1fd6: d10b         	bne	0x1ff0 <gk_gfx2d_get_capability+0x11e4> @ imm = #0x16
+    1fd8: e00d         	b	0x1ff6 <gk_gfx2d_get_capability+0x11ea> @ imm = #0x1a
+    1fda: f853 7036    	ldr.w	r7, [r3, r6, lsl #3]
+    1fde: eb03 03c6    	add.w	r3, r3, r6, lsl #3
+    1fe2: ea0c 0547    	and.w	r5, r12, r7, lsl #1
+    1fe6: 432f         	orrs	r7, r5
+    1fe8: eb07 0903    	add.w	r9, r7, r3
+    1fec: 1d13         	adds	r3, r2, #0x4
+    1fee: d002         	beq	0x1ff6 <gk_gfx2d_get_capability+0x11ea> @ imm = #0x4
+    1ff0: 681f         	ldr	r7, [r3]
+    1ff2: 2f01         	cmp	r7, #0x1
+    1ff4: d104         	bne	0x2000 <gk_gfx2d_get_capability+0x11f4> @ imm = #0x8
+    1ff6: 2300         	movs	r3, #0x0
+    1ff8: 4618         	mov	r0, r3
+    1ffa: b003         	add	sp, #0xc
+    1ffc: e8bd 83f0    	pop.w	{r4, r5, r6, r7, r8, r9, pc}
+    2000: 2f00         	cmp	r7, #0x0
+    2002: db18         	blt	0x2036 <gk_gfx2d_get_capability+0x122a> @ imm = #0x30
+    2004: f04f 4e00    	mov.w	lr, #0x80000000
+    2008: ea0e 0547    	and.w	r5, lr, r7, lsl #1
+    200c: 433d         	orrs	r5, r7
+    200e: 58ef         	ldr	r7, [r5, r3]
+    2010: 442b         	add	r3, r5
+    2012: f1b7 3fff    	cmp.w	r7, #0xffffffff
+    2016: dd11         	ble	0x203c <gk_gfx2d_get_capability+0x1230> @ imm = #0x22
+    2018: 461d         	mov	r5, r3
+    201a: ea0e 0447    	and.w	r4, lr, r7, lsl #1
+    201e: f855 6f04    	ldr	r6, [r5, #4]!
+    2022: 4327         	orrs	r7, r4
+    2024: eb07 0803    	add.w	r8, r7, r3
+    2028: f04f 0e00    	mov.w	lr, #0x0
+    202c: 0e37         	lsrs	r7, r6, #0x18
+    202e: eb05 0787    	add.w	r7, r5, r7, lsl #2
+    2032: 3704         	adds	r7, #0x4
+    2034: e014         	b	0x2060 <gk_gfx2d_get_capability+0x1254> @ imm = #0x28
+    2036: f04f 0e01    	mov.w	lr, #0x1
+    203a: e001         	b	0x2040 <gk_gfx2d_get_capability+0x1234> @ imm = #0x2
+    203c: f04f 0e00    	mov.w	lr, #0x0
+    2040: f3c7 6503    	ubfx	r5, r7, #0x18, #0x4
+    2044: 2d02         	cmp	r5, #0x2
+    2046: d011         	beq	0x206c <gk_gfx2d_get_capability+0x1260> @ imm = #0x22
+    2048: 2d01         	cmp	r5, #0x1
+    204a: d00b         	beq	0x2064 <gk_gfx2d_get_capability+0x1258> @ imm = #0x16
+    204c: bbbd         	cbnz	r5, 0x20be <gk_gfx2d_get_capability+0x12b2> @ imm = #0x6e
+    204e: 4d36         	ldr	r5, [pc, #0xd8]         @ 0x2128 <gk_gfx2d_get_capability+0x131c>
+    2050: 1d1f         	adds	r7, r3, #0x4
+    2052: f1be 0f00    	cmp.w	lr, #0x0
+    2056: 447d         	add	r5, pc
+    2058: bf18         	it	ne
+    205a: 2700         	movne	r7, #0x0
+    205c: f8d5 8000    	ldr.w	r8, [r5]
+    2060: 2600         	movs	r6, #0x0
+    2062: e015         	b	0x2090 <gk_gfx2d_get_capability+0x1284> @ imm = #0x2a
+    2064: 4d2a         	ldr	r5, [pc, #0xa8]         @ 0x2110 <gk_gfx2d_get_capability+0x1304>
+    2066: 2600         	movs	r6, #0x0
+    2068: 447d         	add	r5, pc
+    206a: e002         	b	0x2072 <gk_gfx2d_get_capability+0x1266> @ imm = #0x4
+    206c: 4d27         	ldr	r5, [pc, #0x9c]         @ 0x210c <gk_gfx2d_get_capability+0x1300>
+    206e: 2601         	movs	r6, #0x1
+    2070: 447d         	add	r5, pc
+    2072: f8d5 8000    	ldr.w	r8, [r5]
+    2076: f3c7 4507    	ubfx	r5, r7, #0x10, #0x8
+    207a: 2d00         	cmp	r5, #0x0
+    207c: 462f         	mov	r7, r5
+    207e: bf18         	it	ne
+    2080: 2701         	movne	r7, #0x1
+    2082: ea07 070e    	and.w	r7, r7, lr
+    2086: 2f01         	cmp	r7, #0x1
+    2088: d027         	beq	0x20da <gk_gfx2d_get_capability+0x12ce> @ imm = #0x4e
+    208a: eb03 0585    	add.w	r5, r3, r5, lsl #2
+    208e: 1d2f         	adds	r7, r5, #0x4
+    2090: ea0c 0541    	and.w	r5, r12, r1, lsl #1
+    2094: 2e00         	cmp	r6, #0x0
+    2096: ea41 0105    	orr.w	r1, r1, r5
+    209a: f8c0 3178    	str.w	r3, [r0, #0x178]
+    209e: 4411         	add	r1, r2
+    20a0: e9c0 1956    	strd	r1, r9, [r0, #344]
+    20a4: e9c0 7858    	strd	r7, r8, [r0, #352]
+    20a8: bf18         	it	ne
+    20aa: 2602         	movne	r6, #0x2
+    20ac: f1be 0f00    	cmp.w	lr, #0x0
+    20b0: f04f 0301    	mov.w	r3, #0x1
+    20b4: bf18         	it	ne
+    20b6: 2601         	movne	r6, #0x1
+    20b8: f8c0 616c    	str.w	r6, [r0, #0x16c]
+    20bc: e79c         	b	0x1ff8 <gk_gfx2d_get_capability+0x11ec> @ imm = #-0xc8
+    20be: 481b         	ldr	r0, [pc, #0x6c]         @ 0x212c <gk_gfx2d_get_capability+0x1320>
+    20c0: f240 365a    	movw	r6, #0x35a
+    20c4: 491a         	ldr	r1, [pc, #0x68]         @ 0x2130 <gk_gfx2d_get_capability+0x1324>
+    20c6: 4478         	add	r0, pc
+    20c8: 4a1a         	ldr	r2, [pc, #0x68]         @ 0x2134 <gk_gfx2d_get_capability+0x1328>
+    20ca: 4b1b         	ldr	r3, [pc, #0x6c]         @ 0x2138 <gk_gfx2d_get_capability+0x132c>
+    20cc: 4479         	add	r1, pc
+    20ce: 4f1b         	ldr	r7, [pc, #0x6c]         @ 0x213c <gk_gfx2d_get_capability+0x1330>
+    20d0: 447a         	add	r2, pc
+    20d2: 6800         	ldr	r0, [r0]
+    20d4: 447b         	add	r3, pc
+    20d6: 447f         	add	r7, pc
+    20d8: e00c         	b	0x20f4 <gk_gfx2d_get_capability+0x12e8> @ imm = #0x18
+    20da: 480e         	ldr	r0, [pc, #0x38]         @ 0x2114 <gk_gfx2d_get_capability+0x1308>
+    20dc: f240 3661    	movw	r6, #0x361
+    20e0: 490d         	ldr	r1, [pc, #0x34]         @ 0x2118 <gk_gfx2d_get_capability+0x130c>
+    20e2: 4478         	add	r0, pc
+    20e4: 4a0d         	ldr	r2, [pc, #0x34]         @ 0x211c <gk_gfx2d_get_capability+0x1310>
+    20e6: 4b0e         	ldr	r3, [pc, #0x38]         @ 0x2120 <gk_gfx2d_get_capability+0x1314>
+    20e8: 4479         	add	r1, pc
+    20ea: 4f0e         	ldr	r7, [pc, #0x38]         @ 0x2124 <gk_gfx2d_get_capability+0x1318>
+    20ec: 447a         	add	r2, pc
+    20ee: 447b         	add	r3, pc
+    20f0: 6800         	ldr	r0, [r0]
+    20f2: 447f         	add	r7, pc
+    20f4: f100 04a8    	add.w	r4, r0, #0xa8
+    20f8: e9cd 6700    	strd	r6, r7, [sp]
+    20fc: 4620         	mov	r0, r4
+    20fe: f7fe ebce    	blx	0x89c <fprintf@plt>     @ imm = #-0x1864
+    2102: 4620         	mov	r0, r4
+    2104: f7fe ebd0    	blx	0x8a8 <fflush@plt>      @ imm = #-0x1860
+    2108: f7fe ebd4    	blx	0x8b4 <abort@plt>       @ imm = #-0x1858
+    210c: 1f20         	subs	r0, r4, #0x4
+    210e: 0000         	movs	r0, r0
+    2110: 1f2c         	subs	r4, r5, #0x4
+    2112: 0000         	movs	r0, r0
+    2114: 1eaa         	subs	r2, r5, #0x2
+    2116: 0000         	movs	r0, r0
+    2118: 0846         	lsrs	r6, r0, #0x1
+    211a: 0000         	movs	r0, r0
+    211c: 0a43         	lsrs	r3, r0, #0x9
+    211e: 0000         	movs	r0, r0
+    2120: 0979         	lsrs	r1, r7, #0x5
+    2122: 0000         	movs	r0, r0
+    2124: 0a71         	lsrs	r1, r6, #0x9
+    2126: 0000         	movs	r0, r0
+    2128: 1f42         	subs	r2, r0, #0x5
+    212a: 0000         	movs	r0, r0
+    212c: 1ec6         	subs	r6, r0, #0x3
+    212e: 0000         	movs	r0, r0
+    2130: 0862         	lsrs	r2, r4, #0x1
+    2132: 0000         	movs	r0, r0
+    2134: 0a5f         	lsrs	r7, r3, #0x9
+    2136: 0000         	movs	r0, r0
+    2138: 0993         	lsrs	r3, r2, #0x6
+    213a: 0000         	movs	r0, r0
+    213c: 0a71         	lsrs	r1, r6, #0x9
+    213e: 0000         	movs	r0, r0
+    2140: 6801         	ldr	r1, [r0]
+    2142: 6893         	ldr	r3, [r2, #0x8]
+    2144: 428b         	cmp	r3, r1
+    2146: bf3c         	itt	lo
+    2148: 2000         	movlo	r0, #0x0
+    214a: 4770         	bxlo	lr
+    214c: e92d 43f0    	push.w	{r4, r5, r6, r7, r8, r9, lr}
+    2150: f8b0 900c    	ldrh.w	r9, [r0, #0xc]
+    2154: f04f 0c00    	mov.w	r12, #0x0
+    2158: f1b9 0f00    	cmp.w	r9, #0x0
+    215c: d032         	beq	0x21c4 <gk_gfx2d_get_capability+0x13b8> @ imm = #0x64
+    215e: f240 0801    	movw	r8, #0x1
+    2162: 2300         	movs	r3, #0x0
+    2164: f2c7 0800    	movt	r8, #0x7000
+    2168: 2400         	movs	r4, #0x0
+    216a: f04f 0e00    	mov.w	lr, #0x0
+    216e: 6886         	ldr	r6, [r0, #0x8]
+    2170: 58f7         	ldr	r7, [r6, r3]
+    2172: 4547         	cmp	r7, r8
+    2174: d012         	beq	0x219c <gk_gfx2d_get_capability+0x1390> @ imm = #0x24
+    2176: 2f01         	cmp	r7, #0x1
+    2178: d11d         	bne	0x21b6 <gk_gfx2d_get_capability+0x13aa> @ imm = #0x3a
+    217a: 18f7         	adds	r7, r6, r3
+    217c: 6801         	ldr	r1, [r0]
+    217e: 6896         	ldr	r6, [r2, #0x8]
+    2180: 68bd         	ldr	r5, [r7, #0x8]
+    2182: 4429         	add	r1, r5
+    2184: 428e         	cmp	r6, r1
+    2186: d316         	blo	0x21b6 <gk_gfx2d_get_capability+0x13aa> @ imm = #0x2c
+    2188: 697d         	ldr	r5, [r7, #0x14]
+    218a: 4429         	add	r1, r5
+    218c: 428e         	cmp	r6, r1
+    218e: f04f 0100    	mov.w	r1, #0x0
+    2192: bf38         	it	lo
+    2194: 2101         	movlo	r1, #0x1
+    2196: ea4e 0e01    	orr.w	lr, lr, r1
+    219a: e00c         	b	0x21b6 <gk_gfx2d_get_capability+0x13aa> @ imm = #0x18
+    219c: 441e         	add	r6, r3
+    219e: 6857         	ldr	r7, [r2, #0x4]
+    21a0: 6801         	ldr	r1, [r0]
+    21a2: f04f 0c01    	mov.w	r12, #0x1
+    21a6: 68b5         	ldr	r5, [r6, #0x8]
+    21a8: 4429         	add	r1, r5
+    21aa: 6039         	str	r1, [r7]
+    21ac: 6851         	ldr	r1, [r2, #0x4]
+    21ae: 6977         	ldr	r7, [r6, #0x14]
+    21b0: 604f         	str	r7, [r1, #0x4]
+    21b2: f8b0 900c    	ldrh.w	r9, [r0, #0xc]
+    21b6: 3320         	adds	r3, #0x20
+    21b8: 3401         	adds	r4, #0x1
+    21ba: fa1f f189    	uxth.w	r1, r9
+    21be: 428c         	cmp	r4, r1
+    21c0: d3d5         	blo	0x216e <gk_gfx2d_get_capability+0x1362> @ imm = #-0x56
+    21c2: e001         	b	0x21c8 <gk_gfx2d_get_capability+0x13bc> @ imm = #0x2
+    21c4: f04f 0e00    	mov.w	lr, #0x0
+    21c8: ea0c 000e    	and.w	r0, r12, lr
+    21cc: f000 0001    	and	r0, r0, #0x1
+    21d0: e8bd 83f0    	pop.w	{r4, r5, r6, r7, r8, r9, pc}
+    21d4: 3102         	adds	r1, #0x2
+    21d6: 0848         	lsrs	r0, r1, #0x1
+    21d8: 2890         	cmp	r0, #0x90
+    21da: f200 8154    	bhi.w	0x2486 <gk_gfx2d_get_capability+0x167a> @ imm = #0x2a8
+    21de: f8df 042c    	ldr.w	r0, [pc, #0x42c]        @ 0x260c <gk_gfx2d_get_capability+0x1800>
+    21e2: 4478         	add	r0, pc
+    21e4: e8df f011    	tbh	[pc, r1, lsl #1]
+    21e8: 0122         	lsls	r2, r4, #0x4
+    21ea: 0151         	lsls	r1, r2, #0x5
+    21ec: 0125         	lsls	r5, r4, #0x4
+    21ee: 0128         	lsls	r0, r5, #0x4
+    21f0: 012b         	lsls	r3, r5, #0x4
+    21f2: 012e         	lsls	r6, r5, #0x4
+    21f4: 0131         	lsls	r1, r6, #0x4
+    21f6: 0134         	lsls	r4, r6, #0x4
+    21f8: 0137         	lsls	r7, r6, #0x4
+    21fa: 013a         	lsls	r2, r7, #0x4
+    21fc: 013d         	lsls	r5, r7, #0x4
+    21fe: 0140         	lsls	r0, r0, #0x5
+    2200: 0143         	lsls	r3, r0, #0x5
+    2202: 0146         	lsls	r6, r0, #0x5
+    2204: 0149         	lsls	r1, r1, #0x5
+    2206: 0122         	lsls	r2, r4, #0x4
+    2208: 014c         	lsls	r4, r1, #0x5
+    220a: 0151         	lsls	r1, r2, #0x5
+    220c: 014f         	lsls	r7, r1, #0x5
+    220e: 014f         	lsls	r7, r1, #0x5
+    2210: 014f         	lsls	r7, r1, #0x5
+    2212: 014f         	lsls	r7, r1, #0x5
+    2214: 014f         	lsls	r7, r1, #0x5
+    2216: 014f         	lsls	r7, r1, #0x5
+    2218: 014f         	lsls	r7, r1, #0x5
+    221a: 014f         	lsls	r7, r1, #0x5
+    221c: 014f         	lsls	r7, r1, #0x5
+    221e: 014f         	lsls	r7, r1, #0x5
+    2220: 014f         	lsls	r7, r1, #0x5
+    2222: 014f         	lsls	r7, r1, #0x5
+    2224: 014f         	lsls	r7, r1, #0x5
+    2226: 014f         	lsls	r7, r1, #0x5
+    2228: 014f         	lsls	r7, r1, #0x5
+    222a: 014f         	lsls	r7, r1, #0x5
+    222c: 014f         	lsls	r7, r1, #0x5
+    222e: 014f         	lsls	r7, r1, #0x5
+    2230: 014f         	lsls	r7, r1, #0x5
+    2232: 014f         	lsls	r7, r1, #0x5
+    2234: 014f         	lsls	r7, r1, #0x5
+    2236: 014f         	lsls	r7, r1, #0x5
+    2238: 014f         	lsls	r7, r1, #0x5
+    223a: 014f         	lsls	r7, r1, #0x5
+    223c: 014f         	lsls	r7, r1, #0x5
+    223e: 014f         	lsls	r7, r1, #0x5
+    2240: 014f         	lsls	r7, r1, #0x5
+    2242: 014f         	lsls	r7, r1, #0x5
+    2244: 014f         	lsls	r7, r1, #0x5
+    2246: 014f         	lsls	r7, r1, #0x5
+    2248: 014f         	lsls	r7, r1, #0x5
+    224a: 014f         	lsls	r7, r1, #0x5
+    224c: 014f         	lsls	r7, r1, #0x5
+    224e: 014f         	lsls	r7, r1, #0x5
+    2250: 014f         	lsls	r7, r1, #0x5
+    2252: 014f         	lsls	r7, r1, #0x5
+    2254: 014f         	lsls	r7, r1, #0x5
+    2256: 014f         	lsls	r7, r1, #0x5
+    2258: 014f         	lsls	r7, r1, #0x5
+    225a: 014f         	lsls	r7, r1, #0x5
+    225c: 014f         	lsls	r7, r1, #0x5
+    225e: 014f         	lsls	r7, r1, #0x5
+    2260: 014f         	lsls	r7, r1, #0x5
+    2262: 014f         	lsls	r7, r1, #0x5
+    2264: 014f         	lsls	r7, r1, #0x5
+    2266: 014f         	lsls	r7, r1, #0x5
+    2268: 014f         	lsls	r7, r1, #0x5
+    226a: 014f         	lsls	r7, r1, #0x5
+    226c: 0152         	lsls	r2, r2, #0x5
+    226e: 0155         	lsls	r5, r2, #0x5
+    2270: 0158         	lsls	r0, r3, #0x5
+    2272: 015b         	lsls	r3, r3, #0x5
+    2274: 015e         	lsls	r6, r3, #0x5
+    2276: 0161         	lsls	r1, r4, #0x5
+    2278: 0164         	lsls	r4, r4, #0x5
+    227a: 0167         	lsls	r7, r4, #0x5
+    227c: 016a         	lsls	r2, r5, #0x5
+    227e: 016d         	lsls	r5, r5, #0x5
+    2280: 0170         	lsls	r0, r6, #0x5
+    2282: 0173         	lsls	r3, r6, #0x5
+    2284: 0176         	lsls	r6, r6, #0x5
+    2286: 0179         	lsls	r1, r7, #0x5
+    2288: 017c         	lsls	r4, r7, #0x5
+    228a: 017f         	lsls	r7, r7, #0x5
+    228c: 0182         	lsls	r2, r0, #0x6
+    228e: 0185         	lsls	r5, r0, #0x6
+    2290: 0188         	lsls	r0, r1, #0x6
+    2292: 018b         	lsls	r3, r1, #0x6
+    2294: 018e         	lsls	r6, r1, #0x6
+    2296: 0191         	lsls	r1, r2, #0x6
+    2298: 0194         	lsls	r4, r2, #0x6
+    229a: 0197         	lsls	r7, r2, #0x6
+    229c: 019a         	lsls	r2, r3, #0x6
+    229e: 019d         	lsls	r5, r3, #0x6
+    22a0: 01a0         	lsls	r0, r4, #0x6
+    22a2: 01a3         	lsls	r3, r4, #0x6
+    22a4: 01a6         	lsls	r6, r4, #0x6
+    22a6: 01a9         	lsls	r1, r5, #0x6
+    22a8: 01ac         	lsls	r4, r5, #0x6
+    22aa: 01af         	lsls	r7, r5, #0x6
+    22ac: 014f         	lsls	r7, r1, #0x5
+    22ae: 014f         	lsls	r7, r1, #0x5
+    22b0: 014f         	lsls	r7, r1, #0x5
+    22b2: 014f         	lsls	r7, r1, #0x5
+    22b4: 014f         	lsls	r7, r1, #0x5
+    22b6: 014f         	lsls	r7, r1, #0x5
+    22b8: 014f         	lsls	r7, r1, #0x5
+    22ba: 014f         	lsls	r7, r1, #0x5
+    22bc: 014f         	lsls	r7, r1, #0x5
+    22be: 014f         	lsls	r7, r1, #0x5
+    22c0: 014f         	lsls	r7, r1, #0x5
+    22c2: 014f         	lsls	r7, r1, #0x5
+    22c4: 014f         	lsls	r7, r1, #0x5
+    22c6: 014f         	lsls	r7, r1, #0x5
+    22c8: 014f         	lsls	r7, r1, #0x5
+    22ca: 014f         	lsls	r7, r1, #0x5
+    22cc: 014f         	lsls	r7, r1, #0x5
+    22ce: 014f         	lsls	r7, r1, #0x5
+    22d0: 014f         	lsls	r7, r1, #0x5
+    22d2: 014f         	lsls	r7, r1, #0x5
+    22d4: 014f         	lsls	r7, r1, #0x5
+    22d6: 014f         	lsls	r7, r1, #0x5
+    22d8: 014f         	lsls	r7, r1, #0x5
+    22da: 014f         	lsls	r7, r1, #0x5
+    22dc: 014f         	lsls	r7, r1, #0x5
+    22de: 014f         	lsls	r7, r1, #0x5
+    22e0: 014f         	lsls	r7, r1, #0x5
+    22e2: 014f         	lsls	r7, r1, #0x5
+    22e4: 014f         	lsls	r7, r1, #0x5
+    22e6: 014f         	lsls	r7, r1, #0x5
+    22e8: 014f         	lsls	r7, r1, #0x5
+    22ea: 014f         	lsls	r7, r1, #0x5
+    22ec: 014f         	lsls	r7, r1, #0x5
+    22ee: 014f         	lsls	r7, r1, #0x5
+    22f0: 014f         	lsls	r7, r1, #0x5
+    22f2: 014f         	lsls	r7, r1, #0x5
+    22f4: 014f         	lsls	r7, r1, #0x5
+    22f6: 014f         	lsls	r7, r1, #0x5
+    22f8: 014f         	lsls	r7, r1, #0x5
+    22fa: 014f         	lsls	r7, r1, #0x5
+    22fc: 014f         	lsls	r7, r1, #0x5
+    22fe: 014f         	lsls	r7, r1, #0x5
+    2300: 014f         	lsls	r7, r1, #0x5
+    2302: 014f         	lsls	r7, r1, #0x5
+    2304: 014f         	lsls	r7, r1, #0x5
+    2306: 014f         	lsls	r7, r1, #0x5
+    2308: 014f         	lsls	r7, r1, #0x5
+    230a: 014f         	lsls	r7, r1, #0x5
+    230c: 014f         	lsls	r7, r1, #0x5
+    230e: 014f         	lsls	r7, r1, #0x5
+    2310: 014f         	lsls	r7, r1, #0x5
+    2312: 014f         	lsls	r7, r1, #0x5
+    2314: 014f         	lsls	r7, r1, #0x5
+    2316: 014f         	lsls	r7, r1, #0x5
+    2318: 014f         	lsls	r7, r1, #0x5
+    231a: 014f         	lsls	r7, r1, #0x5
+    231c: 014f         	lsls	r7, r1, #0x5
+    231e: 014f         	lsls	r7, r1, #0x5
+    2320: 014f         	lsls	r7, r1, #0x5
+    2322: 014f         	lsls	r7, r1, #0x5
+    2324: 014f         	lsls	r7, r1, #0x5
+    2326: 014f         	lsls	r7, r1, #0x5
+    2328: 014f         	lsls	r7, r1, #0x5
+    232a: 014f         	lsls	r7, r1, #0x5
+    232c: 014f         	lsls	r7, r1, #0x5
+    232e: 014f         	lsls	r7, r1, #0x5
+    2330: 014f         	lsls	r7, r1, #0x5
+    2332: 014f         	lsls	r7, r1, #0x5
+    2334: 014f         	lsls	r7, r1, #0x5
+    2336: 014f         	lsls	r7, r1, #0x5
+    2338: 014f         	lsls	r7, r1, #0x5
+    233a: 014f         	lsls	r7, r1, #0x5
+    233c: 014f         	lsls	r7, r1, #0x5
+    233e: 014f         	lsls	r7, r1, #0x5
+    2340: 014f         	lsls	r7, r1, #0x5
+    2342: 014f         	lsls	r7, r1, #0x5
+    2344: 014f         	lsls	r7, r1, #0x5
+    2346: 014f         	lsls	r7, r1, #0x5
+    2348: 014f         	lsls	r7, r1, #0x5
+    234a: 014f         	lsls	r7, r1, #0x5
+    234c: 014f         	lsls	r7, r1, #0x5
+    234e: 014f         	lsls	r7, r1, #0x5
+    2350: 014f         	lsls	r7, r1, #0x5
+    2352: 014f         	lsls	r7, r1, #0x5
+    2354: 014f         	lsls	r7, r1, #0x5
+    2356: 014f         	lsls	r7, r1, #0x5
+    2358: 014f         	lsls	r7, r1, #0x5
+    235a: 014f         	lsls	r7, r1, #0x5
+    235c: 014f         	lsls	r7, r1, #0x5
+    235e: 014f         	lsls	r7, r1, #0x5
+    2360: 014f         	lsls	r7, r1, #0x5
+    2362: 014f         	lsls	r7, r1, #0x5
+    2364: 014f         	lsls	r7, r1, #0x5
+    2366: 014f         	lsls	r7, r1, #0x5
+    2368: 014f         	lsls	r7, r1, #0x5
+    236a: 014f         	lsls	r7, r1, #0x5
+    236c: 014f         	lsls	r7, r1, #0x5
+    236e: 014f         	lsls	r7, r1, #0x5
+    2370: 014f         	lsls	r7, r1, #0x5
+    2372: 014f         	lsls	r7, r1, #0x5
+    2374: 014f         	lsls	r7, r1, #0x5
+    2376: 014f         	lsls	r7, r1, #0x5
+    2378: 014f         	lsls	r7, r1, #0x5
+    237a: 014f         	lsls	r7, r1, #0x5
+    237c: 014f         	lsls	r7, r1, #0x5
+    237e: 014f         	lsls	r7, r1, #0x5
+    2380: 014f         	lsls	r7, r1, #0x5
+    2382: 014f         	lsls	r7, r1, #0x5
+    2384: 014f         	lsls	r7, r1, #0x5
+    2386: 014f         	lsls	r7, r1, #0x5
+    2388: 014f         	lsls	r7, r1, #0x5
+    238a: 014f         	lsls	r7, r1, #0x5
+    238c: 014f         	lsls	r7, r1, #0x5
+    238e: 014f         	lsls	r7, r1, #0x5
+    2390: 014f         	lsls	r7, r1, #0x5
+    2392: 014f         	lsls	r7, r1, #0x5
+    2394: 014f         	lsls	r7, r1, #0x5
+    2396: 014f         	lsls	r7, r1, #0x5
+    2398: 014f         	lsls	r7, r1, #0x5
+    239a: 014f         	lsls	r7, r1, #0x5
+    239c: 014f         	lsls	r7, r1, #0x5
+    239e: 014f         	lsls	r7, r1, #0x5
+    23a0: 014f         	lsls	r7, r1, #0x5
+    23a2: 014f         	lsls	r7, r1, #0x5
+    23a4: 014f         	lsls	r7, r1, #0x5
+    23a6: 014f         	lsls	r7, r1, #0x5
+    23a8: 014f         	lsls	r7, r1, #0x5
+    23aa: 014f         	lsls	r7, r1, #0x5
+    23ac: 014f         	lsls	r7, r1, #0x5
+    23ae: 014f         	lsls	r7, r1, #0x5
+    23b0: 014f         	lsls	r7, r1, #0x5
+    23b2: 014f         	lsls	r7, r1, #0x5
+    23b4: 014f         	lsls	r7, r1, #0x5
+    23b6: 014f         	lsls	r7, r1, #0x5
+    23b8: 014f         	lsls	r7, r1, #0x5
+    23ba: 014f         	lsls	r7, r1, #0x5
+    23bc: 014f         	lsls	r7, r1, #0x5
+    23be: 014f         	lsls	r7, r1, #0x5
+    23c0: 014f         	lsls	r7, r1, #0x5
+    23c2: 014f         	lsls	r7, r1, #0x5
+    23c4: 014f         	lsls	r7, r1, #0x5
+    23c6: 014f         	lsls	r7, r1, #0x5
+    23c8: 014f         	lsls	r7, r1, #0x5
+    23ca: 014f         	lsls	r7, r1, #0x5
+    23cc: 014f         	lsls	r7, r1, #0x5
+    23ce: 014f         	lsls	r7, r1, #0x5
+    23d0: 014f         	lsls	r7, r1, #0x5
+    23d2: 014f         	lsls	r7, r1, #0x5
+    23d4: 014f         	lsls	r7, r1, #0x5
+    23d6: 014f         	lsls	r7, r1, #0x5
+    23d8: 014f         	lsls	r7, r1, #0x5
+    23da: 014f         	lsls	r7, r1, #0x5
+    23dc: 014f         	lsls	r7, r1, #0x5
+    23de: 014f         	lsls	r7, r1, #0x5
+    23e0: 014f         	lsls	r7, r1, #0x5
+    23e2: 014f         	lsls	r7, r1, #0x5
+    23e4: 014f         	lsls	r7, r1, #0x5
+    23e6: 014f         	lsls	r7, r1, #0x5
+    23e8: 014f         	lsls	r7, r1, #0x5
+    23ea: 014f         	lsls	r7, r1, #0x5
+    23ec: 01b2         	lsls	r2, r6, #0x6
+    23ee: 01b5         	lsls	r5, r6, #0x6
+    23f0: 01b8         	lsls	r0, r7, #0x6
+    23f2: 01bb         	lsls	r3, r7, #0x6
+    23f4: 01be         	lsls	r6, r7, #0x6
+    23f6: 01c1         	lsls	r1, r0, #0x7
+    23f8: 01c4         	lsls	r4, r0, #0x7
+    23fa: 01c7         	lsls	r7, r0, #0x7
+    23fc: 01ca         	lsls	r2, r1, #0x7
+    23fe: 01cd         	lsls	r5, r1, #0x7
+    2400: 01d0         	lsls	r0, r2, #0x7
+    2402: 01d3         	lsls	r3, r2, #0x7
+    2404: 01d6         	lsls	r6, r2, #0x7
+    2406: 01d9         	lsls	r1, r3, #0x7
+    2408: 01dc         	lsls	r4, r3, #0x7
+    240a: 01df         	lsls	r7, r3, #0x7
+    240c: 01e2         	lsls	r2, r4, #0x7
+    240e: 01e5         	lsls	r5, r4, #0x7
+    2410: 01e8         	lsls	r0, r5, #0x7
+    2412: 01eb         	lsls	r3, r5, #0x7
+    2414: 01ee         	lsls	r6, r5, #0x7
+    2416: 01f1         	lsls	r1, r6, #0x7
+    2418: 01f4         	lsls	r4, r6, #0x7
+    241a: 01f7         	lsls	r7, r6, #0x7
+    241c: 01fa         	lsls	r2, r7, #0x7
+    241e: 01fd         	lsls	r5, r7, #0x7
+    2420: 0200         	lsls	r0, r0, #0x8
+    2422: 0203         	lsls	r3, r0, #0x8
+    2424: 0206         	lsls	r6, r0, #0x8
+    2426: 0209         	lsls	r1, r1, #0x8
+    2428: 020c         	lsls	r4, r1, #0x8
+    242a: 020f         	lsls	r7, r1, #0x8
+    242c: 48c5         	ldr	r0, [pc, #0x314]        @ 0x2744 <gk_gfx2d_get_capability+0x1938>
+    242e: 4478         	add	r0, pc
+    2430: 4770         	bx	lr
+    2432: 48c3         	ldr	r0, [pc, #0x30c]        @ 0x2740 <gk_gfx2d_get_capability+0x1934>
+    2434: 4478         	add	r0, pc
+    2436: 4770         	bx	lr
+    2438: 48c0         	ldr	r0, [pc, #0x300]        @ 0x273c <gk_gfx2d_get_capability+0x1930>
+    243a: 4478         	add	r0, pc
+    243c: 4770         	bx	lr
+    243e: 48be         	ldr	r0, [pc, #0x2f8]        @ 0x2738 <gk_gfx2d_get_capability+0x192c>
+    2440: 4478         	add	r0, pc
+    2442: 4770         	bx	lr
+    2444: 48bb         	ldr	r0, [pc, #0x2ec]        @ 0x2734 <gk_gfx2d_get_capability+0x1928>
+    2446: 4478         	add	r0, pc
+    2448: 4770         	bx	lr
+    244a: 48b9         	ldr	r0, [pc, #0x2e4]        @ 0x2730 <gk_gfx2d_get_capability+0x1924>
+    244c: 4478         	add	r0, pc
+    244e: 4770         	bx	lr
+    2450: 48b6         	ldr	r0, [pc, #0x2d8]        @ 0x272c <gk_gfx2d_get_capability+0x1920>
+    2452: 4478         	add	r0, pc
+    2454: 4770         	bx	lr
+    2456: 48b4         	ldr	r0, [pc, #0x2d0]        @ 0x2728 <gk_gfx2d_get_capability+0x191c>
+    2458: 4478         	add	r0, pc
+    245a: 4770         	bx	lr
+    245c: 48b1         	ldr	r0, [pc, #0x2c4]        @ 0x2724 <gk_gfx2d_get_capability+0x1918>
+    245e: 4478         	add	r0, pc
+    2460: 4770         	bx	lr
+    2462: 48af         	ldr	r0, [pc, #0x2bc]        @ 0x2720 <gk_gfx2d_get_capability+0x1914>
+    2464: 4478         	add	r0, pc
+    2466: 4770         	bx	lr
+    2468: 48ac         	ldr	r0, [pc, #0x2b0]        @ 0x271c <gk_gfx2d_get_capability+0x1910>
+    246a: 4478         	add	r0, pc
+    246c: 4770         	bx	lr
+    246e: 48aa         	ldr	r0, [pc, #0x2a8]        @ 0x2718 <gk_gfx2d_get_capability+0x190c>
+    2470: 4478         	add	r0, pc
+    2472: 4770         	bx	lr
+    2474: 48a7         	ldr	r0, [pc, #0x29c]        @ 0x2714 <gk_gfx2d_get_capability+0x1908>
+    2476: 4478         	add	r0, pc
+    2478: 4770         	bx	lr
+    247a: 48a5         	ldr	r0, [pc, #0x294]        @ 0x2710 <gk_gfx2d_get_capability+0x1904>
+    247c: 4478         	add	r0, pc
+    247e: 4770         	bx	lr
+    2480: 48b1         	ldr	r0, [pc, #0x2c4]        @ 0x2748 <gk_gfx2d_get_capability+0x193c>
+    2482: 4478         	add	r0, pc
+    2484: 4770         	bx	lr
+    2486: 48b1         	ldr	r0, [pc, #0x2c4]        @ 0x274c <gk_gfx2d_get_capability+0x1940>
+    2488: 4478         	add	r0, pc
+    248a: 4770         	bx	lr
+    248c: 489f         	ldr	r0, [pc, #0x27c]        @ 0x270c <gk_gfx2d_get_capability+0x1900>
+    248e: 4478         	add	r0, pc
+    2490: 4770         	bx	lr
+    2492: 489d         	ldr	r0, [pc, #0x274]        @ 0x2708 <gk_gfx2d_get_capability+0x18fc>
+    2494: 4478         	add	r0, pc
+    2496: 4770         	bx	lr
+    2498: 489a         	ldr	r0, [pc, #0x268]        @ 0x2704 <gk_gfx2d_get_capability+0x18f8>
+    249a: 4478         	add	r0, pc
+    249c: 4770         	bx	lr
+    249e: 4898         	ldr	r0, [pc, #0x260]        @ 0x2700 <gk_gfx2d_get_capability+0x18f4>
+    24a0: 4478         	add	r0, pc
+    24a2: 4770         	bx	lr
+    24a4: 4895         	ldr	r0, [pc, #0x254]        @ 0x26fc <gk_gfx2d_get_capability+0x18f0>
+    24a6: 4478         	add	r0, pc
+    24a8: 4770         	bx	lr
+    24aa: 4893         	ldr	r0, [pc, #0x24c]        @ 0x26f8 <gk_gfx2d_get_capability+0x18ec>
+    24ac: 4478         	add	r0, pc
+    24ae: 4770         	bx	lr
+    24b0: 4890         	ldr	r0, [pc, #0x240]        @ 0x26f4 <gk_gfx2d_get_capability+0x18e8>
+    24b2: 4478         	add	r0, pc
+    24b4: 4770         	bx	lr
+    24b6: 488e         	ldr	r0, [pc, #0x238]        @ 0x26f0 <gk_gfx2d_get_capability+0x18e4>
+    24b8: 4478         	add	r0, pc
+    24ba: 4770         	bx	lr
+    24bc: 488b         	ldr	r0, [pc, #0x22c]        @ 0x26ec <gk_gfx2d_get_capability+0x18e0>
+    24be: 4478         	add	r0, pc
+    24c0: 4770         	bx	lr
+    24c2: 4889         	ldr	r0, [pc, #0x224]        @ 0x26e8 <gk_gfx2d_get_capability+0x18dc>
+    24c4: 4478         	add	r0, pc
+    24c6: 4770         	bx	lr
+    24c8: 4886         	ldr	r0, [pc, #0x218]        @ 0x26e4 <gk_gfx2d_get_capability+0x18d8>
+    24ca: 4478         	add	r0, pc
+    24cc: 4770         	bx	lr
+    24ce: 4884         	ldr	r0, [pc, #0x210]        @ 0x26e0 <gk_gfx2d_get_capability+0x18d4>
+    24d0: 4478         	add	r0, pc
+    24d2: 4770         	bx	lr
+    24d4: 4881         	ldr	r0, [pc, #0x204]        @ 0x26dc <gk_gfx2d_get_capability+0x18d0>
+    24d6: 4478         	add	r0, pc
+    24d8: 4770         	bx	lr
+    24da: 487f         	ldr	r0, [pc, #0x1fc]        @ 0x26d8 <gk_gfx2d_get_capability+0x18cc>
+    24dc: 4478         	add	r0, pc
+    24de: 4770         	bx	lr
+    24e0: 487c         	ldr	r0, [pc, #0x1f0]        @ 0x26d4 <gk_gfx2d_get_capability+0x18c8>
+    24e2: 4478         	add	r0, pc
+    24e4: 4770         	bx	lr
+    24e6: 487a         	ldr	r0, [pc, #0x1e8]        @ 0x26d0 <gk_gfx2d_get_capability+0x18c4>
+    24e8: 4478         	add	r0, pc
+    24ea: 4770         	bx	lr
+    24ec: 4877         	ldr	r0, [pc, #0x1dc]        @ 0x26cc <gk_gfx2d_get_capability+0x18c0>
+    24ee: 4478         	add	r0, pc
+    24f0: 4770         	bx	lr
+    24f2: 4875         	ldr	r0, [pc, #0x1d4]        @ 0x26c8 <gk_gfx2d_get_capability+0x18bc>
+    24f4: 4478         	add	r0, pc
+    24f6: 4770         	bx	lr
+    24f8: 4872         	ldr	r0, [pc, #0x1c8]        @ 0x26c4 <gk_gfx2d_get_capability+0x18b8>
+    24fa: 4478         	add	r0, pc
+    24fc: 4770         	bx	lr
+    24fe: 4870         	ldr	r0, [pc, #0x1c0]        @ 0x26c0 <gk_gfx2d_get_capability+0x18b4>
+    2500: 4478         	add	r0, pc
+    2502: 4770         	bx	lr
+    2504: 486d         	ldr	r0, [pc, #0x1b4]        @ 0x26bc <gk_gfx2d_get_capability+0x18b0>
+    2506: 4478         	add	r0, pc
+    2508: 4770         	bx	lr
+    250a: 486b         	ldr	r0, [pc, #0x1ac]        @ 0x26b8 <gk_gfx2d_get_capability+0x18ac>
+    250c: 4478         	add	r0, pc
+    250e: 4770         	bx	lr
+    2510: 4868         	ldr	r0, [pc, #0x1a0]        @ 0x26b4 <gk_gfx2d_get_capability+0x18a8>
+    2512: 4478         	add	r0, pc
+    2514: 4770         	bx	lr
+    2516: 4866         	ldr	r0, [pc, #0x198]        @ 0x26b0 <gk_gfx2d_get_capability+0x18a4>
+    2518: 4478         	add	r0, pc
+    251a: 4770         	bx	lr
+    251c: 4863         	ldr	r0, [pc, #0x18c]        @ 0x26ac <gk_gfx2d_get_capability+0x18a0>
+    251e: 4478         	add	r0, pc
+    2520: 4770         	bx	lr
+    2522: 4861         	ldr	r0, [pc, #0x184]        @ 0x26a8 <gk_gfx2d_get_capability+0x189c>
+    2524: 4478         	add	r0, pc
+    2526: 4770         	bx	lr
+    2528: 485e         	ldr	r0, [pc, #0x178]        @ 0x26a4 <gk_gfx2d_get_capability+0x1898>
+    252a: 4478         	add	r0, pc
+    252c: 4770         	bx	lr
+    252e: 485c         	ldr	r0, [pc, #0x170]        @ 0x26a0 <gk_gfx2d_get_capability+0x1894>
+    2530: 4478         	add	r0, pc
+    2532: 4770         	bx	lr
+    2534: 4859         	ldr	r0, [pc, #0x164]        @ 0x269c <gk_gfx2d_get_capability+0x1890>
+    2536: 4478         	add	r0, pc
+    2538: 4770         	bx	lr
+    253a: 4857         	ldr	r0, [pc, #0x15c]        @ 0x2698 <gk_gfx2d_get_capability+0x188c>
+    253c: 4478         	add	r0, pc
+    253e: 4770         	bx	lr
+    2540: 4854         	ldr	r0, [pc, #0x150]        @ 0x2694 <gk_gfx2d_get_capability+0x1888>
+    2542: 4478         	add	r0, pc
+    2544: 4770         	bx	lr
+    2546: 4852         	ldr	r0, [pc, #0x148]        @ 0x2690 <gk_gfx2d_get_capability+0x1884>
+    2548: 4478         	add	r0, pc
+    254a: 4770         	bx	lr
+    254c: 484f         	ldr	r0, [pc, #0x13c]        @ 0x268c <gk_gfx2d_get_capability+0x1880>
+    254e: 4478         	add	r0, pc
+    2550: 4770         	bx	lr
+    2552: 484d         	ldr	r0, [pc, #0x134]        @ 0x2688 <gk_gfx2d_get_capability+0x187c>
+    2554: 4478         	add	r0, pc
+    2556: 4770         	bx	lr
+    2558: 484a         	ldr	r0, [pc, #0x128]        @ 0x2684 <gk_gfx2d_get_capability+0x1878>
+    255a: 4478         	add	r0, pc
+    255c: 4770         	bx	lr
+    255e: 4848         	ldr	r0, [pc, #0x120]        @ 0x2680 <gk_gfx2d_get_capability+0x1874>
+    2560: 4478         	add	r0, pc
+    2562: 4770         	bx	lr
+    2564: 4845         	ldr	r0, [pc, #0x114]        @ 0x267c <gk_gfx2d_get_capability+0x1870>
+    2566: 4478         	add	r0, pc
+    2568: 4770         	bx	lr
+    256a: 4843         	ldr	r0, [pc, #0x10c]        @ 0x2678 <gk_gfx2d_get_capability+0x186c>
+    256c: 4478         	add	r0, pc
+    256e: 4770         	bx	lr
+    2570: 4840         	ldr	r0, [pc, #0x100]        @ 0x2674 <gk_gfx2d_get_capability+0x1868>
+    2572: 4478         	add	r0, pc
+    2574: 4770         	bx	lr
+    2576: 483e         	ldr	r0, [pc, #0xf8]         @ 0x2670 <gk_gfx2d_get_capability+0x1864>
+    2578: 4478         	add	r0, pc
+    257a: 4770         	bx	lr
+    257c: 483b         	ldr	r0, [pc, #0xec]         @ 0x266c <gk_gfx2d_get_capability+0x1860>
+    257e: 4478         	add	r0, pc
+    2580: 4770         	bx	lr
+    2582: 4839         	ldr	r0, [pc, #0xe4]         @ 0x2668 <gk_gfx2d_get_capability+0x185c>
+    2584: 4478         	add	r0, pc
+    2586: 4770         	bx	lr
+    2588: 4836         	ldr	r0, [pc, #0xd8]         @ 0x2664 <gk_gfx2d_get_capability+0x1858>
+    258a: 4478         	add	r0, pc
+    258c: 4770         	bx	lr
+    258e: 4834         	ldr	r0, [pc, #0xd0]         @ 0x2660 <gk_gfx2d_get_capability+0x1854>
+    2590: 4478         	add	r0, pc
+    2592: 4770         	bx	lr
+    2594: 4831         	ldr	r0, [pc, #0xc4]         @ 0x265c <gk_gfx2d_get_capability+0x1850>
+    2596: 4478         	add	r0, pc
+    2598: 4770         	bx	lr
+    259a: 482f         	ldr	r0, [pc, #0xbc]         @ 0x2658 <gk_gfx2d_get_capability+0x184c>
+    259c: 4478         	add	r0, pc
+    259e: 4770         	bx	lr
+    25a0: 482c         	ldr	r0, [pc, #0xb0]         @ 0x2654 <gk_gfx2d_get_capability+0x1848>
+    25a2: 4478         	add	r0, pc
+    25a4: 4770         	bx	lr
+    25a6: 482a         	ldr	r0, [pc, #0xa8]         @ 0x2650 <gk_gfx2d_get_capability+0x1844>
+    25a8: 4478         	add	r0, pc
+    25aa: 4770         	bx	lr
+    25ac: 4827         	ldr	r0, [pc, #0x9c]         @ 0x264c <gk_gfx2d_get_capability+0x1840>
+    25ae: 4478         	add	r0, pc
+    25b0: 4770         	bx	lr
+    25b2: 4825         	ldr	r0, [pc, #0x94]         @ 0x2648 <gk_gfx2d_get_capability+0x183c>
+    25b4: 4478         	add	r0, pc
+    25b6: 4770         	bx	lr
+    25b8: 4822         	ldr	r0, [pc, #0x88]         @ 0x2644 <gk_gfx2d_get_capability+0x1838>
+    25ba: 4478         	add	r0, pc
+    25bc: 4770         	bx	lr
+    25be: 4820         	ldr	r0, [pc, #0x80]         @ 0x2640 <gk_gfx2d_get_capability+0x1834>
+    25c0: 4478         	add	r0, pc
+    25c2: 4770         	bx	lr
+    25c4: 481d         	ldr	r0, [pc, #0x74]         @ 0x263c <gk_gfx2d_get_capability+0x1830>
+    25c6: 4478         	add	r0, pc
+    25c8: 4770         	bx	lr
+    25ca: 481b         	ldr	r0, [pc, #0x6c]         @ 0x2638 <gk_gfx2d_get_capability+0x182c>
+    25cc: 4478         	add	r0, pc
+    25ce: 4770         	bx	lr
+    25d0: 4818         	ldr	r0, [pc, #0x60]         @ 0x2634 <gk_gfx2d_get_capability+0x1828>
+    25d2: 4478         	add	r0, pc
+    25d4: 4770         	bx	lr
+    25d6: 4816         	ldr	r0, [pc, #0x58]         @ 0x2630 <gk_gfx2d_get_capability+0x1824>
+    25d8: 4478         	add	r0, pc
+    25da: 4770         	bx	lr
+    25dc: 4813         	ldr	r0, [pc, #0x4c]         @ 0x262c <gk_gfx2d_get_capability+0x1820>
+    25de: 4478         	add	r0, pc
+    25e0: 4770         	bx	lr
+    25e2: 4811         	ldr	r0, [pc, #0x44]         @ 0x2628 <gk_gfx2d_get_capability+0x181c>
+    25e4: 4478         	add	r0, pc
+    25e6: 4770         	bx	lr
+    25e8: 480e         	ldr	r0, [pc, #0x38]         @ 0x2624 <gk_gfx2d_get_capability+0x1818>
+    25ea: 4478         	add	r0, pc
+    25ec: 4770         	bx	lr
+    25ee: 480c         	ldr	r0, [pc, #0x30]         @ 0x2620 <gk_gfx2d_get_capability+0x1814>
+    25f0: 4478         	add	r0, pc
+    25f2: 4770         	bx	lr
+    25f4: 4809         	ldr	r0, [pc, #0x24]         @ 0x261c <gk_gfx2d_get_capability+0x1810>
+    25f6: 4478         	add	r0, pc
+    25f8: 4770         	bx	lr
+    25fa: 4807         	ldr	r0, [pc, #0x1c]         @ 0x2618 <gk_gfx2d_get_capability+0x180c>
+    25fc: 4478         	add	r0, pc
+    25fe: 4770         	bx	lr
+    2600: 4804         	ldr	r0, [pc, #0x10]         @ 0x2614 <gk_gfx2d_get_capability+0x1808>
+    2602: 4478         	add	r0, pc
+    2604: 4770         	bx	lr
+    2606: 4802         	ldr	r0, [pc, #0x8]          @ 0x2610 <gk_gfx2d_get_capability+0x1804>
+    2608: 4478         	add	r0, pc
+    260a: 4770         	bx	lr
+    260c: 09c3         	lsrs	r3, r0, #0x7
+    260e: 0000         	movs	r0, r0
+    2610: 06b8         	lsls	r0, r7, #0x1a
+    2612: 0000         	movs	r0, r0
+    2614: 06ba         	lsls	r2, r7, #0x1a
+    2616: 0000         	movs	r0, r0
+    2618: 06bc         	lsls	r4, r7, #0x1a
+    261a: 0000         	movs	r0, r0
+    261c: 06be         	lsls	r6, r7, #0x1a
+    261e: 0000         	movs	r0, r0
+    2620: 06c0         	lsls	r0, r0, #0x1b
+    2622: 0000         	movs	r0, r0
+    2624: 06c2         	lsls	r2, r0, #0x1b
+    2626: 0000         	movs	r0, r0
+    2628: 06c4         	lsls	r4, r0, #0x1b
+    262a: 0000         	movs	r0, r0
+    262c: 06c6         	lsls	r6, r0, #0x1b
+    262e: 0000         	movs	r0, r0
+    2630: 06c8         	lsls	r0, r1, #0x1b
+    2632: 0000         	movs	r0, r0
+    2634: 06ca         	lsls	r2, r1, #0x1b
+    2636: 0000         	movs	r0, r0
+    2638: 06cc         	lsls	r4, r1, #0x1b
+    263a: 0000         	movs	r0, r0
+    263c: 06ce         	lsls	r6, r1, #0x1b
+    263e: 0000         	movs	r0, r0
+    2640: 06d0         	lsls	r0, r2, #0x1b
+    2642: 0000         	movs	r0, r0
+    2644: 06d2         	lsls	r2, r2, #0x1b
+    2646: 0000         	movs	r0, r0
+    2648: 06d4         	lsls	r4, r2, #0x1b
+    264a: 0000         	movs	r0, r0
+    264c: 06d6         	lsls	r6, r2, #0x1b
+    264e: 0000         	movs	r0, r0
+    2650: 06d8         	lsls	r0, r3, #0x1b
+    2652: 0000         	movs	r0, r0
+    2654: 06da         	lsls	r2, r3, #0x1b
+    2656: 0000         	movs	r0, r0
+    2658: 06dc         	lsls	r4, r3, #0x1b
+    265a: 0000         	movs	r0, r0
+    265c: 06de         	lsls	r6, r3, #0x1b
+    265e: 0000         	movs	r0, r0
+    2660: 06e0         	lsls	r0, r4, #0x1b
+    2662: 0000         	movs	r0, r0
+    2664: 06e2         	lsls	r2, r4, #0x1b
+    2666: 0000         	movs	r0, r0
+    2668: 06e5         	lsls	r5, r4, #0x1b
+    266a: 0000         	movs	r0, r0
+    266c: 06e8         	lsls	r0, r5, #0x1b
+    266e: 0000         	movs	r0, r0
+    2670: 06eb         	lsls	r3, r5, #0x1b
+    2672: 0000         	movs	r0, r0
+    2674: 06ee         	lsls	r6, r5, #0x1b
+    2676: 0000         	movs	r0, r0
+    2678: 06f1         	lsls	r1, r6, #0x1b
+    267a: 0000         	movs	r0, r0
+    267c: 06f4         	lsls	r4, r6, #0x1b
+    267e: 0000         	movs	r0, r0
+    2680: 06f7         	lsls	r7, r6, #0x1b
+    2682: 0000         	movs	r0, r0
+    2684: 06fa         	lsls	r2, r7, #0x1b
+    2686: 0000         	movs	r0, r0
+    2688: 06fd         	lsls	r5, r7, #0x1b
+    268a: 0000         	movs	r0, r0
+    268c: 0700         	lsls	r0, r0, #0x1c
+    268e: 0000         	movs	r0, r0
+    2690: 0702         	lsls	r2, r0, #0x1c
+    2692: 0000         	movs	r0, r0
+    2694: 0704         	lsls	r4, r0, #0x1c
+    2696: 0000         	movs	r0, r0
+    2698: 0706         	lsls	r6, r0, #0x1c
+    269a: 0000         	movs	r0, r0
+    269c: 0708         	lsls	r0, r1, #0x1c
+    269e: 0000         	movs	r0, r0
+    26a0: 070a         	lsls	r2, r1, #0x1c
+    26a2: 0000         	movs	r0, r0
+    26a4: 070c         	lsls	r4, r1, #0x1c
+    26a6: 0000         	movs	r0, r0
+    26a8: 070e         	lsls	r6, r1, #0x1c
+    26aa: 0000         	movs	r0, r0
+    26ac: 0710         	lsls	r0, r2, #0x1c
+    26ae: 0000         	movs	r0, r0
+    26b0: 0712         	lsls	r2, r2, #0x1c
+    26b2: 0000         	movs	r0, r0
+    26b4: 0714         	lsls	r4, r2, #0x1c
+    26b6: 0000         	movs	r0, r0
+    26b8: 0716         	lsls	r6, r2, #0x1c
+    26ba: 0000         	movs	r0, r0
+    26bc: 0718         	lsls	r0, r3, #0x1c
+    26be: 0000         	movs	r0, r0
+    26c0: 071a         	lsls	r2, r3, #0x1c
+    26c2: 0000         	movs	r0, r0
+    26c4: 071c         	lsls	r4, r3, #0x1c
+    26c6: 0000         	movs	r0, r0
+    26c8: 071e         	lsls	r6, r3, #0x1c
+    26ca: 0000         	movs	r0, r0
+    26cc: 0720         	lsls	r0, r4, #0x1c
+    26ce: 0000         	movs	r0, r0
+    26d0: 0722         	lsls	r2, r4, #0x1c
+    26d2: 0000         	movs	r0, r0
+    26d4: 0724         	lsls	r4, r4, #0x1c
+    26d6: 0000         	movs	r0, r0
+    26d8: 0726         	lsls	r6, r4, #0x1c
+    26da: 0000         	movs	r0, r0
+    26dc: 0728         	lsls	r0, r5, #0x1c
+    26de: 0000         	movs	r0, r0
+    26e0: 072a         	lsls	r2, r5, #0x1c
+    26e2: 0000         	movs	r0, r0
+    26e4: 072c         	lsls	r4, r5, #0x1c
+    26e6: 0000         	movs	r0, r0
+    26e8: 072f         	lsls	r7, r5, #0x1c
+    26ea: 0000         	movs	r0, r0
+    26ec: 0732         	lsls	r2, r6, #0x1c
+    26ee: 0000         	movs	r0, r0
+    26f0: 0735         	lsls	r5, r6, #0x1c
+    26f2: 0000         	movs	r0, r0
+    26f4: 0738         	lsls	r0, r7, #0x1c
+    26f6: 0000         	movs	r0, r0
+    26f8: 073b         	lsls	r3, r7, #0x1c
+    26fa: 0000         	movs	r0, r0
+    26fc: 073e         	lsls	r6, r7, #0x1c
+    26fe: 0000         	movs	r0, r0
+    2700: 0741         	lsls	r1, r0, #0x1d
+    2702: 0000         	movs	r0, r0
+    2704: 0744         	lsls	r4, r0, #0x1d
+    2706: 0000         	movs	r0, r0
+    2708: 0747         	lsls	r7, r0, #0x1d
+    270a: 0000         	movs	r0, r0
+    270c: 074a         	lsls	r2, r1, #0x1d
+    270e: 0000         	movs	r0, r0
+    2710: 0758         	lsls	r0, r3, #0x1d
+    2712: 0000         	movs	r0, r0
+    2714: 075a         	lsls	r2, r3, #0x1d
+    2716: 0000         	movs	r0, r0
+    2718: 075c         	lsls	r4, r3, #0x1d
+    271a: 0000         	movs	r0, r0
+    271c: 075f         	lsls	r7, r3, #0x1d
+    271e: 0000         	movs	r0, r0
+    2720: 0762         	lsls	r2, r4, #0x1d
+    2722: 0000         	movs	r0, r0
+    2724: 0765         	lsls	r5, r4, #0x1d
+    2726: 0000         	movs	r0, r0
+    2728: 0768         	lsls	r0, r5, #0x1d
+    272a: 0000         	movs	r0, r0
+    272c: 076b         	lsls	r3, r5, #0x1d
+    272e: 0000         	movs	r0, r0
+    2730: 076e         	lsls	r6, r5, #0x1d
+    2732: 0000         	movs	r0, r0
+    2734: 0771         	lsls	r1, r6, #0x1d
+    2736: 0000         	movs	r0, r0
+    2738: 0774         	lsls	r4, r6, #0x1d
+    273a: 0000         	movs	r0, r0
+    273c: 0777         	lsls	r7, r6, #0x1d
+    273e: 0000         	movs	r0, r0
+    2740: 077a         	lsls	r2, r7, #0x1d
+    2742: 0000         	movs	r0, r0
+    2744: 077d         	lsls	r5, r7, #0x1d
+    2746: 0000         	movs	r0, r0
+    2748: 0726         	lsls	r6, r4, #0x1c
+    274a: 0000         	movs	r0, r0
+    274c: 083c         	lsrs	r4, r7, #0x20
+    274e: 0000         	movs	r0, r0
+    2750: e000         	b	0x2754 <gk_gfx2d_get_capability+0x1948> @ imm = #0x0
+    2752: e1a0         	b	0x2a96                  @ imm = #0x340
+    2754: 1fff         	subs	r7, r7, #0x7
+    2756: e89e d034    	ldm.w	lr, {r2, r4, r5, r12, lr, pc}
+    275a: e59e         	b	0x229a <gk_gfx2d_get_capability+0x148e> @ imm = #-0x4c4
+    275c: e03c         	b	0x27d8                  @ imm = #0x78
+    275e: e59e         	b	0x229e <gk_gfx2d_get_capability+0x1492> @ imm = #-0x4c4
+    2760: ff1e e12f    	vrhadd.u16	d14, d14, d31
+    2764: 0b20         	lsrs	r0, r4, #0xc
+    2766: ec90 ff1e    	ldc	p15, c15, [r0], {30}
+    276a: e12f         	b	0x29cc                  @ imm = #0x25e
+    276c: 0b20         	lsrs	r0, r4, #0xc
+    276e: ec90 ff1e    	ldc	p15, c15, [r0], {30}
+    2772: e12f         	b	0x29d4                  @ imm = #0x25e
+    2774: 0b20         	lsrs	r0, r4, #0xc
+    2776: ecd0 ff1e    	ldcl	p15, c15, [r0], {30}
+    277a: e12f         	b	0x29dc                  @ imm = #0x25e
+    277c: 4778         	bx	pc
+    277e: 46c0         	mov	r8, r8
+    2780: c000         	<unknown>
+    2782: e59f         	b	0x22c4 <gk_gfx2d_get_capability+0x14b8> @ imm = #-0x4c2
+    2784: f00f e08c    	blx	0x4118a0                @ imm = #0x40f118
+    2788: e068         	b	0x285c                  @ imm = #0xd0
+    278a: ffff 4778    	vqshl.u32	q10, q12, #0x1f
+    278e: 46c0         	mov	r8, r8
+    2790: c000         	<unknown>
+    2792: e59f         	b	0x22d4 <gk_gfx2d_get_capability+0x14c8> @ imm = #-0x4c2
+    2794: f00f e08c    	blx	0x4118b0                @ imm = #0x40f118
+    2798: e064         	b	0x2864                  @ imm = #0xc8
+    279a: ffff 4778    	vqshl.u32	q10, q12, #0x1f
+    279e: 46c0         	mov	r8, r8
+    27a0: c000         	<unknown>
+    27a2: e59f         	b	0x22e4 <gk_gfx2d_get_capability+0x14d8> @ imm = #-0x4c2
+    27a4: f00f e08c    	blx	0x4118c0                @ imm = #0x40f118
+    27a8: e060         	b	0x286c                  @ imm = #0xc0
+    27aa: ffff 4778    	vqshl.u32	q10, q12, #0x1f
+    27ae: 46c0         	mov	r8, r8
+    27b0: c000         	<unknown>
+    27b2: e59f         	b	0x22f4 <gk_gfx2d_get_capability+0x14e8> @ imm = #-0x4c2
+    27b4: f00f e08c    	blx	0x4118d0                @ imm = #0x40f118
+    27b8: ff94 ffff    	<unknown>

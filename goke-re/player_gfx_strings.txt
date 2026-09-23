@@ -1,0 +1,39 @@
+************************NxPlayer%02d Format Info Begin***********************
+************************NxPlayer%02d Format Info End*************************
+************************NxPlayer%02d Help Info Begin*************************
+************************NxPlayer%02d Help Info End***************************
+************************NxPlayer%02d Media File Info Begin*******************
+************************NxPlayer%02d Media File Info End*********************
+************************NxPlayer%02d Out Info Begin**************************
+************************NxPlayer%02d Out Info End****************************
+*******************NxPlayer%02d Player Adapter Info Begin********************
+<-----Converted Vp9HDR INFO to avplay----->
+PadptGfx2dBitBlit
+PadptGfx2dBitBlit failed
+PadptHalToGfx2dFormat
+PadptPlayerToGfx2dFormat
+PadptPrintConvertedHdrInfo
+PadptVP9HDRInfoConvert2Hal
+REALMAGICMPEG4
+[%u] set video output format, frmLayout=%d, compressMode=%d, bitDepth=%d
+[%u]PlayerReallocNMoreStream subtile failed, addResult:%d
+[%u][CAS] IPTV_PLAYER not clear,dstEcmPid=%u
+[%u]freeze-switch,%u,%u,%u,%u,u32DisableSetWinRect:%u
+[%u]idx:%02d, type:%s, keyflag:%d, len:%-10u, pts:%-10lld, pos:%-10lld, duration:%u
+[%u]send frame failed: stream idx:%02d, type:%s pts:%-10lld, pos:%-10lld
+[%u]stream type:%s, idx:%02d, keyflag:%d, len:%-10u, pts:%-10lld, pos:%-10lld, duration:%u 
+[%u]tplay type:%s %d,stream idx:%02d, type:%s, keyflag:%d, pts:%-10lld, lastIframe pts:%-10lld,s64Pos:%-10llx, duration:%u,dropFlag:%d,s32Line:%d
+getGfx2dDevice
+gfx2d_bitblit failed
+gfx2d_create failed
+gfx2d_submit fail!
+hal format[%u] to gfx format[%u]
+player format[%u] to gfx format[%u]
+ret = PadptGfx2dBitBlit(&surfaceList)
+ret = dev->gfx2d_bitblit(NULL, handle, (GFX2D_LIST *)surfaceList)
+ret = dev->gfx2d_create(NULL, &handle, &createParam)
+ret = dev->gfx2d_init(NULL, &initParam)
+ret = dev->gfx2d_submit(NULL, handle, &jobParam)
+set vsink %p dimensions, control:%p, u32Width:%u, u32Height:%u, u32Depth:%u, isTVP:%u
+strcasecmp
+strncasecmp

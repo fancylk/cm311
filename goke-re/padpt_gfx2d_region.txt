@@ -1,0 +1,351 @@
+    f454: 447d         	add	r5, pc
+    f456: f8df 37bc    	ldr.w	r3, [pc, #0x7bc]        @ 0xfc14 <PadptDecodeFrame+0xc60>
+    f45a: 447a         	add	r2, pc
+    f45c: 4479         	add	r1, pc
+    f45e: e9cd 2500    	strd	r2, r5, [sp]
+    f462: aa02         	add	r2, sp, #0x8
+    f464: 447b         	add	r3, pc
+    f466: c213         	stm	r2!, {r0, r1, r4}
+    f468: 2004         	movs	r0, #0x4
+    f46a: f240 1249    	movw	r2, #0x149
+    f46e: f7f6 ea10    	blx	0x5890 <PlayerPrintf@plt> @ imm = #-0x9be0
+    f472: b15f         	cbz	r7, 0xf48c <PadptDecodeFrame+0x4d8> @ imm = #0x16
+    f474: f8df 17ac    	ldr.w	r1, [pc, #0x7ac]        @ 0xfc24 <PadptDecodeFrame+0xc70>
+    f478: 2002         	movs	r0, #0x2
+    f47a: f8df 37a4    	ldr.w	r3, [pc, #0x7a4]        @ 0xfc20 <PadptDecodeFrame+0xc6c>
+    f47e: f44f 72a5    	mov.w	r2, #0x14a
+    f482: 4479         	add	r1, pc
+    f484: 447b         	add	r3, pc
+    f486: e9cd 7100    	strd	r7, r1, [sp]
+    f48a: e230         	b	0xf8ee <PadptDecodeFrame+0x93a> @ imm = #0x460
+    f48c: 982d         	ldr	r0, [sp, #0xb4]
+    f48e: e9dd 1238    	ldrd	r1, r2, [sp, #224]
+    f492: f8cd 1454    	str.w	r1, [sp, #0x454]
+    f496: fb00 f402    	mul	r4, r0, r2
+    f49a: f8cd 2458    	str.w	r2, [sp, #0x458]
+    f49e: f8cd 045c    	str.w	r0, [sp, #0x45c]
+    f4a2: f8cd 4468    	str.w	r4, [sp, #0x468]
+    f4a6: 1c61         	adds	r1, r4, #0x1
+    f4a8: d10b         	bne	0xf4c2 <PadptDecodeFrame+0x50e> @ imm = #0x16
+    f4aa: f8df 177c    	ldr.w	r1, [pc, #0x77c]        @ 0xfc28 <PadptDecodeFrame+0xc74>
+    f4ae: 2002         	movs	r0, #0x2
+    f4b0: f8df 3778    	ldr.w	r3, [pc, #0x778]        @ 0xfc2c <PadptDecodeFrame+0xc78>
+    f4b4: f240 1205    	movw	r2, #0x105
+    f4b8: 4479         	add	r1, pc
+    f4ba: 447b         	add	r3, pc
+    f4bc: f7f6 e9e8    	blx	0x5890 <PlayerPrintf@plt> @ imm = #-0x9c30
+    f4c0: 982d         	ldr	r0, [sp, #0xb4]
+    f4c2: eddd 0b28    	vldr	d16, [sp, #160]
+    f4c6: f50d 688a    	add.w	r8, sp, #0x450
+    f4ca: f108 0128    	add.w	r1, r8, #0x28
+    f4ce: 2700         	movs	r7, #0x0
+    f4d0: ef60 11b0    	vorr	d17, d16, d16
+    f4d4: 9a27         	ldr	r2, [sp, #0x9c]
+    f4d6: f941 0acf    	vst1.64	{d16, d17}, [r1]
+    f4da: 0861         	lsrs	r1, r4, #0x1
+    f4dc: f8cd 7494    	str.w	r7, [sp, #0x494]
+    f4e0: f8cd 7490    	str.w	r7, [sp, #0x490]
+    f4e4: f8cd 749c    	str.w	r7, [sp, #0x49c]
+    f4e8: f8cd 4498    	str.w	r4, [sp, #0x498]
+    f4ec: f8cd 0460    	str.w	r0, [sp, #0x460]
+    f4f0: f8cd 146c    	str.w	r1, [sp, #0x46c]
+    f4f4: f8df 1738    	ldr.w	r1, [pc, #0x738]        @ 0xfc30 <PadptDecodeFrame+0xc7c>
+    f4f8: 4479         	add	r1, pc
+    f4fa: f851 3037    	ldr.w	r3, [r1, r7, lsl #3]
+    f4fe: 4293         	cmp	r3, r2
+    f500: d028         	beq	0xf554 <PadptDecodeFrame+0x5a0> @ imm = #0x50
+    f502: 1c7b         	adds	r3, r7, #0x1
+    f504: 2f04         	cmp	r7, #0x4
+    f506: 461f         	mov	r7, r3
+    f508: d3f7         	blo	0xf4fa <PadptDecodeFrame+0x546> @ imm = #-0x12
+    f50a: 2467         	movs	r4, #0x67
+    f50c: e035         	b	0xf57a <PadptDecodeFrame+0x5c6> @ imm = #0x6a
+    f50e: 6821         	ldr	r1, [r4]
+    f510: 2900         	cmp	r1, #0x0
+    f512: f43f af73    	beq.w	0xf3fc <PadptDecodeFrame+0x448> @ imm = #-0x11a
+    f516: 68fb         	ldr	r3, [r7, #0xc]
+    f518: f10b 020c    	add.w	r2, r11, #0xc
+    f51c: 4638         	mov	r0, r7
+    f51e: 4798         	blx	r3
+    f520: f10b 0510    	add.w	r5, r11, #0x10
+    f524: 693b         	ldr	r3, [r7, #0x10]
+    f526: f8db 1008    	ldr.w	r1, [r11, #0x8]
+    f52a: 4638         	mov	r0, r7
+    f52c: 462a         	mov	r2, r5
+    f52e: 4798         	blx	r3
+    f530: 2800         	cmp	r0, #0x0
+    f532: f000 810f    	beq.w	0xf754 <PadptDecodeFrame+0x7a0> @ imm = #0x21e
+    f536: 6821         	ldr	r1, [r4]
+    f538: 4638         	mov	r0, r7
+    f53a: 68ba         	ldr	r2, [r7, #0x8]
+    f53c: 4790         	blx	r2
+    f53e: f8df 16b4    	ldr.w	r1, [pc, #0x6b4]        @ 0xfbf4 <PadptDecodeFrame+0xc40>
+    f542: 2000         	movs	r0, #0x0
+    f544: f8df 36b0    	ldr.w	r3, [pc, #0x6b0]        @ 0xfbf8 <PadptDecodeFrame+0xc44>
+    f548: 2279         	movs	r2, #0x79
+    f54a: 6020         	str	r0, [r4]
+    f54c: 4479         	add	r1, pc
+    f54e: 447b         	add	r3, pc
+    f550: 2002         	movs	r0, #0x2
+    f552: e75b         	b	0xf40c <PadptDecodeFrame+0x458> @ imm = #-0x14a
+    f554: f8df 06dc    	ldr.w	r0, [pc, #0x6dc]        @ 0xfc34 <PadptDecodeFrame+0xc80>
+    f558: f8df 16dc    	ldr.w	r1, [pc, #0x6dc]        @ 0xfc38 <PadptDecodeFrame+0xc84>
+    f55c: 4478         	add	r0, pc
+    f55e: f8df 36dc    	ldr.w	r3, [pc, #0x6dc]        @ 0xfc3c <PadptDecodeFrame+0xc88>
+    f562: eb00 00c7    	add.w	r0, r0, r7, lsl #3
+    f566: 4479         	add	r1, pc
+    f568: 447b         	add	r3, pc
+    f56a: 6844         	ldr	r4, [r0, #0x4]
+    f56c: 2004         	movs	r0, #0x4
+    f56e: e9cd 2400    	strd	r2, r4, [sp]
+    f572: 22cd         	movs	r2, #0xcd
+    f574: f7f6 e98c    	blx	0x5890 <PlayerPrintf@plt> @ imm = #-0x9ce8
+    f578: 982d         	ldr	r0, [sp, #0xb4]
+    f57a: 9939         	ldr	r1, [sp, #0xe4]
+    f57c: 2200         	movs	r2, #0x0
+    f57e: f8cd 14f4    	str.w	r1, [sp, #0x4f4]
+    f582: f50d 7c53    	add.w	r12, sp, #0x34c
+    f586: f8cd 24e8    	str.w	r2, [sp, #0x4e8]
+    f58a: f8cd 44a8    	str.w	r4, [sp, #0x4a8]
+    f58e: f8cd 24ec    	str.w	r2, [sp, #0x4ec]
+    f592: f8cd 04f0    	str.w	r0, [sp, #0x4f0]
+    f596: f44f 407f    	mov.w	r0, #0xff00
+    f59a: f8ad 04e4    	strh.w	r0, [sp, #0x4e4]
+    f59e: f240 1001    	movw	r0, #0x101
+    f5a2: f8ad 04e1    	strh.w	r0, [sp, #0x4e1]
+    f5a6: e9db 3005    	ldrd	r3, r0, [r11, #20]
+    f5aa: e9db 1707    	ldrd	r1, r7, [r11, #28]
+    f5ae: e88c 0083    	stm.w	r12, {r0, r1, r7}
+    f5b2: 93d8         	str	r3, [sp, #0x360]
+    f5b4: f8db 300c    	ldr.w	r3, [r11, #0xc]
+    f5b8: 93dc         	str	r3, [sp, #0x370]
+    f5ba: 17db         	asrs	r3, r3, #0x1f
+    f5bc: 93dd         	str	r3, [sp, #0x374]
+    f5be: f8df 3680    	ldr.w	r3, [pc, #0x680]        @ 0xfc40 <PadptDecodeFrame+0xc8c>
+    f5c2: 447b         	add	r3, pc
+    f5c4: f853 7032    	ldr.w	r7, [r3, r2, lsl #3]
+    f5c8: 42b7         	cmp	r7, r6
+    f5ca: d005         	beq	0xf5d8 <PadptDecodeFrame+0x624> @ imm = #0xa
+    f5cc: 1c57         	adds	r7, r2, #0x1
+    f5ce: 2a0d         	cmp	r2, #0xd
+    f5d0: 463a         	mov	r2, r7
+    f5d2: d3f7         	blo	0xf5c4 <PadptDecodeFrame+0x610> @ imm = #-0x12
+    f5d4: 2467         	movs	r4, #0x67
+    f5d6: e013         	b	0xf600 <PadptDecodeFrame+0x64c> @ imm = #0x26
+    f5d8: f8df 0668    	ldr.w	r0, [pc, #0x668]        @ 0xfc44 <PadptDecodeFrame+0xc90>
+    f5dc: f8df 1668    	ldr.w	r1, [pc, #0x668]        @ 0xfc48 <PadptDecodeFrame+0xc94>
+    f5e0: 4478         	add	r0, pc
+    f5e2: f8df 3668    	ldr.w	r3, [pc, #0x668]        @ 0xfc4c <PadptDecodeFrame+0xc98>
+    f5e6: eb00 00c2    	add.w	r0, r0, r2, lsl #3
+    f5ea: 4479         	add	r1, pc
+    f5ec: 447b         	add	r3, pc
+    f5ee: 22e0         	movs	r2, #0xe0
+    f5f0: 6844         	ldr	r4, [r0, #0x4]
+    f5f2: 2004         	movs	r0, #0x4
+    f5f4: e9cd 6400    	strd	r6, r4, [sp]
+    f5f8: f7f6 e94a    	blx	0x5890 <PlayerPrintf@plt> @ imm = #-0x9d6c
+    f5fc: e9db 0106    	ldrd	r0, r1, [r11, #24]
+    f600: 2500         	movs	r5, #0x0
+    f602: 94e8         	str	r4, [sp, #0x3a0]
+    f604: e9cd 55fc    	strd	r5, r5, [sp, #1008]
+    f608: e9cd 01fe    	strd	r0, r1, [sp, #1016]
+    f60c: f44f 407f    	mov.w	r0, #0xff00
+    f610: f8ad 03dc    	strh.w	r0, [sp, #0x3dc]
+    f614: f240 1001    	movw	r0, #0x101
+    f618: f8ad 03d9    	strh.w	r0, [sp, #0x3d9]
+    f61c: 2001         	movs	r0, #0x1
+    f61e: f88d 0238    	strb.w	r0, [sp, #0x238]
+    f622: f8db 1030    	ldr.w	r1, [r11, #0x30]
+    f626: 2901         	cmp	r1, #0x1
+    f628: bf02         	ittt	eq
+    f62a: 2102         	moveq	r1, #0x2
+    f62c: 91a7         	streq	r1, [sp, #0x29c]
+    f62e: f88d 0298    	strbeq.w	r0, [sp, #0x298]
+    f632: a98e         	add	r1, sp, #0x238
+    f634: f8cd 1400    	str.w	r1, [sp, #0x400]
+    f638: f8cd 1508    	str.w	r1, [sp, #0x508]
+    f63c: a9d2         	add	r1, sp, #0x348
+    f63e: f8cd 8074    	str.w	r8, [sp, #0x74]
+    f642: 911e         	str	r1, [sp, #0x78]
+    f644: 901c         	str	r0, [sp, #0x70]
+    f646: 2005         	movs	r0, #0x5
+    f648: 901f         	str	r0, [sp, #0x7c]
+    f64a: f7f6 e970    	blx	0x592c <PlayerGetSysTime@plt> @ imm = #-0x9d20
+    f64e: 4604         	mov	r4, r0
+    f650: f7f6 ebca    	blx	0x5de8 <getGfx2dDevice@plt> @ imm = #-0x986c
+    f654: 4680         	mov	r8, r0
+    f656: f1b8 0f00    	cmp.w	r8, #0x0
+    f65a: 9524         	str	r5, [sp, #0x90]
+    f65c: e9cd 5522    	strd	r5, r5, [sp, #136]
+    f660: e9cd 5520    	strd	r5, r5, [sp, #128]
+    f664: d032         	beq	0xf6cc <PadptDecodeFrame+0x718> @ imm = #0x64
+    f666: 9406         	str	r4, [sp, #0x18]
+    f668: 2400         	movs	r4, #0x0
+    f66a: 9424         	str	r4, [sp, #0x90]
+    f66c: f7f6 e95e    	blx	0x592c <PlayerGetSysTime@plt> @ imm = #-0x9d44
+    f670: f8d8 2000    	ldr.w	r2, [r8]
+    f674: a924         	add	r1, sp, #0x90
+    f676: 4606         	mov	r6, r0
+    f678: 2000         	movs	r0, #0x0
+    f67a: 4790         	blx	r2
+    f67c: 4607         	mov	r7, r0
+    f67e: f7f6 e956    	blx	0x592c <PlayerGetSysTime@plt> @ imm = #-0x9d54
+    f682: f8df 25cc    	ldr.w	r2, [pc, #0x5cc]        @ 0xfc50 <PadptDecodeFrame+0xc9c>
+    f686: 1b80         	subs	r0, r0, r6
+    f688: f8df 15d0    	ldr.w	r1, [pc, #0x5d0]        @ 0xfc5c <PadptDecodeFrame+0xca8>
+    f68c: 26a2         	movs	r6, #0xa2
+    f68e: f8df 55c4    	ldr.w	r5, [pc, #0x5c4]        @ 0xfc54 <PadptDecodeFrame+0xca0>
+    f692: 447a         	add	r2, pc
+    f694: f8df 35c0    	ldr.w	r3, [pc, #0x5c0]        @ 0xfc58 <PadptDecodeFrame+0xca4>
+    f698: 4479         	add	r1, pc
+    f69a: 447d         	add	r5, pc
+    f69c: e9cd 5200    	strd	r5, r2, [sp]
+    f6a0: aa02         	add	r2, sp, #0x8
+    f6a2: 447b         	add	r3, pc
+    f6a4: c243         	stm	r2!, {r0, r1, r6}
+    f6a6: 2004         	movs	r0, #0x4
+    f6a8: 22a2         	movs	r2, #0xa2
+    f6aa: f7f6 e8f2    	blx	0x5890 <PlayerPrintf@plt> @ imm = #-0x9e1c
+    f6ae: b30f         	cbz	r7, 0xf6f4 <PadptDecodeFrame+0x740> @ imm = #0x42
+    f6b0: f8df 35ac    	ldr.w	r3, [pc, #0x5ac]        @ 0xfc60 <PadptDecodeFrame+0xcac>
+    f6b4: 2002         	movs	r0, #0x2
+    f6b6: f8df 15ac    	ldr.w	r1, [pc, #0x5ac]        @ 0xfc64 <PadptDecodeFrame+0xcb0>
+    f6ba: 22a3         	movs	r2, #0xa3
+    f6bc: 447b         	add	r3, pc
+    f6be: 4479         	add	r1, pc
+    f6c0: e9cd 7100    	strd	r7, r1, [sp]
+    f6c4: f7f6 e8e4    	blx	0x5890 <PlayerPrintf@plt> @ imm = #-0x9e38
+    f6c8: 9c06         	ldr	r4, [sp, #0x18]
+    f6ca: e0ea         	b	0xf8a2 <PadptDecodeFrame+0x8ee> @ imm = #0x1d4
+    f6cc: f8df 15e8    	ldr.w	r1, [pc, #0x5e8]        @ 0xfcb8 <PadptDecodeFrame+0xd04>
+    f6d0: f240 1700    	movw	r7, #0x100
+    f6d4: f8df 35d8    	ldr.w	r3, [pc, #0x5d8]        @ 0xfcb0 <PadptDecodeFrame+0xcfc>
+    f6d8: f2c8 07ff    	movt	r7, #0x80ff
+    f6dc: f8df 05d4    	ldr.w	r0, [pc, #0x5d4]        @ 0xfcb4 <PadptDecodeFrame+0xd00>
+    f6e0: 4479         	add	r1, pc
+    f6e2: 447b         	add	r3, pc
+    f6e4: 229f         	movs	r2, #0x9f
+    f6e6: 4478         	add	r0, pc
+    f6e8: e88d 0083    	stm.w	sp, {r0, r1, r7}
+    f6ec: 2002         	movs	r0, #0x2
+    f6ee: f7f6 e8d0    	blx	0x5890 <PlayerPrintf@plt> @ imm = #-0x9e60
+    f6f2: e0d6         	b	0xf8a2 <PadptDecodeFrame+0x8ee> @ imm = #0x1ac
+    f6f4: 9422         	str	r4, [sp, #0x88]
+    f6f6: f7f6 e91a    	blx	0x592c <PlayerGetSysTime@plt> @ imm = #-0x9dcc
+    f6fa: f8d8 3008    	ldr.w	r3, [r8, #0x8]
+    f6fe: a925         	add	r1, sp, #0x94
+    f700: aa22         	add	r2, sp, #0x88
+    f702: 4606         	mov	r6, r0
+    f704: 2000         	movs	r0, #0x0
+    f706: 4798         	blx	r3
+    f708: 4607         	mov	r7, r0
+    f70a: f7f6 e910    	blx	0x592c <PlayerGetSysTime@plt> @ imm = #-0x9de0
+    f70e: f8df 2558    	ldr.w	r2, [pc, #0x558]        @ 0xfc68 <PadptDecodeFrame+0xcb4>
+    f712: 1b80         	subs	r0, r0, r6
+    f714: f8df 155c    	ldr.w	r1, [pc, #0x55c]        @ 0xfc74 <PadptDecodeFrame+0xcc0>
+    f718: 26a6         	movs	r6, #0xa6
+    f71a: f8df 5550    	ldr.w	r5, [pc, #0x550]        @ 0xfc6c <PadptDecodeFrame+0xcb8>
+    f71e: 447a         	add	r2, pc
+    f720: f8df 354c    	ldr.w	r3, [pc, #0x54c]        @ 0xfc70 <PadptDecodeFrame+0xcbc>
+    f724: 4479         	add	r1, pc
+    f726: 447d         	add	r5, pc
+    f728: e9cd 5200    	strd	r5, r2, [sp]
+    f72c: aa02         	add	r2, sp, #0x8
+    f72e: 447b         	add	r3, pc
+    f730: c243         	stm	r2!, {r0, r1, r6}
+    f732: 2004         	movs	r0, #0x4
+    f734: 22a6         	movs	r2, #0xa6
+    f736: f7f6 e8ac    	blx	0x5890 <PlayerPrintf@plt> @ imm = #-0x9ea8
+    f73a: b3d7         	cbz	r7, 0xf7b2 <PadptDecodeFrame+0x7fe> @ imm = #0x74
+    f73c: f8df 1538    	ldr.w	r1, [pc, #0x538]        @ 0xfc78 <PadptDecodeFrame+0xcc4>
+    f740: 2004         	movs	r0, #0x4
+    f742: f8df 3538    	ldr.w	r3, [pc, #0x538]        @ 0xfc7c <PadptDecodeFrame+0xcc8>
+    f746: 22a8         	movs	r2, #0xa8
+    f748: 4479         	add	r1, pc
+    f74a: 447b         	add	r3, pc
+    f74c: f7f6 e8a0    	blx	0x5890 <PlayerPrintf@plt> @ imm = #-0x9ec0
+    f750: 9c06         	ldr	r4, [sp, #0x18]
+    f752: e098         	b	0xf886 <PadptDecodeFrame+0x8d2> @ imm = #0x130
+    f754: 6828         	ldr	r0, [r5]
+    f756: 2800         	cmp	r0, #0x0
+    f758: f43f aeed    	beq.w	0xf536 <PadptDecodeFrame+0x582> @ imm = #-0x226
+    f75c: f8df 1480    	ldr.w	r1, [pc, #0x480]        @ 0xfbe0 <PadptDecodeFrame+0xc2c>
+    f760: f8db 200c    	ldr.w	r2, [r11, #0xc]
+    f764: f8df 347c    	ldr.w	r3, [pc, #0x47c]        @ 0xfbe4 <PadptDecodeFrame+0xc30>
+    f768: 4479         	add	r1, pc
+    f76a: 447b         	add	r3, pc
+    f76c: e9cd 0200    	strd	r0, r2, [sp]
+    f770: 2004         	movs	r0, #0x4
+    f772: 227d         	movs	r2, #0x7d
+    f774: f7f6 e88c    	blx	0x5890 <PlayerPrintf@plt> @ imm = #-0x9ee8
+    f778: e9db 0104    	ldrd	r0, r1, [r11, #16]
+    f77c: 2200         	movs	r2, #0x0
+    f77e: 460b         	mov	r3, r1
+    f780: 2700         	movs	r7, #0x0
+    f782: f7f6 e8bc    	blx	0x58fc <memset_s@plt>   @ imm = #-0x9e88
+    f786: 2800         	cmp	r0, #0x0
+    f788: f43f ae58    	beq.w	0xf43c <PadptDecodeFrame+0x488> @ imm = #-0x350
+    f78c: f8df 3458    	ldr.w	r3, [pc, #0x458]        @ 0xfbe8 <PadptDecodeFrame+0xc34>
+    f790: 227e         	movs	r2, #0x7e
+    f792: f8df 1458    	ldr.w	r1, [pc, #0x458]        @ 0xfbec <PadptDecodeFrame+0xc38>
+    f796: f8df 0458    	ldr.w	r0, [pc, #0x458]        @ 0xfbf0 <PadptDecodeFrame+0xc3c>
+    f79a: 447b         	add	r3, pc
+    f79c: 4479         	add	r1, pc
+    f79e: e9cd 1200    	strd	r1, r2, [sp]
+    f7a2: 4478         	add	r0, pc
+    f7a4: 9002         	str	r0, [sp, #0x8]
+    f7a6: 2003         	movs	r0, #0x3
+    f7a8: 227e         	movs	r2, #0x7e
+    f7aa: f7f6 e872    	blx	0x5890 <PlayerPrintf@plt> @ imm = #-0x9f1c
+    f7ae: 2700         	movs	r7, #0x0
+    f7b0: e644         	b	0xf43c <PadptDecodeFrame+0x488> @ imm = #-0x378
+    f7b2: f7f6 e8bc    	blx	0x592c <PlayerGetSysTime@plt> @ imm = #-0x9e88
+    f7b6: f8d8 3010    	ldr.w	r3, [r8, #0x10]
+    f7ba: aa1c         	add	r2, sp, #0x70
+    f7bc: 9925         	ldr	r1, [sp, #0x94]
+    f7be: 4606         	mov	r6, r0
+    f7c0: 2000         	movs	r0, #0x0
+    f7c2: 4798         	blx	r3
+    f7c4: 4607         	mov	r7, r0
+    f7c6: f7f6 e8b2    	blx	0x592c <PlayerGetSysTime@plt> @ imm = #-0x9e9c
+    f7ca: f8df 24b4    	ldr.w	r2, [pc, #0x4b4]        @ 0xfc80 <PadptDecodeFrame+0xccc>
+    f7ce: 1b80         	subs	r0, r0, r6
+    f7d0: f8df 14b8    	ldr.w	r1, [pc, #0x4b8]        @ 0xfc8c <PadptDecodeFrame+0xcd8>
+    f7d4: 26ac         	movs	r6, #0xac
+    f7d6: f8df 54ac    	ldr.w	r5, [pc, #0x4ac]        @ 0xfc84 <PadptDecodeFrame+0xcd0>
+    f7da: 447a         	add	r2, pc
+    f7dc: f8df 34a8    	ldr.w	r3, [pc, #0x4a8]        @ 0xfc88 <PadptDecodeFrame+0xcd4>
+    f7e0: 4479         	add	r1, pc
+    f7e2: 447d         	add	r5, pc
+    f7e4: e9cd 5200    	strd	r5, r2, [sp]
+    f7e8: aa02         	add	r2, sp, #0x8
+    f7ea: 447b         	add	r3, pc
+    f7ec: c243         	stm	r2!, {r0, r1, r6}
+    f7ee: 2004         	movs	r0, #0x4
+    f7f0: 22ac         	movs	r2, #0xac
+    f7f2: f7f6 e84e    	blx	0x5890 <PlayerPrintf@plt> @ imm = #-0x9f64
+    f7f6: 9c06         	ldr	r4, [sp, #0x18]
+    f7f8: b17f         	cbz	r7, 0xf81a <PadptDecodeFrame+0x866> @ imm = #0x1e
+    f7fa: f8df 1494    	ldr.w	r1, [pc, #0x494]        @ 0xfc90 <PadptDecodeFrame+0xcdc>
+    f7fe: 2004         	movs	r0, #0x4
+    f800: f8df 3490    	ldr.w	r3, [pc, #0x490]        @ 0xfc94 <PadptDecodeFrame+0xce0>
+    f804: 22ae         	movs	r2, #0xae
+    f806: 4479         	add	r1, pc
+    f808: 447b         	add	r3, pc
+    f80a: f7f6 e842    	blx	0x5890 <PlayerPrintf@plt> @ imm = #-0x9f7c
+    f80e: f8d8 201c    	ldr.w	r2, [r8, #0x1c]
+    f812: 2000         	movs	r0, #0x0
+    f814: 9925         	ldr	r1, [sp, #0x94]
+    f816: 4790         	blx	r2
+    f818: e035         	b	0xf886 <PadptDecodeFrame+0x8d2> @ imm = #0x6a
+    f81a: f44f 70fa    	mov.w	r0, #0x1f4
+    f81e: 9021         	str	r0, [sp, #0x84]
+    f820: 2001         	movs	r0, #0x1
+    f822: f88d 0080    	strb.w	r0, [sp, #0x80]
+    f826: f7f6 e882    	blx	0x592c <PlayerGetSysTime@plt> @ imm = #-0x9efc
+    f82a: f8d8 3018    	ldr.w	r3, [r8, #0x18]
+    f82e: aa20         	add	r2, sp, #0x80
+    f830: 9925         	ldr	r1, [sp, #0x94]
+    f832: 4605         	mov	r5, r0
+    f834: 2000         	movs	r0, #0x0
+    f836: 2700         	movs	r7, #0x0
