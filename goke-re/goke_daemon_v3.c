@@ -102,13 +102,13 @@ static uint8_t *map_get(uint32_t phys){
     else{a.mmz_unmap(map_cache[0].ptr);map_cache[0].phys=phys;map_cache[0].ptr=p;}
     return p;
 }
-static int rgba_from_frame(const uint32_t*f,uint8_t*dst,Scratch*sc,uint32_t*out_w,uint32_t*out_h) {
+static int nv21_from_frame(const uint32_t*f,Scratch*sc,uint32_t*out_w,uint32_t*out_h,const uint8_t**out_y,const uint8_t**out_vu) {
     uint32_t w=f[71],h=f[72],stride=f[6];
     if(!w||!h||w>MAX_WIDTH||h>MAX_HEIGHT||stride<w||stride%64||stride>MAX_WIDTH)return -1;
     uint32_t ow=w,oh=h;
-    if(ow>1280||oh>800){
-        if((uint64_t)w*800>(uint64_t)h*1280){ow=1280;oh=((uint64_t)h*ow/w)&~1u;}
-        else{oh=800;ow=((uint64_t)w*oh/h)&~1u;}
+    if(ow>1728||oh>1080){
+        if((uint64_t)w*1080>(uint64_t)h*1728){ow=1728;oh=((uint64_t)h*ow/w)&~1u;}
+        else{oh=1080;ow=((uint64_t)w*oh/h)&~1u;}
     }
     if(ow<2||oh<2)return -1;
     /* v2: f[3]/f[8] are the pixel-data addresses; on 4K streams they sit at
@@ -124,7 +124,7 @@ static int rgba_from_frame(const uint32_t*f,uint8_t*dst,Scratch*sc,uint32_t*out_
         /* fused sample-at-read: for downscaled output, read only the source
            rows actually sampled and extract scaled pixels per 64B tile row —
            cuts uncached MMZ reads ~4x vs full untile at 4K. */
-        uint16_t xmap[1280],uvmap[640];
+        uint16_t xmap[1728],uvmap[864];
         for(uint32_t col=0;col<ow;col++)xmap[col]=(uint32_t)col*w/ow;
         for(uint32_t col=0;col<ow/2;col++)uvmap[col]=((uint32_t)(col*2)*w/ow)&~1u;
         for(uint32_t row=0;row<oh;row++){
@@ -174,14 +174,14 @@ static int rgba_from_frame(const uint32_t*f,uint8_t*dst,Scratch*sc,uint32_t*out_
     }
     yinput=sc->ylin;vuinput=sc->vulin;
     }
-    int r=a.nv21_to_argb(yinput,(int)ow,vuinput,(int)ow,sc->argb,(int)ow*4,(int)ow,(int)oh);
-    if(r)return r;
-    r=a.argb_to_abgr(sc->argb,(int)ow*4,dst,(int)ow*4,(int)ow,(int)oh);
+    /* PATCH(nv21): send NV21 planes; the app converts (NEON) into its own
+       Surface buffer — 2.8MB/frame over the socket instead of 7.5MB RGBA. */
     *out_w=ow;*out_h=oh;
-    return r;
+    *out_y=yinput;*out_vu=vuinput;
+    return 0;
 }
 typedef struct {int fd;uint32_t vdec;volatile int stop;uint32_t frames;uint32_t fails;} Drain;
-static void* drain_loop(void*arg){Drain*d=arg;Scratch sc={malloc(MAX_WIDTH*MAX_HEIGHT),malloc(MAX_WIDTH*MAX_HEIGHT/2),malloc(1280*800),malloc(1280*800/2),malloc(MAX_WIDTH*MAX_HEIGHT*4u)};
+static void* drain_loop(void*arg){Drain*d=arg;Scratch sc={malloc(MAX_WIDTH*MAX_HEIGHT),malloc(MAX_WIDTH*MAX_HEIGHT/2),malloc(1728*1080),malloc(1728*1080/2),malloc(MAX_WIDTH*MAX_HEIGHT*4u)};
     uint8_t *rgba=malloc(MAX_WIDTH*MAX_HEIGHT*4u);
     if(!rgba||!sc.ylin||!sc.vulin||!sc.yscale||!sc.vuscale||!sc.argb){d->stop=1;free(rgba);free(sc.ylin);free(sc.vulin);free(sc.yscale);free(sc.vuscale);free(sc.argb);return NULL;}
     uint32_t last_w=0,last_h=0,last_stride=0;
@@ -216,15 +216,16 @@ static void* drain_loop(void*arg){Drain*d=arg;Scratch sc={malloc(MAX_WIDTH*MAX_H
             }
         }
         TICKS(2);
+        const uint8_t *yp=NULL,*vup=NULL; 
         int rr=-1;
-        if(okay)rr=rgba_from_frame(f,rgba,&sc,&ow,&oh);
+        if(okay)rr=nv21_from_frame(f,&sc,&ow,&oh,&yp,&vup);
         TICKS(3);
-        if(okay&&rr==0){uint32_t head[4]={0x47524631u,ow,oh,ow*oh*4u};
-            if(write_full(d->fd,head,sizeof(head))||write_full(d->fd,rgba,head[3]))d->stop=1;
+        if(okay&&rr==0){uint32_t head[6]={0x47524632u,ow,oh,ow*oh,ow*oh/2u,ow};
+            if(write_full(d->fd,head,sizeof(head))||write_full(d->fd,yp,ow*oh)||write_full(d->fd,vup,ow*oh/2))d->stop=1;
             else d->frames++;
         }else d->fails++;
         TICKS(4);
-        if(d->frames<8)fprintf(stderr,"t recv=%ld rgba=%ld send=%ld rr=%d\n",MSD(0,1),MSD(2,3),MSD(3,4),rr);
+        if(d->frames<8)fprintf(stderr,"t recv=%ld nv21=%ld send=%ld rr=%d\n",MSD(0,1),MSD(2,3),MSD(3,4),rr);
         a.release_frame(d->vdec,f);
     }
     free(rgba);free(sc.ylin);free(sc.vulin);free(sc.yscale);free(sc.vuscale);free(sc.argb);return NULL;
@@ -295,6 +296,8 @@ int main(void){setbuf(stderr,NULL);signal(SIGPIPE,SIG_IGN);signal(SIGTERM,signal
         struct timeval tv={3,0};
         setsockopt(fd,SOL_SOCKET,SO_RCVTIMEO,&tv,sizeof(tv));
         int hr=read_full(fd,hello,sizeof(hello));
+        tv=(struct timeval){0,0};
+        setsockopt(fd,SOL_SOCKET,SO_RCVTIMEO,&tv,sizeof(tv)); /* hello needs a timeout; the session must not (static screens idle >3s) */
         if(hr)fprintf(stderr,"hello read failed r=%d\n",hr);
         else if(hello[0]!=0x474b4849u||(hello[1]!=4&&hello[1]!=36))fprintf(stderr,"bad hello %08x %08x\n",hello[0],hello[1]);
         else session(fd,hello[1]);
