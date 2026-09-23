@@ -1,9 +1,10 @@
 # goke 厂商媒体栈逆向工具集
 
 ## 演练/生产程序
-- `goke_daemon_v3.c` — root 解码守护进程（当前版）：私有 vdec + Unix socket + 映射缓存 + 融合采样。编译：
-  `armv7a-linux-androideabi21-clang goke_daemon_v3.c -o goke_daemon_v3 -ldl -llog -O2`
-  部署：adb push /data/local/tmp/ && `setsid ./goke_daemon_v3 </dev/null > log 2>&1 &`
+- `goke_daemon_v5_1800.c` — 当前实验版：修复 GK6323 亮度/色度瓦片行重排，允许内屏 2880×1800 缩到 1728×1080；仍拒绝 `flag=0x20` 的 4K 压缩帧。`goke_daemon_v5_1800.armv7` 是同源盒端二进制。编译命令见 `section34.md`；实机动态远控验收仍待 Mac 采集恢复。
+- `goke_daemon_v5.c` — 同一布局修复的保守版：只接收 ≤1920×1080，其他源回退 VP9。
+- `goke_daemon_v3.c` — 早期融合采样版，瓦片行重排错误，勿用于画质验收。
+- `diagnostics_v5/` — 合成字/彩条 HEVC 流及 Mac 软件解码参考生成工具；第 30 帧 Y/VU 字节比对结果见 `section34.md`。
 - `goke_client_v3.c` — 测量客户端（帧时间戳/保存 RGBA）
 - `vdec_test.c` — NDK MediaCodec 演练（EOS 门控实验）
 - `omx_test.c` + `omx_mini.h` — 直调 OMX（最小 ABI 头）
