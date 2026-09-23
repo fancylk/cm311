@@ -17,3 +17,9 @@
 - 补丁 dylib 备份：~/rd_mc/rustdesk/target/aarch64-apple-darwin/release/liblibrustdesk.dylib
 - 官方 dylib 备份：~/rd_mc/liblibrustdesk_official_backup.dylib
 - 部署/恢复一键脚本：goke-re/deploy_patched_mac.sh（patch|restore，建议用户在场时执行 patch）
+
+## 双应用并存方案（2026-09-23 20:23 定稿，用户要求）
+- /Applications/RustDesk.app = 官方版（Developer ID 签名，TCC 原授权有效）——日常远程，iPad/手机/盒子都不受影响
+- /Applications/RustDeskCSD.app = 补丁实验版（ad-hoc 重签 + 降采样 dylib，显示名 "RustDesk CSD"）——仅实验用
+- 实验协议：① 退出官方 RustDesk（二者同 ID 206231137，不可并存运行）② 打开 RustDeskCSD（首次需在"录屏与系统录音"里给它授权一次）③ 手动跑 `RustDeskCSD.app/Contents/MacOS/RustDesk --server` ④ 盒子启动 goke_daemon_v3 后重连 ⑤ 实验完退出 CSD、重开官方版
+- 日常 iPad/手机远程：官方版路径，零影响
