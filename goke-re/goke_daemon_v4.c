@@ -104,6 +104,10 @@ static uint8_t *map_get(uint32_t phys){
     else{a.mmz_unmap(map_cache[0].ptr);map_cache[0].phys=phys;map_cache[0].ptr=p;}
     return p;
 }
+static void map_cache_clear(void){
+    for(int i=0;i<map_cache_n;i++)a.mmz_unmap(map_cache[i].ptr);
+    map_cache_n=0;
+}
 static int nv21_from_frame(const uint32_t*f,Scratch*sc,uint32_t*out_w,uint32_t*out_h,const uint8_t**out_y,const uint8_t**out_vu) {
     uint32_t w=f[71],h=f[72],stride=f[6];
     if(!w||!h||w>MAX_WIDTH||h>MAX_HEIGHT||stride<w||stride%64||stride>MAX_WIDTH)return -1;
@@ -286,6 +290,7 @@ static int session(int fd,uint32_t codec){
     free(data);d.stop=1;shutdown(fd,SHUT_RDWR);pthread_join(th,NULL);
     fprintf(stderr,"session done input=%u output=%u mapfail=%u\n",in,d.frames,d.fails);rc=0;
 out:
+    map_cache_clear();
     if(started)a.stop(v);if(opened)a.close(h,2);if(created)a.destroy(h);
     return rc;
 }

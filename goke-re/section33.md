@@ -9,8 +9,9 @@
 
 ### v4 守护进程与验证
 
-- `goke_daemon_v4.c`：最多输出 1920×1080 NV21；超过 1920×1080 或帧 `flag&0x20` 时关闭桥接，让客户端回退 VP9，防止 2880 或 4K 错画；修正 VU 行索引。未动显示器分辨率、/system、/vendor、预装应用，也未重启盒子或 force-stop 盒子 RustDesk。
+- `goke_daemon_v4.c`：最多输出 1920×1080 NV21；超过 1920×1080 或帧 `flag&0x20` 时关闭桥接，让客户端回退 VP9，防止 2880 或 4K 错画；修正 VU 行索引；每次会话结束解映射 MMZ 缓存。未动显示器分辨率、/system、/vendor、预装应用，也未重启盒子或 force-stop 盒子 RustDesk。
 - 盒子合成流：HEVC 1920×1080 输入 90 AU，输出 88 帧；保存的第 30 帧 NV21 转 RGB 后，几何和彩色方块正确。3840×2160 输入 5 AU 后检测 `unsupported output 3840x2160 flag=20`，输出 0 帧并清理会话；daemon 继续监听。
+- 官方 Mac 实际重连：输入 2 AU 后检测 `unsupported output 2880x1800 flag=0`，输出 0 帧；RustDesk 日志约 1.5 秒后出现 `create VP9 decoder success`，盒子画面恢复清晰。最终 v4 加入 MMZ 解映射后重测 1920×1080 合成流仍为 88/90 帧。
 - 当下官方 Mac 服务端已由用户级 `com.carriez.RustDesk_server` launch agent 启动，盒子实际回退 VP9 且截图清晰。盒上 v4 守护进程正在监听，下一次官方 2880×1800 连接会触发保护性回退。
 
 ### 接下来
