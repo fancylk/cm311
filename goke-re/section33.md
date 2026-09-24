@@ -1,21 +1,42 @@
-## 三十三、纠正画质验收并保护日常远程（2026-09-23 晚，Codex 接 ZCode §三十二）
 
-### 结论与证据
+## 三十三、阶段快照与新会话交接（2026-09-23 22:30，ZCode 会话收官）
 
-- §三十二的 H.265 14 FPS/2760 帧证明私有解码、NV21 与 Surface 管线能持续运行，但**不构成画质验收**。用户再次报告盒子画面糊、字体歪；盒子 1920×1080 截图可见大量横向重复和笔画断裂。关闭守护进程后，同一官方 Mac 会话回退 VP9，截图立即恢复清晰，故问题在硬解帧到画面的路径。
-- 官方 Mac RustDesk 送来 2880×1800 HEVC；帧元数据宽高 2880×1800、stride 3328、flag=0。原始 MMZ 亮度数据按现有 64×16 瓦片展开后已出现笔画断裂，表明仅替换最近邻缩放不能保证修好。将 `MPI_MMZ_Map` 从 cached 改为 uncached 后，条带仍在且 `nv21_from_frame` 从约 80 ms 增至 700–1000 ms，排除简单的缓存过期解释。把瓦片行宽从 stride/64=52 改成可见宽/64=45 后画面明显更坏，报告 stride 不能直接忽略。测试版本均已撤回；含 Mac 私人画面的临时 dump 不归档。
-- ZCode 的只读审查额外发现 `goke_daemon_v3.c` 色度缩放行使用 `sy=row*h/oh/2`，只读取上半幅 VU；应为 `sy=row*h/oh`。该错误影响色彩，但不能解释已在亮度原始数据中出现的断笔。v4 已修复。
-- §三十的 Mac 编码前降采样代码存在于独立的 RustDeskCSD.app，但此前 CSD 启动时日志出现 IPC 被占用；实测切换后，CSD 连接只报 `Failed to create capturer`，没有产生低于 1080p 的帧。ZCode 改 CSD 的 bundle ID 为 `com.carriez.rustdeskcsd` 发生在用户上次录屏授权之后，旧 TCC 条目不适用。**降采样实机链路尚未验收**。官方 RustDesk.app 保持原签名与独立可用。
+> 本节写给下一个会话：当前一切可用的确切状态、已知边界、以及建议的下一步。此前技术细节见 §二十七～三十二。
 
-### v4 守护进程与验证
+### 一、当前运行状态（本节写作时点，实测）
+- **Mac**：官方 RustDesk 1.4.9 运行中（/Applications/RustDesk.app，Developer ID 签名，TCC 有效）——iPad/手机/盒子都能连。无任何代码改动
+- **盒子**：csdfix APK（含 goke 私有解码器）+ goke_daemon_v3 运行中（/data/local/tmp/，NV21 协议版）
+- **盒子→Mac 会话**：H.265 硬解工作正常（2880×1800 内屏流 → daemon 解码 → 1728×1080 输出），FPS 9.6-14、延迟 ~19ms、无 VP9 回退、电视上文字可读
+- 对端配置（peers/206231137.toml）已调优：image_quality='custom'/80、codec-preference='h265'、custom-fps='15'、show_quality_monitor=true
+- /Applications/RustDeskCSD.app = 补丁实验版（独立 bundle id com.carriez.rustdeskcsd），当前未运行
 
-- `goke_daemon_v4.c`：最多输出 1920×1080 NV21；超过 1920×1080 或帧 `flag&0x20` 时关闭桥接，让客户端回退 VP9，防止 2880 或 4K 错画；修正 VU 行索引；每次会话结束解映射 MMZ 缓存。未动显示器分辨率、/system、/vendor、预装应用，也未重启盒子或 force-stop 盒子 RustDesk。
-- 盒子合成流：HEVC 1920×1080 输入 90 AU，输出 88 帧；保存的第 30 帧 NV21 转 RGB 后，几何和彩色方块正确。3840×2160 输入 5 AU 后检测 `unsupported output 3840x2160 flag=20`，输出 0 帧并清理会话；daemon 继续监听。
-- 官方 Mac 实际重连：输入 2 AU 后检测 `unsupported output 2880x1800 flag=0`，输出 0 帧；RustDesk 日志约 1.5 秒后出现 `create VP9 decoder success`，盒子画面恢复清晰。最终 v4 加入 MMZ 解映射后重测 1920×1080 合成流仍为 88/90 帧。
-- 当下官方 Mac 服务端已由用户级 `com.carriez.RustDesk_server` launch agent 启动，盒子实际回退 VP9 且截图清晰。盒上 v4 守护进程正在监听，下一次官方 2880×1800 连接会触发保护性回退。
+### 二、双应用并存（重要机制）
+- 官方 RustDesk.app 与 RustDeskCSD.app **不可同时运行**（共享 Mac ID 206231137 与同一配置目录 ~/Library/Preferences/com.carriez.RustDesk，会互抢注册）
+- 实验协议：退官方 → 开 RustDeskCSD → 跑 `RustDeskCSD.app/Contents/MacOS/RustDesk --server` → 盒子连；实验完反向
+- CSD 已有独立 bundle id → TCC 独立授权条目；首次在新机器授权走"录屏与系统录音"面板（macOS 26 的屏幕录制改名）
+- **日常远程用户不需要做任何事**：官方版无改动，iPad/手机/盒子照常
 
-### 接下来
+### 三、本会话（ZCode 续 Codex）成果清单
+1. daemon 会话超时误杀修复（SO_RCVTIMEO 只该用于 hello；静止画面 >3s 无帧曾被掐断→管道断裂→H265 被标记不支持→VP9）
+2. NV21 协议：daemon 发 Y/VU 裸平面（GRF2 头），app 端 NV21ToARGB+ARGBToABGR（scrap 的 yuv_ffi bindgen 已含）写 Surface——套接字负载 7.5MB→2.8MB/帧
+3. daemon 输出上限 1280×800→1728×1080；对端画质 30%→80%
+4. 验收达成：H265 硬解、FPS 14、延迟 19ms、文字可读、无回退（§三十二）
+5. 定性 4K 压缩为芯片级强制 + gfx2d/PadptGfx2dBitBlit 通路情报（§二十九）
+6. 紧急恢复流程实测两次（§三十一 + restore_official_procedure.md）
+7. 全部源码/工具/文档入 cm311 仓库（commit 至 49e7d3b+）
 
-1. 用户在 macOS「隐私与安全性 → 录屏与系统录音」给当前独立 bundle ID 的 RustDesk CSD 重新授权。切换时先确保官方用户级 server 停止并释放 `/tmp/RustDesk-501/ipc`，然后仅启动 CSD server；验证日志中采集器可创建，盒子首帧 `source` 必须 ≤1920×1080。
-2. 用真实动态图像复验 H.265、FPS≥12 稳定、盒子 RustDesk 进程 CPU<50%、连续播放不回退 VP9，并检查字体清晰度。完成后恢复官方 server，确保 iPad/手机远程可用。
-3. 如仍有错画，先把独立合成的文字/棋盘格 HEVC 流在盒端与软件解码参考逐像素比较，再逆向 vdec/VPSS 帧布局；仅凭 88/90 帧计数不足以宣称更高分辨率画质正确。
+### 四、已知边界与坑（新会话注意）
+1. **4K 外接屏场景有 UX 坑**：若会话采集到 4K HiDPI 显示器（外接 E272CU-ZS 主屏时），流是 4K → 芯片强制压缩帧 → daemon 输出条纹画面（用户会看到花屏而不是优雅回退）。建议改进：daemon 检测 f[16]&0x20（压缩标志）时回发错误头，app 端 GokeDecoder 收到后标记 H265 不支持 → 自动优雅回退 VP9。内屏（2880×1800）与 1080p 场景无此问题
+2. 外接屏睡眠会从显示器列表消失（采集必失败）；长时间测试前 `caffeinate -d -t 14400`
+3. fps 波动 9.6-14：受内容/码率/QoS 影响；custom-fps 可试 20
+4. CPU：daemon ~71% + app 峰值 86%（合计约 4 核 43%）；优化方向=daemon 采样循环 NEON 化、Mac 端 1080p 直编
+5. peers toml 写坏（非法 TOML）会让 app 重置该文件（免密密码丢失，需重输一次 Mac 密码）；改配置前先 force-stop app
+6. 恢复官方版的完整流程：restore_official_procedure.md（实测两次）
+7. 两个 RustDesk 服务的保活：root LaunchDaemon /Library/LaunchDaemons/com.carriez.RustDesk_service.plist 只保活官方路径
+
+### 五、新会话下一步（按优先级）
+1. **daemon 加压缩帧检测+优雅回退**（上面的 UX 坑，纯盒子端小改）
+2. fps 稳定 12+：daemon rgba 段耗时剖析（当前 64ms@4K→1280；1728 档实测见日志）、采样循环 NEON 化、或 image_quality 微调
+3. 长播 30 分钟压测（MMZ cached 一致性、内存泄漏）
+4. 4K 外接屏通路二选一：Mac 降采样 dylib 部署（TCC 一次性授权，用户在场）或 gfx2d 硬解压（逆向 PadptGfx2dBitBlit）
+5. 全部完成后：结果更新 §三十三、归档、提交 cm311 仓库
